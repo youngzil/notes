@@ -16,3 +16,12 @@ docker映射的端口要先预留好。
 
 给你下个must done的任务，把arthas集成到 aigw-backend运行态，bin下面可以执行起来监控aigw-backend的运行时动态
 
+
+
+基础教程： 
+https://alibaba.github.io/arthas/arthas-tutorials?language=cn&id=arthas-basics
+进阶教程： 
+https://alibaba.github.io/arthas/arthas-tutorials?language=cn&id=arthas-advanced
+获取方式：（开源）
+https://github.com/alibaba/arthas
+

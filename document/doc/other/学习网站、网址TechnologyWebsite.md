@@ -105,27 +105,13 @@ OpenStack为私有云和公有云提供可扩展的弹性的云计算服务。�
 
 
 
+Github装逼指南——Travis CI 和 Codecov
+https://segmentfault.com/a/1190000004415437
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+github账号登录
+https://codecov.io/
+https://travis-ci.org/
+https://goreportcard.com
 
 
 
