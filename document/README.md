@@ -120,17 +120,17 @@ quickstart-jersey
 ---------------------------------------------------------------------------------------------------------------------
 quickstart-cache		缓存
 
-quickstart-tair
-quickstart-hazelcast
-quickstart-jcache
-quickstart-jetcache
-quickstart-memcached
 quickstart-redis
-quickstart-ehcache
-quickstart-guava-cache
-quickstart-caffeine
-quickstart-codis
-quickstart-concurrentlinkedhashmap
+quickstart-memcached
+quickstart-caffeine     Caffeine缓存框架
+quickstart-jetcache     JetCache是​​一种Java缓存抽象，可为各种缓存解决方案提供一致的使用。
+quickstart-jcache   Java缓存规范JCache API（JSR107），它对Java对象缓存进行标准化，方便高效开发，让程序员摆脱实现缓存有效期、互斥、假脱机（spooling）和缓存一致性等负担。
+quickstart-guava-cache      Guava LocalCache 缓存
+quickstart-hazelcast    Hazelcast是一个高度可扩展的数据分发和集群平台，可用于实现分布式数据存储、数据缓存
+quickstart-ehcache      EhCache 是一个纯Java的进程内缓存框架，具有快速、精干等特点，是Hibernate中默认的CacheProvider。
+quickstart-concurrentlinkedhashmap      基于LRU（Least recently used，最近最少使用）算法来替换Map中的元素
+quickstart-codis    Redis 的集群解决方案有社区的，也有官方的，社区的解决方案有 Codis 和Twemproxy,官方的集群解决方案就是 Redis Cluster
+quickstart-tair     Tair是一个Key/Value结构数据的解决方案，它默认支持基于内存和文件的两种存储方式，分别和我们通常所说的缓存和持久化存储对应。
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -257,23 +257,27 @@ quickstart-btrace
 ---------------------------------------------------------------------------------------------------------------------
 quickstart-mq		消息
 
-quickstart-zeromq
 quickstart-rocketmq
-quickstart-rabbitmq
-quickstart-pulsar
-quickstart-openmessaging
-quickstart-openmq
-quickstart-nanomsg
-quickstart-msgframe-v2
-quickstart-msgframe-v1
-quickstart-kafka
-quickstart-mqtt
-quickstart-hivemq
-quickstart-hornetq
-quickstart-jafka
-quickstart-activemq-apollo
-quickstart-artemis
 quickstart-activemq
+quickstart-kafka
+quickstart-rabbitmq
+quickstart-mqtt
+
+quickstart-openmessaging    云原生，与供应商无关的开放式规范，用于分布式消息传递
+quickstart-artemis   高性能，无阻塞的体系结构，用于下一代事件驱动的消息传递应用程序。
+quickstart-jafka    一个快速，简单的分布式发布-订阅消息系统（mq）
+
+quickstart-msgframe-v1
+quickstart-msgframe-v2
+
+quickstart-nanomsg  nanomsg是一个消息通信组件 - zeromq的作者之一用C语言重写的通信框架，
+quickstart-zeromq   ZeroMQ（简称ZMQ）是一个基于消息队列的多线程网络库，其对套接字类型、连接处理、帧、甚至路由的底层细节进行抽象，提供跨越多种传输协议的套接字。
+
+quickstart-hivemq   HiveMQ的MQTT代理使以高效，快速和可靠的方式轻松地在连接的设备之间来回移动数据。
+quickstart-hornetq  HornetQ是一个开放源代码项目，用于构建多协议，可嵌入，非常高性能的集群异步消息传递系统。 
+quickstart-openmq   Open-MQ 是一个开源的消息中间件，类似IBM的 WebSphere MQ(MQSeries)，采用 C++ 和 Qt 库编写的，支持Windows、Unix 以及 Mac OS 平台，支持 JMS。
+quickstart-pulsar   Pulsar是一个分布式pub-sub消息平台，具有非常灵活的消息传递模型和直观的客户端API。
+quickstart-activemq-apollo  支持STOMP协议，已经废弃
 
 
 ---------------------------------------------------------------------------------------------------------------------
