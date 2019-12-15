@@ -50,7 +50,8 @@ GB18030：GBK再扩展，又加了几千个新的少数民族的字，GBK 扩成
 UNICODE： ISO 就直接规定必须用两个字节，也就是16位来统一表示所有的字符，固定用两个字节来表示一个字符，无论这个字符是汉字还是英文字母，或是别的么。
   ISO （国际标谁化组织）制定的包括了地球上所有文化、所有字母和符号的编码！他们打算叫它"Universal Multiple-Octet Coded Character Set"，简称 UCS, 俗称 "UNICODE"。
   对于ascii里的那些“半角”字符，UNICODE 包持其原编码不变，只是将其长度由原来的8位扩展为16位，而其他文化和语言的字符则全部重新统一编码。由于"半角"英文符号只需要用到低8位，所以其高8位永远是0，因此这种大气的方案在保存英文文本时会多浪费一倍的空间。
-  从 UNICODE 开始，无论是半角的英文字母，还是全角的汉字，它们都是统一的"一个字符"！同时，也都是统一的"两个字节"，请注意"字符"和"字节"两个术语的不同，“字节”是一个8位的物理存贮单元，而“字符”则是一个文化相关的符号。在UNICODE 中，一个字符就是两个字节。
+  从 UNICODE 开始，无论是半角的英文字母，还是全角的汉字，它们都是统一的"一个字符"！同时，也都是统一的"两个字节"，
+  请注意"字符"和"字节"两个术语的不同，“字节”是一个8位的物理存贮单元，而“字符”则是一个文化相关的符号。在UNICODE 中，一个字符就是两个字节。
   UNICODE 在制订时没有考虑与任何一种现有的编码方案保持兼容，这使得 GBK 与UNICODE 在汉字的内码编排上完全是不一样的，没有一种简单的算术方法可以把文本内容从UNICODE编码和另一种编码进行转换，这种转换必须通过查表来进行。
   UNICODE 来到时，一起到来的还有计算机网络的兴起，UNICODE 如何在网络上传输也是一个必须考虑的问题，于是面向传输的众多 UTF（UCS Transfer Format）标准出现了，顾名思义，UTF8就是每次8个位传输数据，而UTF16就是每次16个位，只不过为了传输时的可靠性，从UNICODE到UTF时并不是直接的对应，而是要过一些算法和规则来转换。
   
@@ -100,8 +101,38 @@ UTF-8：
   0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx  
 
 
+
+Unicode标准把代码点分成了17个代码平面（Code Plane）：
+
+代码点
+Unicode标准的本意很简单：希望给世界上每一种文字系统的每一个字符，都分配一个唯一的整数，这些整数叫做代码点（Code Points）。
+
+代码空间
+所有的代码点构成一个代码空间（Code Space），根据Unicode定义，总共有1,114,112个代码点，编号从0x0到0x10FFFF。换句话说，如果每个代码点都能够代表一个有效字符的话，Unicode标准最多能够编码1,114,112，也就是大概110多万个字符。最新的Unicode标准（7.0）已经给超过11万个字符分配了代码点。
+
+代码平面
+Unicode标准把代码点分成了17个代码平面（Code Plane），编号为#0到#16。每个代码平面包含65,536（2^16）个代码点（17*65,536=1,114,112）。其中，Plane#0叫做基本多语言平面（Basic Multilingual Plane，BMP），其余平面叫做补充平面（Supplementary Planes）。Unicode7.0只使用了17个平面中的6个，并且给这6个平面起了名字，如下图所示：
+
+
+下面是这些平面的名字和用途：
+Plane#0 BMP（Basic Multilingual Plane）大部分常用的字符都坐落在这个平面内，比如ASCII字符，汉字等。
+Plane#1 SMP（Supplementary Multilingual Plane）这个平面定义了一些古老的文字，不常用。
+Plane#2 SIP（Supplementary Ideographic Plane）这个平面主要是一些BMP中没有包含汉字。
+Plane#14 SSP（Supplementary Special-purpose Plane）这个平面定义了一些非图形字符。
+Plane#15 SPUA-A（Supplementary Private Use Area A）
+Plane#16 SPUA-B（Supplementary Private Use Area B）
+
+
+
 unicode编码表
 http://www.unicode.org/
+
+
+参考
+https://blog.csdn.net/hezh1994/article/details/78899683
+https://blog.csdn.net/zxhoo/article/details/38819517
+https://zh.wikipedia.org/wiki/Unicode%E5%8D%80%E6%AE%B5
+
 
 ---------------------------------------------------------------------------------------------------------------------
 https://blog.csdn.net/debugingstudy/article/details/12720309
