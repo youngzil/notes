@@ -1,7 +1,9 @@
+```
+
 1、各种编码UNICODE、UTF-8、ANSI、ASCII、GB2312、GBK详解
 2、Java各种编码
 
-
+```
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -12,8 +14,8 @@ ASCII、DBSC（GB2312、GBK、GB18030）、UNICODE、UTF（UTF-8、UTF-16、UTF-
 GB2312：全角字符，半角字符
 国际标准化组织（International Organization for Standardization，ISO）简称ISO，ISO负责目前绝大部分领域（包括军工、石油、船舶等垄断行业）的标准化活动。
 
-UNICODE
-UTF-8
+UNICODE：Unicode只是规定了字符的编号，并没有说明以什么样的形式存储
+UTF-8：存储格式，UTF-8其实就是Unicode字符集的一种编码方式，它可能会占用1~4个字节。
 
 ANSI（American National Standards Institute），中文：美国国家标准学会。
 
@@ -34,6 +36,8 @@ ANSI编码：是一个抽象的概念，在不同的环境下代表不同的编�
 
 ASCII：空格、标点符号、数字、大小写字母，0x32以下的字节状态称为"控制码"
   ASCII码一共规定了128个字符的编码，比如空格“SPACE”是32（二进制00100000），大写的字母A是65（二进制01000001）。这128个符号（包括32个不能打印出来的控制符号），只占用了一个字节的后面7位，最前面的1位统一规定为0。
+
+ASCII码：说白了就是符号和7位二进制数的映射表
 
 
 "DBCS"（Double Byte Charecter Set 双字节字符集）:GB2312、GBK、GB18030

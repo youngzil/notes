@@ -1,3 +1,4 @@
+```
 sonar、findbug的扫描规则，，，，，代码的style的样式检查等
 http://www.infoq.com/cn/news/2008/07/jsr-305-update
 1、关键字顺序
@@ -7,7 +8,7 @@ http://www.infoq.com/cn/news/2008/07/jsr-305-update
 5、异常不要直接抛出Throwable或者Error类型
 6、
 
-
+```
 
 
 

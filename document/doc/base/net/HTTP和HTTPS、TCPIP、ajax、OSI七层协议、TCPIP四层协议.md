@@ -1,3 +1,4 @@
+```
 ajax请求流程，ajax状态码，http状态码
 OSI七层与TCP/IP五层网络架构
 TCP/IP连接过程：三次握手四次挥手
@@ -14,6 +15,8 @@ https连接过程(5步)：+SSL层，过程是先非对称协商秘钥，然后�
 非对称加密：RSA、DSA、ECDSA
 查看项目quickstart-crypto
 /Users/yangzl/git/quickstart-framework/quickstart-document/doc/base/加解密.md
+```
+```
 ---------------------------------------------------------------------------------------------------------------------
 
 xhr对象
@@ -369,6 +372,7 @@ https://blog.csdn.net/qq_38950316/article/details/81087809
 HTTP请求过程
 https://www.linux178.com/web/httprequest.html
 
+
 https请求建立过程
 https://blog.csdn.net/wangjun5159/article/details/51510594
 https://www.cnblogs.com/ttltry-air/archive/2012/08/20/2647898.html
@@ -377,6 +381,6 @@ https://www.cnblogs.com/ttltry-air/archive/2012/08/20/2647898.html
 OSI七层协议和TCP/IP四层协议
 https://blog.csdn.net/qq_18425655/article/details/52314970
 
-
+```
 
 

@@ -1,10 +1,13 @@
+```
 1、SSO
 2、OpenID
 
 3、OAuth
 OAuth 2.0 是一种授权机制，主要用来颁发令牌（token）
 获取令牌的四种方式
+OAuth2 中主要分为了4种角色
 Oauth1.0与Oauth2.0的区别：3点
+JWT，JSON Web Token
 
 4、HTTP API认证授权术
 HTTP Basic
@@ -16,6 +19,8 @@ OAuth 2.0 – Authentication Code & Client Credential
 
 5、
 
+
+```
 
 ---------------------------------------------------------------------------------------------------------------------
 https://www.programcat.com/index/info/id/47
@@ -135,53 +140,38 @@ Server服务端：
 
 
 ---------------------------------------------------------------------------------------------------------------------
-http://www.ruanyifeng.com/blog/2019/04/oauth_design.html
-https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
-https://blog.csdn.net/u013436121/article/details/23631885
-https://www.zhihu.com/question/19851243
-https://oauthlib.readthedocs.io/en/v3.0.1/oauth_1_versus_oauth_2.html
-https://blog.csdn.net/jing12062011/article/details/78147306
-
-客户端示例
-https://www.ibm.com/developerworks/cn/java/se-oauthjavapt1/index.html
-https://www.ibm.com/developerworks/cn/java/se-oauthjavapt2/index.html
-https://www.ibm.com/developerworks/cn/java/se-oauthjavapt3/index.html
-https://www.ibm.com/developerworks/library/se-oauthjavapt3/index.html
-
-
-服务端示例
-https://github.com/Aaron-zheng/oauth2-demo
-https://blog.csdn.net/jing12062011/article/details/78147306
-https://www.cnblogs.com/Irving/p/4134752.html
-
-
-
-
-https://developers.google.com/api-client-library/java/google-oauth-java-client/oauth2
-https://spring.io/guides/tutorials/spring-boot-oauth2/
-https://db-blog.web.cern.ch/blog/emil-kleszcz/2016-08-java-web-application-based-oauth2
-https://developer.byu.edu/docs/consume-api/use-api/oauth-20/oauth-20-java-sample-code
-https://github.com/Aaron-zheng/oauth2-demo
-
-github测试oauth
-https://github.com/settings/apps
-
-
-java实现参考
-/Users/yangzl/git/quickstart-framework/quickstart-example/src/main/java/org/quickstart/example/oauth2
-
-
-
 OAuth 2.0
 https://oauth.net/
 https://oauth.net/code/java/
+https://tools.ietf.org/html/rfc6749
 
 
 
-OAuth 2.0 是一种授权机制，主要用来颁发令牌（token）。
+OAuth 2.0 是一种授权机制，主要用来颁发令牌（token）
 获取令牌的四种方式
+OAuth2 中主要分为了4种角色
 Oauth1.0与Oauth2.0的区别：3点
+JWT，JSON Web Token
 
+
+
+OAuth2 中主要分为了4种角色：
+1、resource owner资源所有者，是能够对受保护的资源授予访问权限的实体，可以是一个用户，这时会被称为end-user。
+2、resource server资源服务器，持有受保护的资源，允许持有访问令牌（access token）的请求访问受保护资源。
+3、client客户端，持有资源所有者的授权，代表资源所有者对受保护资源进行访问。
+4、authorization server授权服务器，对资源所有者的授权进行认证，成功后向客户端发送访问令牌。
+
+
+具体来说，一共分成四种授权类型（authorization grant），即四种颁发令牌的方式，适用于不同的互联网场景。
+OAuth 2.0 规定了四种获得令牌的流程。你可以选择最适合自己的那一种，向第三方应用颁发令牌。下面就是这四种授权方式。
+1、授权码（authorization code）方式，指的是第三方应用先申请一个授权码，然后再用该码获取令牌。
+2、简化类型（也称为隐式类型）（implicit）：允许直接向前端颁发令牌。这种方式没有授权码这个中间步骤，所以称为（授权码）"隐藏式"（implicit）。
+3、密码模式（password）：resource owner password credentials密码类型，如果你高度信任某个应用，RFC 6749 也允许用户把用户名和密码，直接告诉该应用。该应用就使用你的密码，申请令牌，这种方式称为"密码式"（password）。
+4、客户端凭证（client credentials）：最后一种方式是凭证式（client credentials），适用于没有前端的命令行应用，即在命令行下请求令牌。这种方式给出的令牌，是针对第三方应用的，而不是针对用户的，即有可能多个用户共享同一个令牌。
+                                                                                    
+更新令牌
+令牌的有效期到了，如果让用户重新走一遍上面的流程，再申请一个新的令牌，很可能体验不好，而且也没有必要。OAuth 2.0 允许用户自动更新令牌。
+具体方法是，B 网站颁发令牌的时候，一次性颁发两个令牌，一个用于获取数据，另一个用于获取新的令牌（refresh token 字段）。令牌到期前，用户使用 refresh token 发一个请求，去更新令牌。
 
 
 在OAuth诞生前，Web安全方面的标准协议只有OpenID，不过它关注的是验证，即WHO的问题，而不是授权，即WHAT的问题。
@@ -202,20 +192,6 @@ OAuth 引入了一个授权层，用来分离两种不同的角色：客户端�
 注意，只要知道了令牌，就能进入系统。系统一般不会再次确认身份，所以令牌必须保密，泄漏令牌与泄漏密码的后果是一样的。 这也是为什么令牌的有效期，一般都设置得很短的原因。
 
 
-
-具体来说，一共分成四种授权类型（authorization grant），即四种颁发令牌的方式，适用于不同的互联网场景。
-OAuth 2.0 规定了四种获得令牌的流程。你可以选择最适合自己的那一种，向第三方应用颁发令牌。下面就是这四种授权方式。
-1、授权码（authorization code）方式，指的是第三方应用先申请一个授权码，然后再用该码获取令牌。
-2、隐藏式（implicit）：允许直接向前端颁发令牌。这种方式没有授权码这个中间步骤，所以称为（授权码）"隐藏式"（implicit）。
-3、密码式（password）：如果你高度信任某个应用，RFC 6749 也允许用户把用户名和密码，直接告诉该应用。该应用就使用你的密码，申请令牌，这种方式称为"密码式"（password）。
-4、客户端凭证（client credentials）：最后一种方式是凭证式（client credentials），适用于没有前端的命令行应用，即在命令行下请求令牌。这种方式给出的令牌，是针对第三方应用的，而不是针对用户的，即有可能多个用户共享同一个令牌。
-                                                                                    
-更新令牌
-令牌的有效期到了，如果让用户重新走一遍上面的流程，再申请一个新的令牌，很可能体验不好，而且也没有必要。OAuth 2.0 允许用户自动更新令牌。
-具体方法是，B 网站颁发令牌的时候，一次性颁发两个令牌，一个用于获取数据，另一个用于获取新的令牌（refresh token 字段）。令牌到期前，用户使用 refresh token 发一个请求，去更新令牌。
-                            
-
-
 所谓第三方登录，实质就是 OAuth 授权。用户想要登录 A 网站，A 网站让用户提供第三方网站的数据，证明自己的身份。获取第三方网站的身份数据，就需要 OAuth 授权。
 
 举例来说，A 网站允许 GitHub 登录，背后就是下面的流程。
@@ -225,8 +201,6 @@ OAuth 2.0 规定了四种获得令牌的流程。你可以选择最适合自己�
 4、A 网站使用授权码，向 GitHub 请求令牌。
 5、GitHub 返回令牌.
 6、A 网站使用令牌，向 GitHub 请求用户数据。
-
-
 
 
 
@@ -258,6 +232,61 @@ Oauth1.0与Oauth2.0的区别：3点
 
 
 
+JWT，JSON Web Token，作为一个开放的标准，通过紧凑（compact，快速传输，体积小）或者自包含（self-contained，payload中将包含用户所需的所有的信息，避免了对数据库的多次查询）的方式，定义了用于在各方之间发送的安全JSON对象。
+
+
+JWT的组成
+
+JWT格式一般如下：
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiY2FuZyB3dSIsImV4cCI6MTUxODA1MTE1NywidXNlcklkIjoiMTIzNDU2In0.IV4XZ0y0nMpmMX9orv0gqsEMOxXXNQOE680CKkkPQcs
+
+它由三部分组成，每部分通过 .分隔开，分别是：
+1、Header头部
+2、Payload有效负荷
+3、Signature签名
+
+
+
+java实现参考
+/Users/yangzl/git/quickstart-spring-boot2/quickstart-spring-security
+/Users/yangzl/git/quickstart-framework/quickstart-example/src/main/java/org/quickstart/example/oauth2
+
+
+参考
+https://mp.weixin.qq.com/s/n2LOsaTcp6wR6QHBkfy0ug
+http://www.ruanyifeng.com/blog/2019/04/oauth_design.html
+https://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+https://blog.csdn.net/u013436121/article/details/23631885
+https://www.zhihu.com/question/19851243
+https://oauthlib.readthedocs.io/en/v3.0.1/oauth_1_versus_oauth_2.html
+https://blog.csdn.net/jing12062011/article/details/78147306
+
+
+客户端示例
+https://www.ibm.com/developerworks/cn/java/se-oauthjavapt1/index.html
+https://www.ibm.com/developerworks/cn/java/se-oauthjavapt2/index.html
+https://www.ibm.com/developerworks/cn/java/se-oauthjavapt3/index.html
+https://www.ibm.com/developerworks/library/se-oauthjavapt3/index.html
+
+
+服务端示例
+https://github.com/Aaron-zheng/oauth2-demo
+https://blog.csdn.net/jing12062011/article/details/78147306
+https://www.cnblogs.com/Irving/p/4134752.html
+
+
+https://developers.google.com/api-client-library/java/google-oauth-java-client/oauth2
+https://spring.io/guides/tutorials/spring-boot-oauth2/
+https://db-blog.web.cern.ch/blog/emil-kleszcz/2016-08-java-web-application-based-oauth2
+https://developer.byu.edu/docs/consume-api/use-api/oauth-20/oauth-20-java-sample-code
+https://github.com/Aaron-zheng/oauth2-demo
+
+
+Oauth2介绍
+https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+
+github测试oauth
+https://github.com/settings/apps
 
 
 

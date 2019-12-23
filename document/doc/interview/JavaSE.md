@@ -218,6 +218,8 @@ nio的代码，三个标识
 
 
 ---------------------------------------------------------------------------------------------------------------------
+
+```
 参考项目
 java示例：quickstart-example
 java基础：quickstart-javase
@@ -240,7 +242,9 @@ SOA、
 环形缓冲区的实现原理（ring buffer）quickstart-disruptor
 
   
+```
   
+```
 1、JVM和类加载机制：jvm学习.md
 
 计算机内存模型和CPU缓存一致性协议MESI
@@ -281,7 +285,9 @@ jdk的命令行工具：jps、jinfo + jstat 、jmap（-dump、jhat）、jstack
 堆外内存：原因、场景、使用：存活时间长，大内存的
 
 
+```
 
+```
 2、IO网络与文件
 BIO是面向流、阻塞IO，顺序读
    NIO面向缓冲、非阻塞IO、选择器Selector，可以使用position等跳跃读
@@ -329,6 +335,8 @@ https://blog.csdn.net/Big_Blogger/article/details/77654240
    零拷贝：减少内核态和用户态时的数据重复拷贝，java.nio.channel.FileChannel的transferTo()，transferFrom()方法
    
    
+```
+```
 3、多线程
 
 Java线程的5种状态及切换
@@ -354,6 +362,8 @@ Linux进程间通信
    
    ThreadLocal使用：以线程为单位进行隔离，因为WeakReference不会导致内存泄漏，线程复用的时候没有remove可能会导致后面的任务取到前面任务存进去的值，导致程序出错
 
+```
+```
 
 
 4、集合：java集合.md
@@ -362,6 +372,8 @@ List、Set、Map、Queue
 
 
 
+```
+```
 5、concurrent包并发、并发工具类：java并发包concurrent和并发工具类.md
 
 java并发包concurrent：
@@ -383,35 +395,57 @@ Unsafe类的CAS操作
 java并发基础AQS类.md
 
 
+```
+```
 
 6、反射、java agent，反射初始化：java反射和agent.md
 RTTI和反射机制区别
 反射的使用：获取类、构造方法，成员变量，成员方法、注解、泛型
 
 
+```
+```
 7、Java的简单类型及其封装器类
 
+```
+```
 8、Object类的方法，和Thread类方法的区别
 
+```
+```
 9、String StringBuffer,StringBuilder原理：底层的数据结构是 字符数组 char[]
 
+```
+```
 10、sleep、wait  notyfi都干啥的，sycnized怎么用的，concurrent包下面的锁用过哪些，怎么实现的
 
+```
+```
 11、io  jvm  多线程1
 
+```
+```
 12、图的遍历，深度广度啊
 
+```
+```
 13、内存溢出，内存泄露，，怎么调优，类加载
 
+```
+```
 
 14、BloomFilter 与 CuckooFilter
 
+```
+```
 
 15、计算机内存模型和CPU缓存一致性协议MESI
    缓存伪共享
    零拷贝：transTo
 
 
+```
+```
 16、CPU缓存分类：CPU三级缓存：CPU、L1、L2、L3、主内存
    缓存一致性协议：MESI
    伪共享(False Sharing)：缓存行进行字节填充，保证头尾加载到不同的缓存行，避免出入对互斥，不能并发，成为伪共享。jdk8中Contended注解
@@ -420,6 +454,8 @@ RTTI和反射机制区别
    volatile字段：使用内存屏障，保证可见性和有序性，不保证原子性
 
 
+```
+```
 17、synchronized的缺陷：不中断，不并发读，不知道有没有成功获取到锁
    Lock和synchronized对比：可重入，不中断，不公平，lock可中断、可公平，并发读，手动释放，是接口类
    
@@ -430,89 +466,159 @@ RTTI和反射机制区别
    总的来说, Lock + Condition + await()/signal/signalAll ≈ Synchronized + Object.wait()/notify/signalAll
    Condition原理：线程放入等待链表,可以实现“选择性通知”，而notify由JVM随机选择的
 
+```
+```
 18、分布式锁实现.md：数据库、redis、zookeeper
 
+```
+```
 19、加解密.md：加解密的分类和实现
 
+```
+```
 20、单例模式有三种实现方式
 
+```
+```
 21、图片加载缓慢优化.md：
 
+```
+```
 22、泛型通配符extends与super的区别.md：泛型：泛型上限通配符extends与泛型下限通配符super
 
+```
+```
 23、负载均衡.md:负载均衡算法
 
+```
+```
 24、java热部署、模块化：jarslink
 
+```
+```
 25、SPI和JDK、JDK7、JDK8
 
+```
+```
 26、一致性哈希算法(consistent hashing)
 
+```
+```
 27、java常见异常
 
+```
+```
 28、Comparable与Comparator的区别
 
+```
+```
 29、对Runtime的了解:Runtime类
 
+```
+```
 30、什么是线程死锁？如何避免线程死锁？如何加一个线程死锁检查机制？
 
+```
+```
 31、java进程间通信(IPC interProcess communication)：
 
+```
+```
 32、如何实现分布式缓存
 
+```
+```
 33、volatile原理
 
+```
+```
 34、数据结构：堆和树
 
+```
+```
 
 35、Queue队列的常用方法
 
+```
+```
 36、数组、链表，队列 ，栈，散列表，树，图
 
+```
+```
 37、Java线程的5种状态及切换
 
+```
+```
 38、Linux探秘之用户态与内核态
 
+```
+```
 39、java进程CPU过高问题如何排查？
 
+```
+```
 40、Java8中用sun.misc.Contended避免伪共享(false sharing)
 
+```
+```
 41、动态代理和静态代理
 
+```
+```
 42、
 
+```
+```
 43、
 
+```
+```
 44、
 
+```
+```
 45、
 
+```
+```
 46、
 
+```
+```
 47、
 
+```
+```
 48、
 
+```
+```
 49、
 
+```
+```
 50、
 
 
 
+```
+
 ---------------------------------------------------------------------------------------------------------------------
+```
 Java8中用sun.misc.Contended避免伪共享(false sharing)：
 https://blog.csdn.net/aigoogle/article/details/41518369
 1、long padding来避免伪共享 
 2、jdk8新特性，Contended注解避免false sharing：需要在jvm启动时设置-XX:-RestrictContended 
-
+```
 ---------------------------------------------------------------------------------------------------------------------
+```
 动态代理和静态代理.md
 动态代理：cglib、jdk
 静态代理：javassist、AspectJ
-
+```
 
 ---------------------------------------------------------------------------------------------------------------------
-
+```
 java se：
 单例
 锁的种类：可重入锁，
@@ -542,11 +648,13 @@ CMS流程：初始标记、并发标记、重新标记、并发清楚，并发�
 初始标记(CMS-initial-mark) -> 并发标记(CMS-concurrent-mark) -> 重新标记(CMS-remark) -> 并发清除(CMS-concurrent-sweep) ->并发重设状态等待下次CMS的触发(CMS-concurrent-reset)。
 其中的1，3两个步骤需要暂停所有的应用程序线程的
 
+```
 
 
 
 
 ---------------------------------------------------------------------------------------------------------------------
+```
 一致性哈希算法(consistent hashing)
 http://blog.csdn.net/cywosp/article/details/23397179/
 https://blog.csdn.net/bntX2jSQfEHy7/article/details/79549368
@@ -565,7 +673,11 @@ https://blog.csdn.net/thinkmo/article/details/26833565
 平衡性：使用虚拟节点来保证，新增或者删除机器节点，对象平衡分散被影响，并且之后的对象依然平衡分散
 单调性：新增或者删除机器节点，只是影响相邻的部分对象，但按照顺时候移动，可能出现不平衡问题（使用虚节点）
 分散性：节点hash后分散
+
+```
 ---------------------------------------------------------------------------------------------------------------------
+```
+
 Object类的方法
 getClass
 hashcode
@@ -588,7 +700,7 @@ run():执行该线程对象要执行的任务
 sleep()和wait()的区别
 sleep():不释放锁对象，释放CPU使用权在休眠的时间内，不能唤醒。
 wait():释放锁对象，释放CPU释放权，在等待时间内能被唤醒。
-
+```
 ---------------------------------------------------------------------------------------------------------------------
 一个英文字母(不分大小写)或者符号占一个字节的空间，一个中文汉字或者符号占两个字节的空间． 
 字节(Byte):通常将可表示常用英文字符8位二进制称为一字节。 1字节(Byte） = 8位(bit) 
@@ -900,6 +1012,7 @@ http://blog.csdn.net/RodeStillFaraway/article/details/50530142
 ![数据结构体系图](./image/datastructsystem.png "ReferencePicture")
 ![数据结构时间复杂度](./image/Datastructuretimecomplexity.png "ReferencePicture")
 ---------------------------------------------------------------------------------------------------------------------
+```
 Java线程的5种状态及切换(透彻讲解)
 https://www.cnblogs.com/nwnu-daizh/p/8036156.html
 http://blog.csdn.net/pange1991/article/details/53860651
@@ -909,14 +1022,15 @@ http://blog.csdn.net/pange1991/article/details/53860651
 运行-->阻塞-->就绪-->运行（sleep、t2.join、等用户输入，3中阻塞条件结束，获取cpu时间片）
 运行-->等待队列-->锁池队列-->就绪（wait()+notify/notifyAll、synchronized(obj) ）
 运行-->就绪（yield()、时间片用完）
-
+```
 ![线程状态转换](./image/threadstatuschange.png "ReferencePicture")
-
+```
 在调用sleep()方法的过程中，线程不会释放对象锁。
 而当调用wait()方法的时候，线程会放弃对象锁，让出cpu该其他线程，进入等待此对象的等待锁定池，只有针对此对象调用notify()方法后本线程才进入对象锁定池准备
 
-
+```
 ---------------------------------------------------------------------------------------------------------------------
+```
 Linux探秘之用户态与内核态
 
 
@@ -999,9 +1113,9 @@ https://baike.baidu.com/item/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%84%E6%96%87%E4%BB
 pageCache
 https://blog.csdn.net/iter_zc/article/details/44195731
 https://blog.csdn.net/kisimple/article/details/42559779
-
+```
 ---------------------------------------------------------------------------------------------------------------------
-
+```
 String StringBuffer,StringBuilder原理
 
 String对象有final修饰，是不可变的，也可以理解为常量，显然是线程安全的。
@@ -1027,7 +1141,9 @@ StringBuilder与StringBuffer有公共父类AbstractStringBuilder(抽象类)。
 String：new是放在堆区，+或者substring都是通过改变字符数组生成新的字符数组来实现
 一个是非同步的StringBuilder，一个是同步的StringBuffer（synchronized在方法上），都是字符数组，
 append时先扩容，把字符数组拷贝到一个新的大的字符数组，再进行拼接，还是拼接拷贝到一个新的字符数组，
+```
 ---------------------------------------------------------------------------------------------------------------------
+```
 https://blog.csdn.net/qq_42022528/article/details/87860311 
 
 
@@ -1039,6 +1155,7 @@ java的线程是映射到操作系统原生线程之上的，如果要阻塞或�
 
 synchronized会导致争用不到锁的线程进入阻塞状态，所以说它是java语言中一个重量级的同步操纵，被称为重量级锁，为了缓解上述性能问题，JVM从1.5开始，引入了轻量锁与偏向锁，默认启用了自旋锁，他们都属于乐观锁。所以明确java线程切换的代价，是理解java中各种锁的优缺点的基础之一。
 
+```
 ---------------------------------------------------------------------------------------------------------------------
 
 

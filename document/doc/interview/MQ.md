@@ -34,13 +34,14 @@ rocketmq数据存储方式：数据头+消息体，根据消息头判断读取�
 
 
 ---------------------------------------------------------------------------------------------------------------------
-
+```
 1、
 /Users/yangzl/git/quickstart-mq/doc/消息分类.md  
 /Users/yangzl/git/quickstart-mq/quickstart-activemq/doc/ActiveMQ学习.md  
 /Users/yangzl/git/quickstart-mq/quickstart-rocketmq/doc/RocketMQ学习.md  
 /Users/yangzl/git/quickstart-mq/quickstart-kafka/doc/Kafka学习.md  
-
+```
+```
 2、
 消息类型：
 
@@ -53,7 +54,7 @@ tag消息
 事务消息
 延时消息（定时消息）
 优先级消息（activemq）
-
+```
 3、ActiveMQ学习
 JMS规范
 JMS消息组成：JMS消息由3部分组成：消息头、属性和消息体
