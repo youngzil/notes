@@ -5,30 +5,49 @@ rdb aof
   
 ---------------------------------------------------------------------------------------------------------------------  
   
-1、  
-/Users/yangzl/git/quickstart-cache/quickstart-memcached/README.md  
-/Users/yangzl/git/quickstart-cache/quickstart-redis/doc/redis学习.md  
-  
-2、Redis和Memcached的区别  
-  
-3、  
-  
-  
-  
-1、缓存热点Key、大Value  
-2、缓存一致性问题  
-3、redis和memcached的区别  
-4、分布式缓存和Redis Key设计技巧  
+1、缓存学习.md
+1、缓存热点Key、大Value
+2、缓存一致性问题
+3、redis和memcached的区别
+4、分布式缓存和Redis Key设计技巧
 5、缓存的作用和分类  
-  
-  
+
+2、Redis和Memcached的区别  
+  /Users/yangzl/git/quickstart-cache/quickstart-memcached/README.md  
+  /Users/yangzl/git/quickstart-cache/quickstart-redis/doc/redis学习.md  
+    
+3、quickstart-caffeine框架
+
 Caffeine：  
 1、Caffeine 的三种缓存填充策略：手动、同步加载和异步加载。  
 2、Caffeine 有三个值回收策略：基于大小，基于时间和基于引用。  
 3、刷新：（不同于过期）可以将缓存配置为在指定时间段后自动刷新条目。  
 4、统计：Caffeine 有记录缓存使用情况的统计方式：  
+
+
+ConcurrentLinkedHashMap框架
+/Users/yangzl/git/quickstart-cache/quickstart-concurrentlinkedhashmap/README.md
+ConcurrentLinkedHashMap提供一个基于权重管理容量的Map，有以下特性
+    基于LRU（Least recently used，最近最少使用）算法来替换Map中的元素
+    再高负载情况下，和ConrrentHashMap具有相同的性能
+    Can bound by the size of the values (e.g. Multimap cache) （这条没看懂）
+    提供元素移除的通知事件
+
+guava-cache学习
+/Users/yangzl/git/quickstart-cache/quickstart-guava-cache/README.md
+
+
+jcache学习
+/Users/yangzl/git/quickstart-cache/quickstart-jcache/README.md
+
+
+jetcache学习：缓存统一的接口，类似slf4j
+/Users/yangzl/git/quickstart-cache/quickstart-jetcache/README.md
+
   
-  
+
+Redis学习
+quickstart-redis  
 Redis集群解决方案：  
 Redis 的集群解决方案有社区的，也有官方的，社区的解决方案有 Codis 和Twemproxy,  
 Codis是由我国的豌豆荚团队开源的，  
@@ -111,72 +130,72 @@ Memcached 所有命令都是原子性的
   
   
   
-```  
+  
 4、  
-```  
-```  
+  
+  
 5、  
-```  
-```  
+  
+  
 6、  
-```  
-```  
+  
+  
 7、  
-```  
-```  
+  
+  
 8、  
-```  
-```  
+  
+  
 9、  
-```  
-```  
+  
+  
 10、  
-```  
-```  
+  
+  
 11、  
-```  
-```  
+  
+  
 12、  
-```  
-```  
+  
+  
 13、  
-```  
-```  
+  
+  
 14、  
-```  
-```  
+  
+  
 15、  
-```  
-```  
+  
+  
 16、  
-```  
-```  
+  
+  
 17、  
-```  
-```  
+  
+  
 18、  
-```  
-```  
+  
+  
 19、  
-```  
-```  
+  
+  
 20、  
-```  
-```  
+  
+  
 21、  
-```  
-```  
+  
+  
 22、  
-```  
-```  
+  
+  
 23、  
-```  
-```  
+  
+  
 24、  
-```  
-```  
+  
+  
 25、  
-```  
+  
   
   
   
