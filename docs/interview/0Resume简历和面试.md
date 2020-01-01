@@ -13,6 +13,10 @@
 4、公司面试注意事项  
 5、别人的面试经历1  
 6、  
+
+![Java面试梳理](image/Java面试梳理.png "ReferencePicture")
+
+
 7、  
 8、  
 9、  
