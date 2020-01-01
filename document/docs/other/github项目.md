@@ -5,31 +5,7 @@ https://github.com/jumpserver/jumpserver
 4A：身份验证 Authentication、账号管理 Account	、授权控制 Authorization	、安全审计 Audit	
 
 
-亚马逊：https://github.com/amzn
-亚马逊云服务：https://github.com/aws
-谷歌：https://github.com/google
-阿里巴巴：https://github.com/alibaba
-脸书：https://github.com/facebook
-推特：https://github.com/twitter
-支付宝：https://github.com/alipay
-腾讯：https://github.com/Tencent
-百度：https://github.com/baidu
-新美大：https://github.com/Meituan-Dianping
-美团：https://github.com/meituan
-大众点评：https://github.com/dianping
-京东：https://github.com/CHINA-JD
-小米：https://github.com/orgs/XiaoMi
-领英：https://github.com/linkedin
-网易：https://github.com/NetEase
-雅虎：https://github.com/yahoo
-Netflix：https://github.com/Netflix
-亿贝：https://github.com/eBay
-微软：https://github.com/Microsoft
-豆瓣：https://github.com/douban
-唯品会：https://github.com/vipshop
-苹果：https://github.com/apple
-猫途鹰：https://github.com/tripadvisor
-三星：https://github.com/SAMSUNG
+
 
 
 

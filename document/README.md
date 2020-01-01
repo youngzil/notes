@@ -2,161 +2,335 @@
 
 - [Java](#Java)
     - [基础](#基础)
-    - [容器](#容器)
+    - [集合](#集合)
     - [并发](#并发)
     - [JVM](#JVM)
     - [I/O](#IO)
     - [Java8](#Java8)
+    - [Java9](#Java9)
+    - [Java学习常见问题汇总](#Java学习常见问题汇总)
     - [读书和笔记](#读书和笔记)
 - [MQ消息组件](#MQ消息组件)
     - [RocketMQ](#RocketMQ)
     - [ActiveMQ](#ActiveMQ)
     - [Kafka](#Kafka)
+    - [RabbitMQ](#RabbitMQ)
+    - [OpenMessaging](#OpenMessaging)
     - [MQTT](#MQTT)
-    - [[]()](#)[]()
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-- [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-
-
-
-
-
-
-    
-- [网络](#网络)
-- [操作系统](#操作系统)
-    - [Linux相关](#linux相关)
+- [远程通讯和RPC框架](#远程通讯和RPC框架)
+    - [Netty](#Netty)
+    - [MINA](#MINA)
+    - [Hession](#Hession)
+    - [t-io](#t-io)
+    - [xSocket](#xSocket)
+    - [Grizzly](#Grizzly)
+    - [Dubbo](#Dubbo)
+    - [gRPC](#gRPC)
+    - [Thrift](#Thrift)
+    - [Finagle](#Finagle)
+    - [Jupiter](#Jupiter)
+    - [Motan](#Motan)
+    - [Tars](#Tars)
+    - [HSF](#HSF)
+    - [自己实现simple RPC](#自己实现simple RPC)
+- [容器](#容器)
+    - [Docker](#Docker)
+    - [Kubernetes](#Kubernetes)
+    - [Istio](#Istio)
+    - [Pouch](#Pouch)
+- [缓存和KV数据库](#缓存和KV数据库)
+    - [Redis](#Redis)
+    - [Memcached](#Memcached)
+    - [Caffeine](#Caffeine)
+    - [JetCache](#JetCache)
+    - [JCache](#JCache)
+    - [GuavaCache](#GuavaCache)
+    - [ConcurrentLinkedHashMap](#ConcurrentLinkedHashMap)
+    - [EhCache](#EhCache)
+    - [Hazelcast](#Hazelcast)
+    - [Codis](#Codis)
+    - [Tair](#Tair)
+- [Reactive响应式编程](#Reactive响应式编程)
+    - [Reactor](#Reactor)
+    - [ReactiveX](#ReactiveX)
+    - [WebFlux](#WebFlux)
+    - [RSocket](#RSocket)
+    - [Akka](#Akka)
+    - [Ratpack](#Ratpack)
+- [设计模式](#设计模式)
+    - [](#)
+- [网络和HTTP](#网络和HTTP)
+    - [HTTP客户端](#HTTP客户端)
+        - [Unirest](#Unirest)
+        - [Feign](#Feign)
+        - [HttpClient](#HttpClient)
+        - [OkHttp](#OkHttp)
+        - [http-jersey](#http-jersey)
+        - [JDK NIO/BIO](#JDK NIOBIO)
+- [Spring](#Spring)
+    - [SpringBoot](#SpringBoot)
+        - [websocket](#websocket)
+        - [web](#web)
+        - [sqlite](#sqlite)
+        - [mybatis-generator](#mybatis-generator)
+        - [tkmapper](#tkmapper)
+        - [swagger](#swagger)
+        - [webflux](#webflux)
+        - [starter](#starter)
+        - [security](#security)
+        - [kafka](#kafka)
+        - [cache](#cache)
+        - [activemq](#activemq)
+        - [actuator](#actuator)
+        - [admin](#admin)
+        - [druid](#druid)
+        - [jooq](#jooq)
+        - [kafka](#kafka)
+        - [multidatasource](#multidatasource)
+    - [SpringCloud](#SpringCloud)
+        - [zuul](#zuul)
+        - [stream](#stream)
+        - [web](#web)
+        - [sleuth](#sleuth)
+        - [example](#example)
+        - [hystrix](#hystrix)
+        - [eureka](#eureka)
+        - [consul](#consul)
+        - [config](#config)
+    - [SpringMVC](#SpringMVC)
+        - [kafka](#kafka)
+        - [jooq](#jooq)
+        - [example](#example)
+        - [annotation](#annotation)
+        - [activemq](#activemq)
+    - [SpringData](#SpringData)
+        - [solr](#solr)
+        - [redis](#redis)
+        - [elasticsearch](#elasticsearch)
+- [注册中心和配置中心](#注册中心和配置中心)
+    - [注册中心](#注册中心)
+        - [ZooKeeper](#ZooKeeper)
+        - [Nacos](#Nacos)
+        - [Etcd](#Etcd)
+        - [Consul](#Consul)
+        - [ZKWeb](#ZKWeb)
+    - [配置中心](#配置中心)
+        - [Apollo](#Apollo)
+        - [Disconf](#Disconf)
+        - [XDiamond](#XDiamond)
+        - [XXL-CONF](#XXL-CONF)
+- [分布式](#分布式)
+    - [分布式事务](#分布式事务)
+    - [分布式锁](#分布式锁)
+    - [分布式ID](#分布式ID)
+    - [分布式缓存](#分布式缓存)
+- [网关](#网关)
+    - [API服务网关](#API服务网关)
+        - [Zuul2](#Zuul2)
+        - [Zuul1](#Zuul1)
+        - [Kong](#Kong)
+    - [代理服务器](#代理服务器)
+        - [Nginx](#Nginx)
+        - [Tengine](#Tengine)
+        - [LittleProxy](#LittleProxy)
+        - [Apache HTTP](#ApacheHTTP)
+    - [限流熔断](#限流熔断)
+        - [Sentinel](#Sentinel)
+        - [Resilience4j](#Resilience4j)
+        - [Eureka](#Eureka)
+        - [SnowJena](#SnowJena)
+- [模块化和类隔离](#模块化和类隔离)
+    - [sofa-jarslink](#sofa-jarslink)
+    - [Pandora](#Pandora)
+    - [Java9](#Java9)
+    - [JarsLink](#JarsLink)
+- [Linux](#Linux)
+    - [](#)
+- [AIF组件和项目](#AIF组件和项目)
+    - [网关和能力开放平台OSP](#网关和能力开放平台OSP)
+    - [消息组件MsgFrame](#消息组件MsgFrame)
+    - [缓存Aicache](#缓存Aicache)
+    - [配置中心Amber](#配置中心Amber)
+    - [微服务治理框架CSF](#微服务治理框架CSF)
+    - [监控和跟踪Log4x和ISee](#监控和跟踪Log4x和ISee)
+    - [调度ET(AISchedule)](#调度ET(AISchedule))
+    - [服务编排Comframe](#服务编排Comframe)
+    - [统一权限USPA](#统一权限USPA)
+    - [网管项目](#网管项目)
 - [数据结构与算法](#数据结构与算法)
     - [数据结构](#数据结构)
     - [算法](#算法)
+- [应用容器](#应用容器)
+    - [Jetty](#Jetty)
+    - [Tomcat](#Tomcat)
+    - [Undertow](#Undertow)
+    - [JBoss](#JBoss)
+    - [Jersey](#Jersey)
+    - [QuickServer](#QuickServer)
+    - [WebLogic](#WebLogic)
+    - [WebSphere](#WebSphere)
+- [系统监控](#系统监控)
+    - [进程监控](#进程监控)
+        - [Prometheus](#Prometheus)
+        - [Zabbix](#Zabbix)
+    - [在线诊断工具](#在线诊断工具)
+        - [JVM SandBox](#JVM SandBox)
+        - [Anthas](#Anthas)
+        - [BTrace](#BTrace)
+        - [Greys-Anatomy](#Greys-Anatomy)
+        - [HouseMD](#HouseMD)
+- [常用框架](#常用框架)
+    - [](#)
 - [数据库](#数据库)
-    - [MySQL](#mysql)
-    - [Redis](#redis)
-    - [数据库扩展](#数据库扩展)
-- [系统设计](#系统设计)
-    - [常用框架(Spring/SpringBoot、Zookeeper ... )](#常用框架)
-    - [数据通信/中间件(消息队列、RPC ... )](#数据通信中间件)
-    - [权限认证](#权限认证)
-    - [分布式 & 微服务](#分布式--微服务)
-      - [API 网关](#api-网关)
-      - [配置中心](#配置中心)
-      - [唯一 id 生成](#唯一-id-生成)
-      - [服务治理：服务注册与发现、服务路由控制](#服务治理服务注册与发现服务路由控制)
-    - [架构](#架构)
-    - [设计模式(工厂模式、单例模式 ... )](#设计模式)
+    - [数据库产品](#数据库产品)
+        - [MySQL](#MySQL)
+        - [Oracle](#Oracle)
+        - [OceanBase](#OceanBase)
+        - [MongoDB](#MongoDB)
+    - [数据库操作框架](#数据库操作框架)
+        - [DataSource](#DataSource)
+        - [MyBatis](#MyBatis)
+        - [MyBatis-Plus](#MyBatis-Plus)
+        - [Hibernate](#Hibernate)
+        - [ThinkJD](#ThinkJD)
+        - [JOOQ](#JOOQ)
+    - [数据库中间件](#数据库中间件)
+        - [MyCat](#MyCat)
+        - [Druid](#Druid)
+        - [ShardingSphere](#ShardingSphere)
+        - [Zdal](#Zdal)
+    - [轻量级数据库](#轻量级数据库)
+        - [H2](#H2)
+        - [SQLite](#SQLite)
+        - [Derby](#Derby)
+        - [InfluxDB](#InfluxDB)
+    - [数据迁移](#数据迁移)
+        - [Yugong](#Yugong)
+    - [Liquibase](#Liquibase)
+    - [Otter](#Otter)
+    - [数据库工具](#数据库工具)
+        - [DataGrip](#DataGrip)
+        - [Navicat](#Navicat)
+        - [PL/SQL Developer](#PLSQL Developer)
+        - [PL/SQL](#PLSQL)
+- [大数据处理](#大数据处理)
+    - [流处理](#流处理)
+        - [Flink](#Flink)
+        - [JStorm](#JStorm)
+        - [Storm](#Storm)
+        - [Flume](#Flume)
+        - [Spark](#Spark)
+        - [Beam](#Beam)
+        - [Samza](#Samza)
+        - [Hadoop](#Hadoop)
+        - [HBase](#HBase)
+        - [druid-io](#druid-io)
+    - [搜索](#搜索)
+        - [Elasticsearch](#Elasticsearch)
+        - [Lucene](#Lucene)
+        - [Solr](#Solr)
+    - [Spider爬虫](#Spider爬虫)
+        - [](#)
+- [SOFA](#SOFA)
+    - [sofa-rpc](#sofa-rpc)
+    - [sofa-mesh](#sofa-mesh)
+    - [sofa-boot](#sofa-boot)
+    - [sofa-bolt](#sofa-bolt)
+    - [sofa-ark](#sofa-ark)
+    - [sofa-jarslink](#sofa-jarslink)
+
+- [Netflix](#Netflix)
+    - [zuul2](#zuul2)
+    - [zuul1](#zuul1)
+    - [Eureka](#Eureka)
+    - [Hystrix](#Hystrix)
+    - [Ribbon](#Ribbon)
+    - [Turbine](#Turbine)
+    - [Archaius](#Archaius)
+    - [Governator](#Governator)
+- [Micronaut Framework](#Micronaut Framework)
+    - [](#)
+- [WebService](#WebService)
+    - [](#)
+- [测试](#测试)
+    - [单元测试](#单元测试)
+        - [JUnit](#JUnit)
+        - [TestNG](#TestNG)
+        - [Arquillian](#Arquillian)
+    - [Mock测试](#Mock测试)
+        - [Mockito](#Mockito)
+        - [Spock](#Spock)
+        - [Moco框架](#Moco框架)
+    - [压力测试](#压力测试)
+        - [JMeter](#JMeter)
+        - [LoadRunner](#LoadRunner)
+    - [自动化测试](#自动化测试)
+        - [Selenium](#Selenium)
+    - [基准测试](#基准测试)
+        - [JMH](#JMH)
+- [Golang](#Golang)
+    - [](#)
+- [Python](#Python)
+    - [](#)
+- [Lua](#Lua)
+    - [](#)
+- [C++/C](#C++C)
+    - [](#)
+- [前端开发](#前端开发)
+    - [VueJS](#VueJS)
+    - [Angular](#Angular)
+    - [Bootstrap](#Bootstrap)
+    - [ECharts](#ECharts)
+    - [RequireJS](#RequireJS)
+    - [zTree](#zTree)
+    - [Layui](#Layui)
+    - [JavaScript](#JavaScript)
+- [读书和笔记](#读书和笔记)
+    - [Java](#Java)
+    - [数据库](#数据库)
+    - [网络HTTP](#网络HTTP)
+    - [Linux](#Linux)
+    - [Netty](#Netty)
+    - [Spring](#Spring)
+    - [分布式](#分布式)
+    - [架构设计](#架构设计)
+    - [技术其他](#技术其他)
+    - [英语](#英语)
+    - [医学](#医学)
+    - [历史](#历史)
+    - [股票](#股票)
 - [面试指南](#面试指南)
     - [备战面试](#备战面试)
     - [面经](#面经)
-- [Java学习常见问题汇总](#java学习常见问题汇总)
-- [工具](#工具)
-    - [Git](#git)
-    - [Docker](#Docker)
-- [资源](#资源)
-    - [书单](#书单)
-    - [Github榜单](#Github榜单)
+    - [常见的学习网站](#常见的学习网站)
+    - [开源项目](#开源项目)
+- [开发工具](#开发工具)
+    - [基础工具](#基础工具)
+        - [Git](#Git)
+        - [Nexus](#Nexus)
+    - [项目管理](#项目管理)
+        - [Maven](#Maven)
+        - [Gradle](#Gradle)
+        - [Ant](#Ant)
+        - [Ivy](#Ivy)
+    - [代码扫描](#代码扫描)
+        - [SonarQube](#SonarQube)
+        - [PMD](#PMD)
+        - [FindBugs](#FindBugs)
+        - [Checkstyle](#Checkstyle)
+    - [DevOps工具](#DevOps工具)
+        - [Jenkins](#Jenkins)
 - [待办](#待办)
 - [说明](#说明)
 
-
-
-
+---------------------------------------------------------------------------------------------------------------------
 ## Java
 
 ### 基础
 * [基础](docs/java/XXX.md)
 
-### 容器
-* [容器](docs/java/XXX.md)
+### 集合
+* [集合](docs/java/XXX.md)
 
 ### 并发
 * [并发](docs/java/XXX.md)
@@ -172,14 +346,19 @@
 * [Java 8 学习资源推荐](docs/java/What's%20New%20in%20JDK8/Java8教程推荐.md)
 * [Java8 forEach 指南](docs/java/What's%20New%20in%20JDK8/Java8foreach指南.md)
 
-### 优雅 Java 代码必备实践(Java编程规范)
-* [Java 编程规范以及优雅 Java 代码实践总结](docs/java/Java编程规范.md)
+
+### Java9 
+[quickstart-javase9]
+
+### Java学习常见问题汇总 
 
 ###读书和笔记
 * [Java 编程规范以及优雅 Java 代码实践总结](docs/java/Java编程规范.md)
 
-
+---------------------------------------------------------------------------------------------------------------------
 ##MQ消息组件
+[quickstart-mq]
+
 ### RocketMQ
 * [RocketMQ](docs/java/XXX.md)
 
@@ -189,25 +368,76 @@
 ### Kafka
 * [Kafka](docs/java/XXX.md)
 
+### RabbitMQ
+* [RabbitMQ](docs/java/XXX.md)
+
+### OpenMessaging
+
 ### MQTT
 * [MQTT](docs/java/XXX.md)
 
+quickstart-openmessaging    云原生，与供应商无关的开放式规范，用于分布式消息传递
+quickstart-artemis   高性能，无阻塞的体系结构，用于下一代事件驱动的消息传递应用程序。
+quickstart-jafka    一个快速，简单的分布式发布-订阅消息系统（mq）
 
+quickstart-msgframe-v1
+quickstart-msgframe-v2
+
+quickstart-nanomsg  nanomsg是一个消息通信组件 - zeromq的作者之一用C语言重写的通信框架，
+quickstart-zeromq   ZeroMQ（简称ZMQ）是一个基于消息队列的多线程网络库，其对套接字类型、连接处理、帧、甚至路由的底层细节进行抽象，提供跨越多种传输协议的套接字。
+
+quickstart-hivemq   HiveMQ的MQTT代理使以高效，快速和可靠的方式轻松地在连接的设备之间来回移动数据。
+quickstart-hornetq  HornetQ是一个开放源代码项目，用于构建多协议，可嵌入，非常高性能的集群异步消息传递系统。 
+quickstart-openmq   Open-MQ 是一个开源的消息中间件，类似IBM的 WebSphere MQ(MQSeries)，采用 C++ 和 Qt 库编写的，支持Windows、Unix 以及 Mac OS 平台，支持 JMS。
+quickstart-pulsar   Pulsar是一个分布式pub-sub消息平台，具有非常灵活的消息传递模型和直观的客户端API。
+quickstart-activemq-apollo  支持STOMP协议，已经废弃
+
+
+
+---------------------------------------------------------------------------------------------------------------------
 ##远程通讯和RPC框架
+[quickstart-remoting]
+[quickstart-rpc]
+
 ### Netty
 * [Netty](docs/java/XXX.md)
 
-### mina
+### MINA
 * [mina](docs/java/XXX.md)
 
-### hessian
+### Hession
 * [hessian](docs/java/XXX.md)
 
 ### t-io
 * [t-io](docs/java/XXX.md)
 
 
+### xSocket
+
+### Grizzly
+
+### Dubbo
+
+### gRPC
+
+### Thrift
+
+### Finagle
+
+### Jupiter
+
+### Motan
+
+### Tars
+
+### HSF
+
+### 自己实现simple RPC
+
+---------------------------------------------------------------------------------------------------------------------
 ##容器
+[quickstart-container]
+
 ### Docker
 * [Docker](docs/java/XXX.md)
 
@@ -217,66 +447,150 @@
 ### Istio
 * [Istio](docs/java/XXX.md)
 
+### Pouch
 
+---------------------------------------------------------------------------------------------------------------------
 ##缓存和KV数据库
+[quickstart-cache]
 
+### Redis
 
+### Memcached
+
+### Caffeine
+Caffeine缓存框架
+
+### JetCache
+JetCache是​​一种Java缓存抽象，可为各种缓存解决方案提供一致的使用。
+
+### JCache
+Java缓存规范JCache API（JSR107），它对Java对象缓存进行标准化，方便高效开发，让程序员摆脱实现缓存有效期、互斥、假脱机（spooling）和缓存一致性等负担。
+
+### GuavaCache
+Guava LocalCache 缓存
+
+### ConcurrentLinkedHashMap
+基于LRU（Least recently used，最近最少使用）算法来替换Map中的元素
+
+### EhCache
+EhCache 是一个纯Java的进程内缓存框架，具有快速、精干等特点，是Hibernate中默认的CacheProvider。
+
+### Hazelcast
+zelcast是一个高度可扩展的数据分发和集群平台，可用于实现分布式数据存储、数据缓存
+
+### Codis
+Redis 的集群解决方案有社区的，也有官方的，社区的解决方案有 Codis 和Twemproxy,官方的集群解决方案就是 Redis Cluster
+
+### Tair
+air是一个Key/Value结构数据的解决方案，它默认支持基于内存和文件的两种存储方式，分别和我们通常所说的缓存和持久化存储对应。
+
+---------------------------------------------------------------------------------------------------------------------
 ##Reactive响应式编程
+[quickstart-reactive]
 
+### Reactor
 
+### ReactiveX
+
+### WebFlux
+
+### RSocket
+
+### Akka
+
+### Ratpack
+
+---------------------------------------------------------------------------------------------------------------------
 ##设计模式
 
-
+---------------------------------------------------------------------------------------------------------------------
 ##网络和HTTP
+[quickstart-http]
 
 
+
+---------------------------------------------------------------------------------------------------------------------
 ##Spring
 ###SpringBoot
+[quickstart-spring-boot]
+[quickstart-spring-boot2]
 
 ###SpringCloud
+[quickstart-spring-cloud]
+[quickstart-spring-cloud2]
+
 
 ###SpringMVC
+[quickstart-spring-framework]
 
 
+###SpringData
+[quickstart-spring-data]
+
+---------------------------------------------------------------------------------------------------------------------
 ##注册中心和配置中心
+[quickstart-register]
+[quickstart-config]
 
 ###注册中心
-* [zookeeper](docs/java/XXX.md)
-* [nacos](docs/java/XXX.md)
-* [consul](docs/java/XXX.md)
-* [etcd](docs/java/XXX.md)
-
-- quickstart-register
-  - quickstart-zookeeper
-  - quickstart-zkweb
-  - quickstart-nacos
-  - quickstart-etcd
-  - quickstart-consul
+###ZooKeeper
+###Nacos
+###Etcd
+###Consul
+###ZKWeb
 
 ###配置中心
-* [apollo](docs/java/XXX.md)
-* [disconf](docs/java/XXX.md)
-* [xdiamond](docs/java/XXX.md)
-* [xxl-conf](docs/java/XXX.md)
+###Apollo
+###Disconf
+###XDiamond
+###XXL-CONF
 
-- quickstart-config
-  - quickstart-disconf
-  - quickstart-xdiamond
-  - quickstart-xxl-conf
-  - quickstart-apollo
-
-
-
+---------------------------------------------------------------------------------------------------------------------
 ##分布式
 
+---------------------------------------------------------------------------------------------------------------------
+##网关
+网关、微服务
+[quickstart-gateway]
 
+###API服务网关
+###Zuul2
+###Zuul1
+###Kong
+
+###代理服务器
+流量网关 或者 代理服务器 或者 负载均衡
+###Nginx
+###Tengine
+###LittleProxy
+###ApacheHTTP
+
+###限流熔断
+###Sentinel
+###Resilience4j
+###Eureka
+###SnowJena
+---------------------------------------------------------------------------------------------------------------------
 ##模块化和类隔离
+[quickstart-modular]		模块化
 
 
+###sofa-jarslink
+
+###Pandora
+
+###Java9
+java9模块化开发
+
+###JarsLink
+阿里开源，已经合并到sofa-jarslink里面了
+
+
+---------------------------------------------------------------------------------------------------------------------
 ##Linux
 
 
-
+---------------------------------------------------------------------------------------------------------------------
 ##AIF项目
 ### 网关和能力开放平台OSP
 * [gateway和osp](docs/java/XXX.md)
@@ -305,41 +619,216 @@
 ### 统一权限USPA
 * [uspa](docs/java/XXX.md)
 
+### 网管项目
+自己做过的项目
+[oss-example]		网管项目示例
 
-##应用容器
-
-
-##系统监控
-
-
-##SOFA
+---------------------------------------------------------------------------------------------------------------------
+## 数据结构与算法
 
 
-##大数据处理
+### 数据结构
+
+### 算法
+
+---------------------------------------------------------------------------------------------------------------------
+## 应用容器
+[quickstart-application-container]
+
+### Jetty
+### Tomcat
+### Undertow
+### JBoss
+### Jersey
+### QuickServer
+### WebLogic
+### WebSphere
+---------------------------------------------------------------------------------------------------------------------
+## 系统监控
+[quickstart-monitor]	监控
+
+### 进程监控
+### Prometheus
+### Zabbix
+
+### 在线诊断工具
+### JVM SandBox
+### Anthas
+### BTrace
+### Greys-Anatomy
+### HouseMD
 
 
-##数据库
-
-
+---------------------------------------------------------------------------------------------------------------------
 ##常用框架
+---------------------------------------------------------------------------------------------------------------------
+##数据库
+[quickstart-database]
 
 
-##前端开发
+###数据库产品
+###MySQL
+###Oracle
+###OceanBase
+###MongoDB
 
 
+###数据库操作框架
+###DataSource
+###MyBatis
+###MyBatis-Plus
+###Hibernate
+###ThinkJD
+###JOOQ
+
+
+###数据库中间件
+###MyCat
+###Druid
+###ShardingSphere
+###Zdal
+
+
+###轻量级数据库
+###H2
+###SQLite
+###Derby
+###InfluxDB
+
+
+###数据迁移
+###Yugong
+
+
+###Liquibase
+###Otter
+
+
+###数据库工具
+###DataGrip
+###Navicat
+###PL/SQL Developer
+###PL/SQL
+
+
+---------------------------------------------------------------------------------------------------------------------
+##大数据处理
+[quickstart-data]		大数据、流式计算
+
+
+###流处理
+###Flink
+###JStorm
+###Storm
+###Flume
+###Spark
+###Beam
+###Samza
+###Hadoop
+###HBase
+###druid-io
+
+
+###搜索
+###Elasticsearch
+###Lucene
+###Solr
+
+###Spider爬虫
+
+---------------------------------------------------------------------------------------------------------------------
+##SOFA
+[quickstart-sofa]
+
+###sofa-rpc
+###sofa-mesh
+###sofa-boot
+###sofa-bolt
+###sofa-ark
+###sofa-jarslink
+
+---------------------------------------------------------------------------------------------------------------------
+##Netflix
+[quickstart-netflix]	netflix组件
+
+---------------------------------------------------------------------------------------------------------------------
+##Micronaut Framework
+[quickstart-micronaut]	微服务框架micronaut
+
+---------------------------------------------------------------------------------------------------------------------
+##WebService
+[quickstart-webservice]		webservice服务
+
+quickstart-webservice-wink
+quickstart-webservice-web
+quickstart-webservice-spring-framework
+quickstart-webservice-spring-boot
+quickstart-webservice-resteasy3
+quickstart-webservice-spring
+quickstart-webservice-resteasy2
+quickstart-webservice-jersey1
+quickstart-webservice-jersey2
+quickstart-webservice-jaxws
+quickstart-webservice-cxf
+quickstart-webservice-client
+quickstart-webservice-axis2
+
+---------------------------------------------------------------------------------------------------------------------
 ##测试
+[quickstart-test]
+
+###单元测试
+###JUnit
+###TestNG
+###Arquillian
 
 
-##开发工具
+###Mock测试
+###Mockito
+###Spock
+###Moco框架
 
 
+###压力测试
+###JMeter
+###LoadRunner
+
+
+###自动化测试
+###Selenium
+
+###基准测试
+###JMH
+
+---------------------------------------------------------------------------------------------------------------------
 ##Golang
+[quickstart-golang]
 
-
+---------------------------------------------------------------------------------------------------------------------
 ##Python
+[quickstart-python]
+---------------------------------------------------------------------------------------------------------------------
+##Lua
 
+---------------------------------------------------------------------------------------------------------------------
+##C++/C
+[quickstart-cpp]
+---------------------------------------------------------------------------------------------------------------------
+##前端开发
+[quickstart-front]
 
+###VueJS
+###Angular
+###Bootstrap
+###ECharts
+###RequireJS
+###zTree
+###Layui
+###JavaScript
+---------------------------------------------------------------------------------------------------------------------
 ##读书和笔记
+1、[notes]学习笔记文档  
+[youngzil.github.io]  
 
 ### Java
 * [Effective Java中文版](docs/java/Effective Java中文版.md)
@@ -352,6 +841,7 @@
 ### 数据库
 * [深入浅出MyBatis技术原理与实战](docs/java/深入浅出MyBatis技术原理与实战.md)
 * [高性能MySQL](docs/java/.md)
+* [test](MQ_ADDRESS/README.md)
 
 
 ### 网络HTTP
@@ -378,7 +868,7 @@
 * [亿级网站架构核心技术](docs/java/)
 * [可伸缩服务架构](docs/java/)
 
-### 其他
+### 技术其他
 * [阿里巴巴Java开发手册](docs/java/阿里巴巴Java开发手册.md)
 
 ### 英语
@@ -391,10 +881,46 @@
 
 
 
----------------------------------------------------------------------------------------------------------------------
-1、notes	学习笔记文档
-  youngzil.github.io
+##面试指南
+###备战面试
+* [面试学习网站](docs/interview/面试学习网站.md)
 
+
+###面经
+
+###常见的学习网站
+* [开源组织和公司开源项目地址和网站](docs/interview/开源组织和公司开源项目地址和网站.md)
+* [框架网站](docs/interview/框架网站.md)
+* [其他学习网站](docs/interview/其他的学习网站.md)
+
+
+###开源项目
+
+
+---------------------------------------------------------------------------------------------------------------------
+##开发工具
+[quickstart-tools]
+
+###基础工具
+###Git
+###Nexus
+
+
+###项目管理
+###Maven
+###Gradle
+###Ant
+###Ivy
+
+
+###代码扫描
+###SonarQube
+###PMD
+###FindBugs
+###Checkstyle
+
+###DevOps工具
+###Jenkins
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -477,380 +1003,44 @@ quickstart-lua	lua脚本语言
 
 
 ---------------------------------------------------------------------------------------------------------------------
-其他语言：C++、Python、Go
-
-
-quickstart-cpp		c++
-quickstart-golang
-quickstart-python
-
-
----------------------------------------------------------------------------------------------------------------------
-自己做过的项目
-oss-example		网管项目示例
-
-
----------------------------------------------------------------------------------------------------------------------
-
-quickstart-application-container		应用容器
-
-
-quickstart-websphere
-quickstart-weblogic
-quickstart-tomcat
-quickstart-undertow
-quickstart-jetty
-quickstart-quickserver
-quickstart-jboss
-quickstart-jersey
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-cache		缓存
-
-quickstart-redis
-quickstart-memcached
-quickstart-caffeine     Caffeine缓存框架
-quickstart-jetcache     JetCache是​​一种Java缓存抽象，可为各种缓存解决方案提供一致的使用。
-quickstart-jcache   Java缓存规范JCache API（JSR107），它对Java对象缓存进行标准化，方便高效开发，让程序员摆脱实现缓存有效期、互斥、假脱机（spooling）和缓存一致性等负担。
-quickstart-guava-cache      Guava LocalCache 缓存
-quickstart-hazelcast    Hazelcast是一个高度可扩展的数据分发和集群平台，可用于实现分布式数据存储、数据缓存
-quickstart-ehcache      EhCache 是一个纯Java的进程内缓存框架，具有快速、精干等特点，是Hibernate中默认的CacheProvider。
-quickstart-concurrentlinkedhashmap      基于LRU（Least recently used，最近最少使用）算法来替换Map中的元素
-quickstart-codis    Redis 的集群解决方案有社区的，也有官方的，社区的解决方案有 Codis 和Twemproxy,官方的集群解决方案就是 Redis Cluster
-quickstart-tair     Tair是一个Key/Value结构数据的解决方案，它默认支持基于内存和文件的两种存储方式，分别和我们通常所说的缓存和持久化存储对应。
-
+[notes]:https://github.com/youngzil/notes
+[oss-example]:https://github.com/youngzil/oss-example
+[quickstart-all]:https://github.com/youngzil/quickstart-all
+[quickstart-application-container]:https://github.com/youngzil/quickstart-application-container
+[quickstart-cache]:https://github.com/youngzil/quickstart-cache
+[quickstart-config]:https://github.com/youngzil/quickstart-config
+[quickstart-container]:https://github.com/youngzil/quickstart-container
+[quickstart-cpp]:https://github.com/youngzil/quickstart-cpp
+[quickstart-data]:https://github.com/youngzil/quickstart-data
+[quickstart-database]:https://github.com/youngzil/quickstart-database
+[quickstart-framework]:https://github.com/youngzil/quickstart-framework
+[quickstart-front]:https://github.com/youngzil/quickstart-front
+[quickstart-gateway]:https://github.com/youngzil/quickstart-gateway
+[quickstart-golang]:https://github.com/youngzil/quickstart-golang
+[quickstart-http]:https://github.com/youngzil/quickstart-http
+[quickstart-javase9]:https://github.com/youngzil/quickstart-javase9
+[quickstart-micronaut]:https://github.com/youngzil/quickstart-micronaut
+[quickstart-modular]:https://github.com/youngzil/quickstart-modular
+[quickstart-monitor]:https://github.com/youngzil/quickstart-monitor
+[quickstart-mq]:https://github.com/youngzil/quickstart-mq
+[quickstart-netflix]:https://github.com/youngzil/quickstart-netflix
+[quickstart-python]:https://github.com/youngzil/quickstart-python
+[quickstart-reactive]:https://github.com/youngzil/quickstart-reactive
+[quickstart-register]:https://github.com/youngzil/quickstart-register
+[quickstart-remoting]:https://github.com/youngzil/quickstart-remoting
+[quickstart-rpc]:https://github.com/youngzil/quickstart-rpc
+[quickstart-sofa]:https://github.com/youngzil/quickstart-sofa
+[quickstart-spring-boot]:https://github.com/youngzil/quickstart-spring-boot
+[quickstart-spring-boot2]:https://github.com/youngzil/quickstart-spring-boot2
+[quickstart-spring-cloud]:https://github.com/youngzil/quickstart-spring-cloud
+[quickstart-spring-cloud2]:https://github.com/youngzil/quickstart-spring-cloud2
+[quickstart-spring-data]:https://github.com/youngzil/quickstart-spring-data
+[quickstart-spring-framework]:https://github.com/youngzil/quickstart-spring-framework
+[quickstart-test]:https://github.com/youngzil/quickstart-test
+[quickstart-tools]:https://github.com/youngzil/quickstart-tools
+[quickstart-webservice]:https://github.com/youngzil/quickstart-webservice
+[youngzil.github.io]:https://github.com/youngzil/youngzil.github.io
 
 ---------------------------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------------
-quickstart-container	容器
-
-quickstart-pouch
-quickstart-kubernetes
-quickstart-docker
-
-
----------------------------------------------------------------------------------------------------------------------
-
-quickstart-database		数据库
-
-quickstart-zdal
-quickstart-thinkjd
-quickstart-yugong
-quickstart-sqlite
-quickstart-sharding-sphere
-quickstart-otter
-quickstart-mysql
-quickstart-oceanbase
-quickstart-mycat
-quickstart-mybatis-plus
-quickstart-mybatis
-quickstart-mongodb
-quickstart-liquibase
-quickstart-jooq
-quickstart-influxdb
-quickstart-hibernate
-quickstart-h2
-quickstart-druid
-quickstart-derby
-quickstart-datasource
-quickstart-datagrip
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-front	前端
-quickstart-ztree
-quickstart-vuejs
-quickstart-layui
-quickstart-requirejs
-quickstart-javascript
-quickstart-echarts
-quickstart-bootstrap
-quickstart-angular
-
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-gateway	网关、微服务
-
-quickstart-zuul
-quickstart-snowjena
-quickstart-tengine
-quickstart-resilience4j
-quickstart-sentinel
-quickstart-nginx
-quickstart-litte-proxy
-quickstart-kong
-
----------------------------------------------------------------------------------------------------------------------
-
-quickstart-http		http服务
-
-quickstart-unirest
-quickstart-server
-quickstart-okhttp
-quickstart-jdk
-quickstart-httpclient
-quickstart-http-jersey
-quickstart-feign
-
-
----------------------------------------------------------------------------------------------------------------------
-
-
-quickstart-micronaut	微服务框架micronaut
-
-quickstart-spark-kotlin
-quickstart-spark-java
-quickstart-micronaut-java
-quickstart-micronaut-kotlin
-quickstart-jooby-java
-quickstart-jooby-kotlin
-quickstart-javalin-java
-quickstart-javalin-kotlin
-quickstart-inventory
-quickstart-gateway
-quickstart-books
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-modular		模块化
-
-quickstart-sofa-jarslink
-quickstart-javase9  java9模块化开发
-quickstart-jarslink  阿里开源，已经合并到sofa-jarslink里面了
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-monitor	监控
-
-quickstart-zabbix
-quickstart-prometheus
-quickstart-monitor.iml
-quickstart-jvm-sandbox
-quickstart-housemd
-quickstart-greys
-quickstart-btrace
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-mq		消息
-
-quickstart-rocketmq
-quickstart-activemq
-quickstart-kafka
-quickstart-rabbitmq
-quickstart-mqtt
-
-quickstart-openmessaging    云原生，与供应商无关的开放式规范，用于分布式消息传递
-quickstart-artemis   高性能，无阻塞的体系结构，用于下一代事件驱动的消息传递应用程序。
-quickstart-jafka    一个快速，简单的分布式发布-订阅消息系统（mq）
-
-quickstart-msgframe-v1
-quickstart-msgframe-v2
-
-quickstart-nanomsg  nanomsg是一个消息通信组件 - zeromq的作者之一用C语言重写的通信框架，
-quickstart-zeromq   ZeroMQ（简称ZMQ）是一个基于消息队列的多线程网络库，其对套接字类型、连接处理、帧、甚至路由的底层细节进行抽象，提供跨越多种传输协议的套接字。
-
-quickstart-hivemq   HiveMQ的MQTT代理使以高效，快速和可靠的方式轻松地在连接的设备之间来回移动数据。
-quickstart-hornetq  HornetQ是一个开放源代码项目，用于构建多协议，可嵌入，非常高性能的集群异步消息传递系统。 
-quickstart-openmq   Open-MQ 是一个开源的消息中间件，类似IBM的 WebSphere MQ(MQSeries)，采用 C++ 和 Qt 库编写的，支持Windows、Unix 以及 Mac OS 平台，支持 JMS。
-quickstart-pulsar   Pulsar是一个分布式pub-sub消息平台，具有非常灵活的消息传递模型和直观的客户端API。
-quickstart-activemq-apollo  支持STOMP协议，已经废弃
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-javase9		java9以上
-quickstart-javase9-service
-quickstart-javase9-markdown
-quickstart-javase9-api
-quickstart-javase
-
-
-quickstart-netflix	netflix组件
-quickstart-zuul
-quickstart-turbine
-quickstart-ribbon
-quickstart-hystrix
-quickstart-governator
-quickstart-eureka
-quickstart-archaius
-
-
-quickstart-sofa		SOFA框架
-quickstart-sofaboot-module
-quickstart-sofa-rpc
-quickstart-sofa-mesh
-quickstart-sofa-boot
-quickstart-sofa-bolt
-quickstart-sofa-ark
-
-
-quickstart-reactive		反应式编程	
-quickstart-spring-webflux
-quickstart-springboot-rsocket
-quickstart-rsocket
-quickstart-reactor
-quickstart-reactivex
-quickstart-reactive-streams
-quickstart-ratpack
-quickstart-akka
-
-
-quickstart-webservice		webservice服务
-quickstart-webservice-wink
-quickstart-webservice-web
-quickstart-webservice-spring-framework
-quickstart-webservice-spring-boot
-quickstart-webservice-resteasy3
-quickstart-webservice-spring
-quickstart-webservice-resteasy2
-quickstart-webservice-jersey1
-quickstart-webservice-jersey2
-quickstart-webservice-jaxws
-quickstart-webservice-cxf
-quickstart-webservice-client
-quickstart-webservice-axis2
-
-
----------------------------------------------------------------------------------------------------------------------
-
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-remoting		远程调用
-quickstart-xsocket
-quickstart-t-io
-quickstart-netty
-quickstart-mina
-quickstart-hessian
-quickstart-grizzly
-
-
-quickstart-rpc		RPC调用
-quickstart-tars
-quickstart-thrift
-quickstart-motan
-quickstart-simple
-quickstart-jupiter
-quickstart-grpc
-quickstart-hsf
-quickstart-finagle
-quickstart-dubbo
-
-
----------------------------------------------------------------------------------------------------------------------
-
-quickstart-test		测试框架
-quickstart-testng
-quickstart-spock
-quickstart-moco
-quickstart-selenium
-quickstart-mock
-quickstart-loadrunner
-quickstart-junit
-quickstart-jmh
-quickstart-jmeter
-quickstart-arquillian
-
-
-quickstart-tools	工具框架
-quickstart-sonar
-quickstart-pmd
-quickstart-maven
-quickstart-nexus
-quickstart-ivy
-quickstart-jenkins
-quickstart-gradle4
-quickstart-gradle
-quickstart-findbugs
-quickstart-checkstyle
-quickstart-ant
-
-
-
----------------------------------------------------------------------------------------------------------------------
-quickstart-data		大数据、流式计算
-
-quickstart-storm
-quickstart-spider
-quickstart-spark
-quickstart-solr
-quickstart-samza	Apache samza是分布式流处理框架，
-quickstart-lucene
-quickstart-jstorm
-quickstart-hbase
-quickstart-hadoop
-quickstart-flume
-quickstart-flink
-quickstart-elasticsearch
-quickstart-druid-io
-quickstart-beam  大数据批处理和流处理标准 Apache Beam 
-
----------------------------------------------------------------------------------------------------------------------
-
-Spring框架
-
-quickstart-spring-boot	
-quickstart-spring-boot-websocket-client
-quickstart-spring-boot-websocket
-quickstart-spring-boot-web-example
-quickstart-spring-boot-web
-quickstart-spring-boot-sqlite
-quickstart-spring-boot-mybatis-generator
-quickstart-spring-boot-multidatasource
-quickstart-spring-boot-kafka
-quickstart-spring-boot-jooq
-quickstart-spring-boot-druid
-quickstart-spring-boot-admin
-quickstart-spring-boot-actuator
-quickstart-spring-boot-activemq
-
-
-
-quickstart-spring-boot2
-quickstart-springboot-tkmapper
-quickstart-spring-swagger
-quickstart-spring-webflux
-quickstart-spring-starter
-quickstart-spring-security
-quickstart-spring-kafka
-quickstart-spring-cache
-
-
-
-quickstart-spring-cloud
-quickstart-spring-cloud-zuul
-quickstart-spring-cloud-stream
-quickstart-spring-cloud-web
-quickstart-spring-cloud-sleuth
-quickstart-spring-cloud-example
-quickstart-spring-cloud-hystrix
-quickstart-spring-cloud-eureka
-quickstart-spring-cloud-consul
-quickstart-spring-cloud-config
-
-
-quickstart-spring-cloud2
-quickstart-spring-cloud2-example
-
-
-
-quickstart-spring-data
-quickstart-spring-data-solr
-quickstart-spring-data-redis
-quickstart-spring-data-elasticsearch
-
-
-
-quickstart-spring-framework
-quickstart-spring-framework-kafka
-quickstart-spring-framework-jooq
-quickstart-spring-framework-example
-quickstart-spring-framework-annotation
-quickstart-spring-activemq
-
-
----------------------------------------------------------------------------------------------------------------------
 
