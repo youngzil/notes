@@ -17,6 +17,10 @@
     - [RabbitMQ](#RabbitMQ)
     - [OpenMessaging](#OpenMessaging)
     - [MQTT](#MQTT)
+    - [OpenMQ](#OpenMQ)
+    - [ZeroMQ](#ZeroMQ)
+    - [HiveMQ](#HiveMQ)
+    - [HornetQ](#HornetQ)
 - [远程通讯和RPC框架](#远程通讯和RPC框架)
     - [Netty](#Netty)
     - [MINA](#MINA)
@@ -230,7 +234,8 @@
         - [Lucene](#Lucene)
         - [Solr](#Solr)
     - [Spider爬虫](#Spider爬虫)
-        - [](#)
+        - [Jsoup](#Jsoup)
+        - [Crawler4j](#Crawler4j)
 - [SOFA](#SOFA)
     - [sofa-rpc](#sofa-rpc)
     - [sofa-mesh](#sofa-mesh)
@@ -930,6 +935,11 @@ Java实例：
 quickstart-example	Java代码示例
 quickstart-javase
 
+
+其他框架：  
+ 字节码框架asm、设计模式、disruptor、fastdfs、guava、jvm序列化框架、yaml框架、xml框架、web  
+ String字符串压缩、reflect反射、reactivex、quartz、proxy代理、logging框架、linux相关、json、jfinal、  
+ javase、uuid、文档、  
 
 常用框架：
 quickstart-apache-commons	apache-commons学习.md
