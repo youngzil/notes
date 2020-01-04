@@ -1,11 +1,218 @@
+[]()  
   
+1、[Java基础学习](#Java基础学习)  
+
+2、[JVM学习](#JVM学习)  
+
+3、[Java并发和多线程](#Java并发和多线程)  
+
+4、[](#)  
+
+5、[](#)  
+  
+  
+---------------------------------------------------------------------------------------------------------------------  
+## Java基础学习
+
+Java基础：IO、集合、多线程、反射  
+字节流和字符流  
+BIO和NIO  
+集合  
+多线程：  
+并发工具类  
+SPI  
+JDK、JDK7、JDK8  
+java agent  
+零拷贝：减少内核态和用户态时的数据重复拷贝，java.nio.channel.FileChannel的transferTo()，transferFrom()方法  
+内存映射文件：mmap()方法  
+java热部署、模块化：jarslink  
+泛型：泛型上限通配符extends与泛型下限通配符super  
+反射初始化  
+环形缓冲区的实现原理（ring buffer）quickstart-disruptor  
+java锁  
+1、synchronized和lock的用法区别  各自底层原理  
+3、如何设计线程池 需要什么特性  怎么扩容 缩容  如何去取资源 分配资源  
+4、java基础：  
+Object有方法  
+java常见的异常  
+Comparable与Comparator的区别  
+Runtime类：获取jvm信息，执行程序  
+什么是线程死锁？如何避免线程死锁？如何加一个线程死锁检查机制？  
+java进程间通讯方式（IPC）：Socket，RMI、RPC，共享内存  
+内存泄漏，现象，排查  
+oom的可能原因，排查  
+惊群问题(The "thundering herd" problem)  
+
+Java线程的5种状态及切换  
+Java 语法糖
+hashmap数据结构
+volidate关键字作用：线程可见性、有序性，不保证原子性  
+
+直接内存详解 
+4、集合：java集合.md  
+List、Set、Map、Queue  
+并发集合：ConcurrentHashMap、ConcurrentSkipListSet、CopyOnWriteArrayList等  
+  
+  
+6、反射、java agent，反射初始化：java反射和agent.md  
+RTTI和反射机制区别  
+反射的使用：获取类、构造方法，成员变量，成员方法、注解、泛型  
+  
+7、Java的简单类型及其封装器类  
+8、Object类的方法，和Thread类方法的区别  
+9、String StringBuffer,StringBuilder原理：底层的数据结构是 字符数组 char[]  
+10、sleep、wait  notyfi都干啥的，sycnized怎么用的，concurrent包下面的锁用过哪些，怎么实现的 
+
+33、volatile原理  
+34、数据结构：堆和树  
+35、Queue队列的常用方法  
+36、数组、链表，队列 ，栈，散列表，树，图  
+38、Linux探秘之用户态与内核态  
+39、java进程CPU过高问题如何排查？  
+40、Java8中用sun.misc.Contended避免伪共享(false sharing)  
+41、动态代理和静态代理 
+
+23、负载均衡.md:负载均衡算法  
+24、java热部署、模块化：jarslink  
+25、SPI和JDK、JDK7、JDK8  
+26、一致性哈希算法(consistent hashing)  
+27、java常见异常  
+28、Comparable与Comparator的区别  
+29、对Runtime的了解:Runtime类  
+30、什么是线程死锁？如何避免线程死锁？如何加一个线程死锁检查机制？  
+31、java进程间通信(IPC interProcess communication)：  
+32、如何实现分布式缓存  
+
+18、分布式锁实现.md：数据库、redis、zookeeper  
+19、加解密.md：加解密的分类和实现  
+20、单例模式有三种实现方式  
+21、图片加载缓慢优化.md：  
+22、泛型通配符extends与super的区别.md：泛型：泛型上限通配符extends与泛型下限通配符super  
+12、图的遍历，深度广度啊  
+13、内存溢出，内存泄露，，怎么调优，类加载  
+14、BloomFilter 与 CuckooFilter  
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------  
+## JVM学习
+
+JVM结构、垃圾回收、类加载机制、内存泄露排查 
+linux系统工具能利用工具排查CPU、内存和网络IO问题排查  
+JVM优化技术  
+JVM参数  
+javaGC、内存模型 
+jvm诊断命令  
+堆怎么区分的？为什么分代？对象回收，内存等  
+怎么判断是否回收？哪些类型的对象？  
+java中一个类加载过程？主要考虑类加载器过程，加载过程，双亲委派模型  
+oom怎么排查，堆dump、线程dump怎么查看  
+JVM内存模型：五个区域和各自保存的对象，会抛出什么异常：年轻代、年老代、持久代（方法去）、堆外内存（直接内存）
+
+
+
+计算机内存模型和CPU缓存一致性协议MESI：
+缓存伪共享、
+零拷贝：transTo、transFrom、map
 mmap：安全、高效（zero copy）、gc  
+
+
+CPU缓存分类：CPU三级缓存：CPU、L1、L2、L3、主内存  
+   缓存一致性协议：MESI  
+   伪共享(False Sharing)：缓存行进行字节填充，保证头尾加载到不同的缓存行，避免出入对互斥，不能并发，成为伪共享。jdk8中Contended注解  
+   缓存系统中是以缓存行（cache line）为单位存储的：现在64byte，早期32byte，范围32-128byte  
+   缓存段竞争：导致总线风暴  
+   volatile字段：使用内存屏障，保证可见性和有序性，不保证原子性 
+
+MESI－CPU缓存一致性协议、JVM内存模型、内存结构 
+  类加载机制（双亲委派），类加载过程  
+  垃圾回收：垃圾收集算法、垃圾收集器，对象存活方式判断，GC Roots包括，类回收条件，堆（年轻代、年老代），java对象的引用（强引用，软引用，弱引用，虚引用）  
+  垃圾回收、内存调优、常见参数    
+  jdk的命令行工具  
+    
+  1、启动一个包含main方法的类时，输出字符，整个启动到输出的详细流程  
+  2、JVM类加载机制，哪几种类加载器，类加载之间的父子关系是怎样的？每个类加载器都加载哪些类？classloader的功能和工作模式  
+  3、jvm内存模型：  
+  4、GC策略，GC过程，GCROOTs哪里来的(哪些可以是GCROOTs)，常见的垃圾回收器，  
+  5、oom怎么排查，jvm诊断命令堆dump、线程dump怎么查看  
+  6、jvm类加载机制  
+  内存模型  
+  GC类型、算法、回收机制，  
+  jvm诊断命令  
+  jvm学习.md  
+  JVM GC日志分析工具：  
+  GCHisto、GCViewer  
   
+JVM内存结构，和Java虚拟机的运行时区域有关。   
+Java内存模型，和Java的并发编程有关。   
+Java对象模型，和Java对象在虚拟机中的表现形式有关。  
+  
+JAVA中的内存泄露：堆区不断增长，最后不断触发FullGC, 甚至crash  
+jdk的命令行工具：jps、jinfo + jstat 、jmap（-dump、jhat）、jstack  
+堆外内存：原因、场景、使用：存活时间长，大内存的  
+
+java对象的引用包括：强引用，软引用，弱引用，虚引用  
+Java中提供这四种引用类型主要有两个目的：  
+第一是可以让程序员通过代码的方式决定某些对象的生命周期；  
+第二是有利于JVM进行垃圾回收。
+
 .java 编译到.class过程？  
 类加载过程  
 java文件编译成class文件的过程  
-类加载过程：校验，加载-双亲委派模型，初始化，卸载等  
+类加载过程：校验，加载-双亲委派模型，初始化，卸载等
+
+
+---------------------------------------------------------------------------------------------------------------------  
+## Java并发和多线程
+
+Java线程的5种状态及切换
+java基础：多线程的概念能不能介绍一下  
+线程同步的常见问题，以及怎么处理？  死锁、饥饿、活锁、 
+
+Java线程的5种状态及切换  
+java进程和Linux线程的关系  
+多线程概念：线程同步（两种锁、特殊变量volatile、线程变量ThreadLocal、并发工具类）、线程间通信、线程死锁、线程控制（挂起、停止和恢复）  
+Unsafe类的使用  
+java线程的创建和分类  
+Linux进程间通信  
+线程池：查看ThreadPool.md  
   
+线程状态切换的代价  
+  
+   ThreadPoolExecutor或者Executors工具类（4种）来创建  
+   参数：7个  
+   创建线程流程和销毁线程流程  
+     
+   提交任务：execute() 和 submit()  
+   execute()：FutureTask（ExecutorCompletionService）  
+   submit()：Callable接口、Future接口  
+     
+   RejectedExecutionHandler策略  
+   其他方法：beforeExecute、afterExecute、  
+     
+   ThreadLocal使用：以线程为单位进行隔离，因为WeakReference不会导致内存泄漏，线程复用的时候没有remove可能会导致后面的任务取到前面任务存进去的值，导致程序出错  
+ 
+ concurrent包并发、并发工具类：java并发包concurrent和并发工具类.md  
+   
+java并发包concurrent：  
+1、Atomic原子类型：Long、Integer、Boolean、Refrence等  
+2、并发锁Lock锁：ReentrantLock、ReentrantReadWriteLock等  
+3、线程池：Callable接口、Future接口、FutureTask（ExecutorCompletionService）、Executors、ExecutorService、ThreadPoolExecutor、ThreadFactory、  
+4、并发集合：ConcurrentHashMap、ConcurrentSkipListSet、CopyOnWriteArrayList和CopyOnWriteArraySet等  
+5、并发工具类：CountDownLatch、CyclicBarrier、Semaphore、Exchanger、ForkJoinPool等  
+Java并发工具类：  
+并发开始：同步屏障CyclicBarrier  
+并发结束：等待多线程完成的CountDownLatch  
+并发控制：控制并发线程数的Semaphore  
+并发交换：两个线程进行数据交换的Exchanger  
+
+并发类，如ThreadLocal 、volatile  
+并发编程中的三个概念：原子性，可见性，有序性，和volatile关键字的两层语义  
+java线程状态转换和线程并发  
+Unsafe类的CAS操作  
+java并发基础AQS类.md   
+
 在那些场景用了哪些多线程的什么接口  
   
 blockqueue中获取数据流程？  
@@ -18,9 +225,43 @@ concurrenthashmap
 blockqueue从里面去任务，阻塞知道取出任务，源码查看过吗？  
 lock方法？  
 candition怎么使用？  
-并发工具类：四个，concurrenthashmap，  
+并发工具类：四个，concurrenthashmap，
   
+---------------------------------------------------------------------------------------------------------------------  
+## 
+
+
+---------------------------------------------------------------------------------------------------------------------  
+## 
+
+---------------------------------------------------------------------------------------------------------------------  
+
+ 泛型通配符extends与super  
+ 	1、<? extends T> 泛型上限通配符，只能用于方法返回，只能返回T和T子类型  
+ 	2、<? super T>泛型下限通配符，只能用于限定方法入参，只能传入T和T的父类型  
+ 	3、? 既不能用于入参也不能用于返参  
+    
+hash冲突解决  
+java读取文件方式  
+javaagent  
+JMX  
+java内部类 
+ 
+   
+了Java的基础知识，容器类，线程安全和非安全的，多线程相关基础知识，实现方式，死锁的检查与排查  
+1.String， StringBuffer， StringBuilder 的区别，为什么String 不可改变，StringBuilder可以改变？  
   
+3.什么是线程死锁？如何避免线程死锁？如何加一个线程死锁检查机制？  
+  
+Throwable、Error、Exception、RuntimeException 区别和联系各是什么？  
+checked exception 和 unchecked exception的区别是什么？  
+volatile的特性是什么？ 可以完美解决多线程同步问题吗？  
+threadlocal有什么用？ 多线程使用有什么需要注意的地方？ 使用完后为什么要remove？  
+synchronized和reentrantlock的底层原理各是什么？ 有什么优缺点？  
+JVM加载class文件的原理机制？为什么要用双亲委托模型？ 如何打破双亲委托模型？  
+职业规划如何？ 为什么要加入蚂蚁金服？ 对未来的期待怎么样？   
+  Java基础：IO、集合、多线程、并发、反射  
+   
 虚拟机了解多少？服务器上只有jre没有jdk，怎么看文件，启动参数设置oom打印日志  
   
 JVM崩溃Log日志和GC日志  
@@ -32,7 +273,7 @@ JVM 发生OOM的四种情况
 https://www.cnblogs.com/baizhanshi/p/6704731.html?utm_source=itdadao&utm_medium=referral  
 https://blog.csdn.net/pbuzhidaol/article/details/72871898  
   
-  
+javaOOM类型.md   
   
 https://www.cnblogs.com/gdpuzxs/p/7044963.html  
 https://www.cnblogs.com/ITtangtang/p/3978102.html  
@@ -168,9 +409,6 @@ ConcurrentHashMap扩容：默认16个Segment，
 在JDK8里面，去掉了分段锁，将锁的级别控制在了更细粒度的table元素级别，也就是说只需要锁住这个链表的head节点，并不会影响其他的table元素的读写，好处在于并发的粒度更细，影响更小，从而并发效率更好，但不足之处在于并发扩容的时候，由于操作的table都是同一个，不像JDK7中分段控制，所以这里需要等扩容完之后，所有的读写操作才能进行，所以扩容的效率就成为了整个并发的一个瓶颈点  
   
   
-volidate关键字作用：线程可见性、有序性，不保证原子性  
-  
-  
 如何实现一个并发情况下线程安全性的方案？加锁、排队、线程变量，原子变量  
 threadlocal实现原理？如何实现线程安全？线程为单位隔离，  
 是否会造成内存溢出？  
@@ -197,12 +435,6 @@ wait()方法则是指当前线程让自己暂时退让出同步资源锁，以�
 3、sleep()是线程线程类（Thread）的方法，调用会暂停此线程指定的时间，但监控依然保持，不会释放对象锁，到时间自动恢复；wait()是Object的方法，调用会放弃对象锁，进入等待队列，待调用notify()/notifyAll()唤醒指定的线程或者所有线程，才会进入锁池，不再次获得对象锁才会进入运行状态；  
   
   
-  
-jvm的内存结构？  
-堆怎么区分的？为什么分代？对象回收，内存等  
-怎么判断是否回收？哪些类型的对象？  
-java中一个类加载过程？主要考虑类加载器过程，加载过程，双亲委派模型  
-  
 java基础知识掌握程度一般，对于Java 引用，堆外内存不了解，对于HashMap，线程池了解一点；对于LRU算法实现没有清晰思路；对于并发问题接触较少。  
   
 nio的代码，三个标识  
@@ -219,15 +451,6 @@ nio的代码，三个标识
   
 ---------------------------------------------------------------------------------------------------------------------  
   
-```  
-参考项目  
-java示例：quickstart-example  
-java基础：quickstart-javase  
-  
-  
-直接内存详解  
-  
-  
 熟悉IO、多线程、集合  
 理解java运行时工作原理，熟悉jvm性能调优，能够充分利用java特性支持框架与程序库的设计开发;  
 4、熟悉多线程编程，熟练使用java并发包下的各项常用基础设施;  
@@ -241,18 +464,6 @@ java基础：quickstart-javase
 SOA、  
 环形缓冲区的实现原理（ring buffer）quickstart-disruptor  
   
-    
-```  
-    
-```  
-1、JVM和类加载机制：jvm学习.md  
-  
-计算机内存模型和CPU缓存一致性协议MESI  
-缓存伪共享  
-零拷贝  
-在JavaSE.md  
-  
-JVM内存模型：五个区域和各自保存的对象，会抛出什么异常：年轻代、年老代、持久代（方法去）、堆外内存（直接内存）  
   
 垃圾回收：垃圾收集算法、垃圾收集器，对象存活方式判断，类回收条件，堆（年轻代、年老代），java对象的引用（强引用，软引用，弱引用，虚引用）  
 方法区垃圾回收：废弃常量、无用的类  
@@ -271,23 +482,8 @@ finalize()方法不可靠表现2方面
 2、系统开发模块化，比如阿里的jarslink、支付宝的sofaArk  
 3、热部署功能、热加载  
   
-java对象的引用包括：强引用，软引用，弱引用，虚引用  
-Java中提供这四种引用类型主要有两个目的：  
-第一是可以让程序员通过代码的方式决定某些对象的生命周期；  
-第二是有利于JVM进行垃圾回收。  
-  
-JVM内存结构，和Java虚拟机的运行时区域有关。   
-Java内存模型，和Java的并发编程有关。   
-Java对象模型，和Java对象在虚拟机中的表现形式有关。  
-  
-JAVA中的内存泄露：堆区不断增长，最后不断触发FullGC, 甚至crash  
-jdk的命令行工具：jps、jinfo + jstat 、jmap（-dump、jhat）、jstack  
-堆外内存：原因、场景、使用：存活时间长，大内存的  
   
   
-```  
-  
-```  
 2、IO网络与文件  
 BIO是面向流、阻塞IO，顺序读  
    NIO面向缓冲、非阻塞IO、选择器Selector，可以使用position等跳跃读  
@@ -322,8 +518,6 @@ https://blog.csdn.net/Big_Blogger/article/details/77654240
   3、Unsafe进行分配和回收  
     
     
-     
-     
    网络：  
    SocketChannel:创建连接，读写数据，从channel到buffer，从buffer到channel  
    ServerSocketChannel:监听连接，默认是阻塞模式，可以设置为非阻塞模式（while循环）  
@@ -334,128 +528,7 @@ https://blog.csdn.net/Big_Blogger/article/details/77654240
    网络IO：FileChannel.transferTo 和 FileChannel.transferFrom方法  
    零拷贝：减少内核态和用户态时的数据重复拷贝，java.nio.channel.FileChannel的transferTo()，transferFrom()方法  
      
-     
-```  
-```  
-3、多线程  
   
-Java线程的5种状态及切换  
-java进程和Linux线程的关系  
-多线程概念：线程同步（两种锁、特殊变量volatile、线程变量ThreadLocal、并发工具类）、线程间通信、线程死锁、线程控制（挂起、停止和恢复）  
-Unsafe类的使用  
-java线程的创建和分类  
-Linux进程间通信  
-线程池：查看ThreadPool.md  
-  
-线程状态切换的代价  
-  
-   ThreadPoolExecutor或者Executors工具类（4种）来创建  
-   参数：7个  
-   创建线程流程和销毁线程流程  
-     
-   提交任务：execute() 和 submit()  
-   execute()：FutureTask（ExecutorCompletionService）  
-   submit()：Callable接口、Future接口  
-     
-   RejectedExecutionHandler策略  
-   其他方法：beforeExecute、afterExecute、  
-     
-   ThreadLocal使用：以线程为单位进行隔离，因为WeakReference不会导致内存泄漏，线程复用的时候没有remove可能会导致后面的任务取到前面任务存进去的值，导致程序出错  
-  
-```  
-```  
-  
-  
-4、集合：java集合.md  
-List、Set、Map、Queue  
-并发集合：ConcurrentHashMap、ConcurrentSkipListSet、CopyOnWriteArrayList等  
-  
-  
-  
-```  
-```  
-5、concurrent包并发、并发工具类：java并发包concurrent和并发工具类.md  
-  
-java并发包concurrent：  
-1、Atomic原子类型：Long、Integer、Boolean、Refrence等  
-2、并发锁Lock锁：ReentrantLock、ReentrantReadWriteLock等  
-3、线程池：Callable接口、Future接口、FutureTask（ExecutorCompletionService）、Executors、ExecutorService、ThreadPoolExecutor、ThreadFactory、  
-4、并发集合：ConcurrentHashMap、ConcurrentSkipListSet、CopyOnWriteArrayList和CopyOnWriteArraySet等  
-5、并发工具类：CountDownLatch、CyclicBarrier、Semaphore、Exchanger、ForkJoinPool等  
-Java并发工具类：  
-并发开始：同步屏障CyclicBarrier  
-并发结束：等待多线程完成的CountDownLatch  
-并发控制：控制并发线程数的Semaphore  
-并发交换：两个线程进行数据交换的Exchanger  
-  
-并发类，如ThreadLocal 、volatile  
-并发编程中的三个概念：原子性，可见性，有序性，和volatile关键字的两层语义  
-java线程状态转换和线程并发  
-Unsafe类的CAS操作  
-java并发基础AQS类.md  
-  
-  
-```  
-```  
-  
-6、反射、java agent，反射初始化：java反射和agent.md  
-RTTI和反射机制区别  
-反射的使用：获取类、构造方法，成员变量，成员方法、注解、泛型  
-  
-  
-```  
-```  
-7、Java的简单类型及其封装器类  
-  
-```  
-```  
-8、Object类的方法，和Thread类方法的区别  
-  
-```  
-```  
-9、String StringBuffer,StringBuilder原理：底层的数据结构是 字符数组 char[]  
-  
-```  
-```  
-10、sleep、wait  notyfi都干啥的，sycnized怎么用的，concurrent包下面的锁用过哪些，怎么实现的  
-  
-```  
-```  
-11、io  jvm  多线程1  
-  
-```  
-```  
-12、图的遍历，深度广度啊  
-  
-```  
-```  
-13、内存溢出，内存泄露，，怎么调优，类加载  
-  
-```  
-```  
-  
-14、BloomFilter 与 CuckooFilter  
-  
-```  
-```  
-  
-15、计算机内存模型和CPU缓存一致性协议MESI  
-   缓存伪共享  
-   零拷贝：transTo  
-  
-  
-```  
-```  
-16、CPU缓存分类：CPU三级缓存：CPU、L1、L2、L3、主内存  
-   缓存一致性协议：MESI  
-   伪共享(False Sharing)：缓存行进行字节填充，保证头尾加载到不同的缓存行，避免出入对互斥，不能并发，成为伪共享。jdk8中Contended注解  
-   缓存系统中是以缓存行（cache line）为单位存储的：现在64byte，早期32byte，范围32-128byte  
-   缓存段竞争：导致总线风暴  
-   volatile字段：使用内存屏障，保证可见性和有序性，不保证原子性  
-  
-  
-```  
-```  
 17、synchronized的缺陷：不中断，不并发读，不知道有没有成功获取到锁  
    Lock和synchronized对比：可重入，不中断，不公平，lock可中断、可公平，并发读，手动释放，是接口类  
      
@@ -466,159 +539,22 @@ RTTI和反射机制区别
    总的来说, Lock + Condition + await()/signal/signalAll ≈ Synchronized + Object.wait()/notify/signalAll  
    Condition原理：线程放入等待链表,可以实现“选择性通知”，而notify由JVM随机选择的  
   
-```  
-```  
-18、分布式锁实现.md：数据库、redis、zookeeper  
-  
-```  
-```  
-19、加解密.md：加解密的分类和实现  
-  
-```  
-```  
-20、单例模式有三种实现方式  
-  
-```  
-```  
-21、图片加载缓慢优化.md：  
-  
-```  
-```  
-22、泛型通配符extends与super的区别.md：泛型：泛型上限通配符extends与泛型下限通配符super  
-  
-```  
-```  
-23、负载均衡.md:负载均衡算法  
-  
-```  
-```  
-24、java热部署、模块化：jarslink  
-  
-```  
-```  
-25、SPI和JDK、JDK7、JDK8  
-  
-```  
-```  
-26、一致性哈希算法(consistent hashing)  
-  
-```  
-```  
-27、java常见异常  
-  
-```  
-```  
-28、Comparable与Comparator的区别  
-  
-```  
-```  
-29、对Runtime的了解:Runtime类  
-  
-```  
-```  
-30、什么是线程死锁？如何避免线程死锁？如何加一个线程死锁检查机制？  
-  
-```  
-```  
-31、java进程间通信(IPC interProcess communication)：  
-  
-```  
-```  
-32、如何实现分布式缓存  
-  
-```  
-```  
-33、volatile原理  
-  
-```  
-```  
-34、数据结构：堆和树  
-  
-```  
-```  
-  
-35、Queue队列的常用方法  
-  
-```  
-```  
-36、数组、链表，队列 ，栈，散列表，树，图  
-  
-```  
-```  
-37、Java线程的5种状态及切换  
-  
-```  
-```  
-38、Linux探秘之用户态与内核态  
-  
-```  
-```  
-39、java进程CPU过高问题如何排查？  
-  
-```  
-```  
-40、Java8中用sun.misc.Contended避免伪共享(false sharing)  
-  
-```  
-```  
-41、动态代理和静态代理  
-  
-```  
-```  
-42、  
-  
-```  
-```  
-43、  
-  
-```  
-```  
-44、  
-  
-```  
-```  
-45、  
-  
-```  
-```  
-46、  
-  
-```  
-```  
-47、  
-  
-```  
-```  
-48、  
-  
-```  
-```  
-49、  
-  
-```  
-```  
-50、  
-  
-  
-  
-```  
-  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 Java8中用sun.misc.Contended避免伪共享(false sharing)：  
 https://blog.csdn.net/aigoogle/article/details/41518369  
 1、long padding来避免伪共享   
 2、jdk8新特性，Contended注解避免false sharing：需要在jvm启动时设置-XX:-RestrictContended   
-```  
+  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 动态代理和静态代理.md  
 动态代理：cglib、jdk  
 静态代理：javassist、AspectJ  
-```  
+  
   
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 java se：  
 单例  
 锁的种类：可重入锁，  
@@ -648,13 +584,8 @@ CMS流程：初始标记、并发标记、重新标记、并发清楚，并发�
 初始标记(CMS-initial-mark) -> 并发标记(CMS-concurrent-mark) -> 重新标记(CMS-remark) -> 并发清除(CMS-concurrent-sweep) ->并发重设状态等待下次CMS的触发(CMS-concurrent-reset)。  
 其中的1，3两个步骤需要暂停所有的应用程序线程的  
   
-```  
-  
-  
-  
-  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 一致性哈希算法(consistent hashing)  
 http://blog.csdn.net/cywosp/article/details/23397179/  
 https://blog.csdn.net/bntX2jSQfEHy7/article/details/79549368  
@@ -674,9 +605,9 @@ https://blog.csdn.net/thinkmo/article/details/26833565
 单调性：新增或者删除机器节点，只是影响相邻的部分对象，但按照顺时候移动，可能出现不平衡问题（使用虚节点）  
 分散性：节点hash后分散  
   
-```  
+  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
   
 Object类的方法  
 getClass  
@@ -700,7 +631,7 @@ run():执行该线程对象要执行的任务
 sleep()和wait()的区别  
 sleep():不释放锁对象，释放CPU使用权在休眠的时间内，不能唤醒。  
 wait():释放锁对象，释放CPU释放权，在等待时间内能被唤醒。  
-```  
+  
 ---------------------------------------------------------------------------------------------------------------------  
 一个英文字母(不分大小写)或者符号占一个字节的空间，一个中文汉字或者符号占两个字节的空间．   
 字节(Byte):通常将可表示常用英文字符8位二进制称为一字节。 1字节(Byte） = 8位(bit)   
@@ -1012,7 +943,7 @@ http://blog.csdn.net/RodeStillFaraway/article/details/50530142
 ![数据结构体系图](./image/datastructsystem.png "ReferencePicture")  
 ![数据结构时间复杂度](./image/Datastructuretimecomplexity.png "ReferencePicture")  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 Java线程的5种状态及切换(透彻讲解)  
 https://www.cnblogs.com/nwnu-daizh/p/8036156.html  
 http://blog.csdn.net/pange1991/article/details/53860651  
@@ -1022,15 +953,15 @@ http://blog.csdn.net/pange1991/article/details/53860651
 运行-->阻塞-->就绪-->运行（sleep、t2.join、等用户输入，3中阻塞条件结束，获取cpu时间片）  
 运行-->等待队列-->锁池队列-->就绪（wait()+notify/notifyAll、synchronized(obj) ）  
 运行-->就绪（yield()、时间片用完）  
-```  
+  
 ![线程状态转换](./image/threadstatuschange.png "ReferencePicture")  
-```  
+  
 在调用sleep()方法的过程中，线程不会释放对象锁。  
 而当调用wait()方法的时候，线程会放弃对象锁，让出cpu该其他线程，进入等待此对象的等待锁定池，只有针对此对象调用notify()方法后本线程才进入对象锁定池准备  
   
-```  
+  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 Linux探秘之用户态与内核态  
   
   
@@ -1113,9 +1044,9 @@ https://baike.baidu.com/item/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%84%E6%96%87%E4%BB
 pageCache  
 https://blog.csdn.net/iter_zc/article/details/44195731  
 https://blog.csdn.net/kisimple/article/details/42559779  
-```  
+  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 String StringBuffer,StringBuilder原理  
   
 String对象有final修饰，是不可变的，也可以理解为常量，显然是线程安全的。  
@@ -1141,9 +1072,9 @@ StringBuilder与StringBuffer有公共父类AbstractStringBuilder(抽象类)。
 String：new是放在堆区，+或者substring都是通过改变字符数组生成新的字符数组来实现  
 一个是非同步的StringBuilder，一个是同步的StringBuffer（synchronized在方法上），都是字符数组，  
 append时先扩容，把字符数组拷贝到一个新的大的字符数组，再进行拼接，还是拼接拷贝到一个新的字符数组，  
-```  
+  
 ---------------------------------------------------------------------------------------------------------------------  
-```  
+  
 https://blog.csdn.net/qq_42022528/article/details/87860311   
   
   
@@ -1155,63 +1086,7 @@ java的线程是映射到操作系统原生线程之上的，如果要阻塞或�
   
 synchronized会导致争用不到锁的线程进入阻塞状态，所以说它是java语言中一个重量级的同步操纵，被称为重量级锁，为了缓解上述性能问题，JVM从1.5开始，引入了轻量锁与偏向锁，默认启用了自旋锁，他们都属于乐观锁。所以明确java线程切换的代价，是理解java中各种锁的优缺点的基础之一。  
   
-```  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
   
 ---------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
-  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
-  
-  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
-  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
-  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
----------------------------------------------------------------------------------------------------------------------  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   

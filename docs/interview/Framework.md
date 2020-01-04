@@ -1,4 +1,4 @@
-[测试相关](https://github.com/youngzil/quickstart-test)  
+[常用框架](https://github.com/youngzil/quickstart-framework)  
   
 1、[](#)  
 
@@ -31,16 +31,65 @@
 ## 
 
 ---------------------------------------------------------------------------------------------------------------------  
+
+apache-commons学习.md  
+
+常用刷题网站和博客.md  
+    剑指Offer学习  
   
+  
+2、Disruptor学习.md
+无锁队列Disruptor  
+  
+  
+3、Guava学习.md  
+  
+  
+4、javaSE基础知识点
+quickstart-javase  
+  
+  
+5、JSON框架学习
+quickstart-json  
+  
+  
+6、Linux学习
+quickstart-linux  
+  
+  
+7、日志框架
+quickstart-logging  
+  
+  
+8、Lua学习.md  
+  
+  
+9、java代理学习
+quickstart-proxy
+
+动态代理和静态代理的区别
+静态代理优缺点
+动态代理优缺点
+cglib和Jdk动态代理的区别  
+  
+  
+10、java Servlet学习
+quickstart-servlet  
+  
+  
+11、javaWeb学习
+quickstart-web  
+  
+  
+12、  
   
 ---------------------------------------------------------------------------------------------------------------------  
+熟悉分布式、缓存、消息队列等中间件技术  
+熟悉常用设计模式  
+熟悉并对javaEE、SOA、spring、osgi等技术潮流保持关注，  
+有数据库、分布式、性能优化、高并发、高可用性系统设计开发经验  
   
-test：  
-jmeter、loadrunner、selenium  
-junit、testng、jmh、mock  
   
-  
----------------------------------------------------------------------------------------------------------------------  
   
 ---------------------------------------------------------------------------------------------------------------------  
   
