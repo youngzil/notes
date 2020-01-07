@@ -77,17 +77,63 @@ TCP和UDP的最完整的区别.md
   https://hit-alibaba.github.io/interview/basic/network/TCP.html  
     
    
-5、  
+
+1.TCP/IP 三次握手 四次挥手  
+osi参考模型：  
+tcp/ip四层概念模型：应用层（应用层、表现层、会话层）、传输层、网络层、数据链路层（数据链路层、物理层）（3 1 1 2）  
+  
+TCP/IP:协议的集合，代表性的有ip、tcp、http。  
+ip:网络层。代表网际协议。  
+tcp：传输层。tcp是可靠的，udp是不可靠的。  
+http：应用层协议，主要解决如何包装数据。除了http还有ftp、telnet等等  
+把IP想像成一种高速公路，它允许其它协议在上面行驶并找到到其它电脑的出口。TCP和UDP是高速公路上的“卡车”，它们携带的货物就是像HTTP，文件传输协议FTP这样的协议等。  
+  
+tcp三次握手：建立tcp连接。client端发送一个数据包，server端确认收到连接并返回给client，client确认然后连接建立完成。随后client和server端可以开始传输数据。  
+tcp四次握手：断开tcp连接。client端发送一个FIN请求，server收到一个FIN请求表示client这一端不在发送数据了，但是还能接收数据，此时tcp连接还没有关闭。直到server端再发送一个FIN请求，表示server端也不会再发送数据了；client端收到FIN后，给server一个ack响应，server端进入closed状态。  
+
+2.Http的格式说明  
+request由请求行、请求头、请求体组成  
+请求行（参考：GET /mix/76.html?name=kelvin&password=123456 HTTP/1.1      请求类型 请求地址  协议版本）  
+请求头（参考：HOST是主机地址，User-Agent是客户端的信息，它是检测浏览器类型的重要信息，由浏览器定义，并且在每个请求中自动发送，等等  
+Host: www.fishbay.cn  
+Upgrade-Insecure-Requests: 1  
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36  
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8  
+Accept-Encoding: gzip, deflate, sdch  
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6  
+）  
+空行：请求头后面必须有一行空行  
+请求数据：请求体  
+  
+response由状态行、响应头、响应体组成。参考如下：  
+HTTP/1.1 200 OK   状态行  
+Server: nginx  响应头  
+Date: Mon, 20 Feb 2017 09:13:59 GMT  
+Content-Type: text/plain;charset=UTF-8  
+Vary: Accept-Encoding  
+Cache-Control: no-store  
+Pragrma: no-cache  
+Expires: Thu, 01 Jan 1970 00:00:00 GMT  
+Cache-Control: no-cache  
+Content-Encoding: gzip  
+Transfer-Encoding: chunked  
+Proxy-Connection: Keep-alive  
+				空行  
+{"res":ok"}   响应体  
   
   
-6、  
-  
-  
-7、  
-  
-  
-http调用：feign、httpClient、okhttp、unirest、jdk、jersey-http  
-  
+3.状态码说明  
+200 OK 请求成功  
+301 Moved Permanently 永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。  
+今后任何新的请求都应使用新的URI代替  
+302 Found 临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI  
+400 Bad Request 客户端请求的语法错误，服务器无法理解  
+401 Unauthorized 请求要求用户的身份认证  
+403 Forbidden 服务器理解请求客户端的请求，但是拒绝执行此请求  
+404 Not Found 资源未找到  
+500 Internal Server Error 服务端内部错误  
+502	Bad Gateway	充当网关或代理的服务器，从远端服务器接收到了一个无效的请求  
+    
   
 网络：  
 1、TCP/IP 三次握手 四次挥手  
@@ -241,4 +287,5 @@ CLOSE_WAIT状态
 发起TCP连接关闭的一方称为client，被动关闭的一方称为server。被动关闭的server收到FIN后，但未发出ACK的TCP状态是CLOSE_WAIT。出现这种状况一般都是由于server端代码的问题，如果你的服务器上出现大量CLOSE_WAIT，应该要考虑检查代码。  
   
 ---------------------------------------------------------------------------------------------------------------------  
-  
+http调用：feign、httpClient、okhttp、unirest、jdk、jersey-http  
+

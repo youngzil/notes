@@ -134,6 +134,8 @@ tcpdump：
 tcpdump -i en4 port 8101 -U -w ./target.cap
 tcpdump tcp port 8101 -n -X -s 0
 
+tcpdump  tcp port 8001 -w tcpdump5.cap
+
 
 wireshark：
 http  and  tcp.port == 8101

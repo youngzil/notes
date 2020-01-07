@@ -191,10 +191,12 @@ https://github.com/youngzil/notes
 - [常用框架](#常用框架)
     - [Disruptor](#Disruptor)
     - [Guava](#Guava)
+    - [apache-commons框架](#apache-commons框架)
     - [Servlet](#Servlet)
     - [Guice](#Guice)
     - [Crypto](#Crypto)
     - [字节码框架ASM](#字节码框架ASM)
+    - [jOOQ](#jOOQ)
     - [logging框架](#logging框架)
     - [JSON框架](#JSON框架)
     - [Reflect反射](#Reflect反射)
@@ -206,8 +208,10 @@ https://github.com/youngzil/notes
     - [Quartz](#Quartz)
     - [JFinal](#JFinal)
     - [UUID](#UUID)
+    - [Objenesis框架](#Objenesis框架)
     - [Proxy代理](#Proxy代理)
     - [Java和Kotlin、Groovy、Scala的代码和相互调用](#Java和Kotlin、Groovy、Scala的代码和相互调用)
+    - [其他框架](#其他框架)
 - [数据库](#数据库)
     - [数据库产品](#数据库产品)
         - [MySQL](#MySQL)
@@ -283,6 +287,7 @@ https://github.com/youngzil/notes
     - [机器学习](#机器学习)
     - [区块链](#区块链)
     - [人工智能](#人工智能)
+    - [其他相关](#其他相关)
 - [测试](#测试)
     - [单元测试](#单元测试)
         - [JUnit](#JUnit)
@@ -447,8 +452,8 @@ Pulsar是一个分布式pub-sub消息平台，具有非常灵活的消息传递�
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [远程通讯和RPC框架](docs/interview/Remoting和RPC框架.md)
-[quickstart-remoting]
-[quickstart-rpc]
+[quickstart-remoting]  
+[quickstart-rpc]  
 
 ### Netty
 * [Netty](docs/java/XXX.md)
@@ -487,7 +492,7 @@ Pulsar是一个分布式pub-sub消息平台，具有非常灵活的消息传递�
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [容器](docs/interview/Container容器.md)
-[quickstart-container]
+[quickstart-container]  
 
 ### Docker
 * [Docker](docs/java/XXX.md)
@@ -502,7 +507,7 @@ Pulsar是一个分布式pub-sub消息平台，具有非常灵活的消息传递�
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [缓存和KV数据库](docs/interview/Cache和KV数据库.md)
-[quickstart-cache]
+[quickstart-cache]  
 
 ### Redis
 
@@ -537,7 +542,7 @@ air是一个Key/Value结构数据的解决方案，它默认支持基于内存�
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [Reactive响应式编程](docs/interview/Reactive响应式编程.md)
-[quickstart-reactive]
+[quickstart-reactive]  
 
 ### Reactor
 
@@ -556,21 +561,28 @@ air是一个Key/Value结构数据的解决方案，它默认支持基于内存�
 
 
 ### 设计模式
+quickstart-design-pattern	设计模式和代码示例
+
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [网络和HTTP](docs/interview/网络和HTTP.md)
-[quickstart-http]
+[quickstart-http]  
+[HTTP和HTTPS、TCPIP、ajax、OSI七层协议、TCPIP四层协议](docs/base/net/HTTP和HTTPS、TCPIP、ajax、OSI七层协议、TCPIP四层协议.md)  
+[IP地址分类-内网IP](docs/base/net/IP地址分类-内网IP.md)  
+[NAT和UDP穿孔打洞、HTTP隧道](docs/base/net/NAT和UDP穿孔打洞、HTTP隧道.md)  
 
+[DNS域名](docs/base/dns/DNS域名.md)   
+[常用的DNS服务器](docs/base/dns/常用的DNS服务器.md)   
 
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [Spring](docs/interview/Spring.md)
 ### SpringBoot
-[quickstart-spring-boot]
-[quickstart-spring-boot2]
+[quickstart-spring-boot]  
+[quickstart-spring-boot2]  
 
 ### SpringCloud
-[quickstart-spring-cloud]
+[quickstart-spring-cloud]  
 [quickstart-spring-cloud2]
 
 
@@ -583,7 +595,7 @@ air是一个Key/Value结构数据的解决方案，它默认支持基于内存�
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [注册中心和配置中心](docs/interview/Register注册中心和Config配置中心.md)
-[quickstart-register]
+[quickstart-register]  
 [quickstart-config]
 
 ### 注册中心
@@ -600,25 +612,30 @@ air是一个Key/Value结构数据的解决方案，它默认支持基于内存�
 ### XXL-CONF
 
 ---------------------------------------------------------------------------------------------------------------------
-## [分布式](docs/interview/分布式.md)
+## [分布式](docs/interview/分布式)
 
 ### 分布式事务
-* [分布式理论](docs/interview/分布式.md)
+* [分布式事务与一致性算法](docs/interview/分布式事务与一致性算法.md)
 
 ### 分布式锁
+[分布式锁实现](docs/base/分布式/分布式锁实现.md)
 
 
 ### 分布式ID
-
+[分布式ID生成服务](docs/base/分布式/分布式ID生成服务.md)
 
 ### 分布式缓存
+[分布式缓存](docs/base/分布式/分布式缓存.md)
+
+### 分布式缓存
+[分布式存储系统](docs/base/分布式/分布式存储系统.md)
 
 
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [网关](docs/interview/Gateway网关.md)
-网关、微服务
-[quickstart-gateway]
+网关、微服务  
+[quickstart-gateway]  
 
 ### API服务网关
 ### Zuul2
@@ -656,6 +673,13 @@ java9模块化开发
 ---------------------------------------------------------------------------------------------------------------------
 ## [Linux](docs/interview/Linux.md)
 
+[Linux环境变量修改](docs/base/操作系统/Linux/Linux环境变量修改.md)
+[Linux用户空间与内核空间、地址空间](docs/base/操作系统/Linux/Linux用户空间与内核空间、地址空间.md)
+[TCP参数](docs/base/操作系统/Linux/TCP参数.md)
+[操作系统-内存管理机制](docs/base/操作系统/Linux/操作系统-内存管理机制.md)
+
+
+quickstart-linux	Linux命令、Shell脚本等  
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [AIF项目](docs/interview/AIF.md)
@@ -695,8 +719,13 @@ java9模块化开发
 
 
 ### 数据结构
+[数据结构学习](docs/base/datastructure/数据结构.md)
+
 
 ### 算法
+[常见算法](docs/base/algorithm/常见算法.md)
+[递归算法](docs/base/algorithm/递归算法.md)
+[Top K 之海量数据找出现次数最多或，不重复的](docs/base/algorithm/Top K 之海量数据找出现次数最多或，不重复的.md)
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [应用容器](docs/interview/ApplicationContainer.md)
@@ -728,6 +757,133 @@ java9模块化开发
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [常用框架](docs/interview/Framework.md)
+
+
+### Disruptor
+无锁队列Disruptor
+
+### Guava
+Guava工具类
+
+
+### apache-commons框架
+apache-commons学习.md
+
+
+### Servlet
+Servlet3异步NIO
+
+
+### Guice
+依赖注入框架
+
+
+### Crypto
+加解密工具
+
+
+### 字节码框架ASM
+字节码修改工具
+
+
+### jOOQ 
+Object Oriented Querying  
+jOOQ面向对象查询  
+ 
+quickstart-jool		jOOλ，Java lambdas和Stream API  
+quickstart-joor		jOOR - 更好地进行Java反射。  
+quickstart-joou		jOOU - 无符号整数，Object Oriented Unsigned无符号的  
+quickstart-joox		jOOX - 应用于W3C DOM的jQuery的强大功能  
+
+
+### logging框架
+日志框架：logback、log4j2、log4j、jul
+
+
+### JSON框架
+json工具：fastjson、Gson、jackson等
+
+
+### Reflect反射
+Java反射框架：reflections等
+
+
+
+
+### YAML框架
+yaml文件解析
+
+
+### XML框架
+quickstart-xbean		java XML解析
+quickstart-xml
+quickstart-xmlbeans
+
+
+### JVM序列化框架
+JVM序列化工具：jdk、fst、kryo、hession、thrift等
+
+
+### String字符串压缩
+字符串压缩
+
+
+### FastDFS
+FastDFS是一个开源的分布式文件系统
+
+
+### Quartz
+Quartz是一个开源的作业调度框架
+
+
+### JFinal
+JAVA 极速WEB+ORM框架 JFinal
+
+
+### UUID
+UUID工具类
+
+### Objenesis框架
+Objenesis是一个专用于在创建对象时绕过构造函数的库。在任何JVM上都有。
+
+### Proxy代理
+动态代理和静态代理，Java Agent，字节码工具等  
+
+
+### Java和Kotlin、Groovy、Scala的代码和相互调用
+
+其他语言：
+Java和Kotlin、Groovy、Scala的代码和相互调用
+/Users/yangzl/git/quickstart-framework/quickstart-kotlin
+quickstart-groovy
+quickstart-kotlin
+quickstart-scala
+
+
+
+### 其他框架
+quickstart-lombok	lombok框架
+quickstart-elastic-job	Elastic-Job 是一个分布式调度解决方案
+quickstart-hppc	Java集合类扩展
+quickstart-websocket	websocket协议使用
+quickstart-velocity		Velocity是一个基于Java的模板引擎
+quickstart-jgit	Java git工具
+quickstart-jython	Jython是一种完整的语言，而不是一个Java翻译器或仅仅是一个Python编译器，它是一个Python语言在Java中的完全实现。
+quickstart-jctools	JCTools是一款对jdk并发数据结构进行增强的并发工具，主要提供了map以及queue的增强数据结构。
+quickstart-machine-learning		机器学习相关
+quickstart-mnemonic		Apache Mnemonic  是一个面向非易失性混合内存存储的库，它提出了一个非易失性/持久的 Java 对象模型和持久的计算服务，能显着提高了海量实时数据处理/分析的性能。 
+quickstart-web	JavaWeb框架
+quickstart-proguard		Java混淆器 ProGuard，我们通常说的proguard包括四个功能，shrinker（压缩）, optimizer（优化）,obfuscator（混淆）,preverifier（预校验）。
+
+
+lintcode等：
+quickstart-code	lintcode等刷题、剑指Offer
+
+
+微服务、Web框架
+quickstart-dropwizard	Dropwizard与Spring Boot类似，也是构建微服务可选的工具
+quickstart-plexus	Plexus——Spring之外的IoC容器
+quickstart-servicecomb	ServiceComb 是华为开源的一套包含代码框架生成，服务注册发现，负载均衡，服务可靠性（容错熔断，限流降级，调用链追踪）等功能的微服务框架。
 
 
 
@@ -846,12 +1002,26 @@ quickstart-webservice-axis2
 
 
 ---------------------------------------------------------------------------------------------------------------------
-## [新技术](docs/interview/机器学习、区块链、人工智能.md)
+## [新技术](docs/)
 
 
 ### 机器学习
+[MachineLearning机器学习](docs/base/MachineLearning/MachineLearning机器学习.md)
+
+
 ### 区块链
+[Blockchain区块链](docs/base/blockchain/Blockchain区块链.md)
+[Ethereum以太坊](docs/base/blockchain/Ethereum以太坊.md)
+[Bitcoin](docs/base/blockchain/Bitcoin.md)
+
 ### 人工智能
+[ArtificialIntelligence人工智能](docs/base/ArtificialIntelligence/ArtificialIntelligence人工智能.md)
+
+
+### 其他相关
+[CloudComputing云计算](docs/other/CloudComputing云计算.md)
+[EdgeComputing边缘计算](docs/other/EdgeComputing边缘计算.md)
+
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [测试](docs/interview/Test测试.md)
@@ -889,6 +1059,8 @@ quickstart-webservice-axis2
 [quickstart-python]
 ---------------------------------------------------------------------------------------------------------------------
 ## [Lua](docs/Language/Lua.md)  
+
+quickstart-lua	lua脚本语言
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [C++/C](docs/Language/C++.md)  
@@ -1078,85 +1250,6 @@ APMCon演讲PPT
 APMCon是由听云、极客邦科技与InfoQ联合主办的全球高水准APM技术盛会，聚焦当前最为关键的移动端、Web端和Server端的性能监控和管理技术。整个会议包含智能运维、数据库性能优化、移动性能优化、前端性能优化、业务数据实时分析和可视化、微服务与容器与CDN加速等话题。
 
 APMCon内容源于实践并面向社区，来自国内外的演讲嘉宾依据热点话题，面向5年以上的技术团队负责人、中高级开发和运维人员、工程总监分享APM技术创新、趋势和最佳实践。
-
-
----------------------------------------------------------------------------------------------------------------------
-2、Java相关：
-
-Java实例：
-quickstart-example	Java代码示例
-quickstart-javase
-
-
-常用框架：
-quickstart-apache-commons	apache-commons学习.md
-quickstart-asm  字节码修改工具
-quickstart-disruptor	无锁队列Disruptor
-quickstart-crypto	加解密工具
-quickstart-elastic-job	Elastic-Job 是一个分布式调度解决方案
-quickstart-eaio-uuid	UUID工具类
-quickstart-fastdfs	FastDFS是一个开源的分布式文件系统
-quickstart-guava	Guava工具类
-quickstart-guice	依赖注入框架
-quickstart-hppc	Java集合类扩展
-
-quickstart-machine-learning		机器学习相关
-quickstart-mnemonic		Apache Mnemonic  是一个面向非易失性混合内存存储的库，它提出了一个非易失性/持久的 Java 对象模型和持久的计算服务，能显着提高了海量实时数据处理/分析的性能。 
-quickstart-objenesis		Objenesis是一个专用于在创建对象时绕过构造函数的库。在任何JVM上都有。
-
-quickstart-proxy	动态代理和静态代理，Java Agent，字节码工具等
-quickstart-quartz	Quartz是一个开源的作业调度框架
-quickstart-reflect	Java反射框架：reflections等
-
-quickstart-servlet	Servlet3异步NIO
-quickstart-string-compress	字符串压缩
-quickstart-web	JavaWeb框架
-quickstart-websocket	websocket协议使用
-
-quickstart-velocity		Velocity是一个基于Java的模板引擎
-quickstart-xbean		java XML解析
-quickstart-xml
-quickstart-xmlbeans
-quickstart-yaml		yaml文件解析
-
-quickstart-jool		jOOλ，Java lambdas和Stream API
-quickstart-joor		jOOR - 更好地进行Java反射。
-quickstart-joou		jOOU - 无符号整数，Object Oriented Unsigned无符号的
-quickstart-joox		jOOX - 应用于W3C DOM的jQuery的强大功能
-
-quickstart-json		json工具：fastjson、Gson、jackson等
-quickstart-jvm-serializer	JVM序列化工具：jdk、fst、kryo、hession、thrift等
-quickstart-logging	日志框架：logback、log4j2、log4j、jul
-
-quickstart-lombok	lombok框架
-quickstart-jctools	JCTools是一款对jdk并发数据结构进行增强的并发工具，主要提供了map以及queue的增强数据结构。
-quickstart-jgit	Java git工具
-quickstart-jython	Jython是一种完整的语言，而不是一个Java翻译器或仅仅是一个Python编译器，它是一个Python语言在Java中的完全实现。
-quickstart-linux	Linux命令、Shell脚本等
-quickstart-proguard		Java混淆器 ProGuard，我们通常说的proguard包括四个功能，shrinker（压缩）, optimizer（优化）,obfuscator（混淆）,preverifier（预校验）。
-
-
-设计模式和lintcode等：
-quickstart-design-pattern	设计模式和代码示例
-quickstart-code	lintcode等刷题、剑指Offer
-
-
-微服务、Web框架
-quickstart-dropwizard	Dropwizard与Spring Boot类似，也是构建微服务可选的工具
-quickstart-jfinal	JAVA 极速WEB+ORM框架 JFinal
-quickstart-plexus	Plexus——Spring之外的IoC容器
-quickstart-servicecomb	ServiceComb 是华为开源的一套包含代码框架生成，服务注册发现，负载均衡，服务可靠性（容错熔断，限流降级，调用链追踪）等功能的微服务框架。
-
-
-
-其他语言：
-Java和Kotlin、Groovy、Scala的代码和相互调用
-/Users/yangzl/git/quickstart-framework/quickstart-kotlin
-quickstart-groovy
-quickstart-kotlin
-quickstart-scala
-
-quickstart-lua	lua脚本语言
 
 
 ---------------------------------------------------------------------------------------------------------------------

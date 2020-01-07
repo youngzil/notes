@@ -25,6 +25,8 @@ TCP粘包/拆包与Netty解决方案：4种：分隔符，回车换行分隔符�
 netty的网络创建在哪里  
 java nio的selector  和linux的epoll select  
 
+netty小对象、大对象的管理  
+
 
 netty执行流程  
 Server端Boss线程和worker线程比较：boss设置为1，我猜测是为了减少线程切换，因为处理事情比较简单，不耗费时间  
