@@ -1,4 +1,3 @@
-```
 1、SSO
 2、OpenID
 
@@ -19,8 +18,6 @@ OAuth 2.0 – Authentication Code & Client Credential
 
 5、
 
-
-```
 
 ---------------------------------------------------------------------------------------------------------------------
 https://www.programcat.com/index/info/id/47

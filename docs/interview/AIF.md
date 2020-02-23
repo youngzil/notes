@@ -302,7 +302,7 @@ Client启动的时候，首先从配置中心，再到本地获取配置
 微服务治理框架CSF：RPC框架  
   
 Provider和Consumer都从Zookeeper获取服务路由信息，  
-1、  使用Zookeeper做服务注册中心  
+1、使用Zookeeper做服务注册中心  
 2、实现服务间的调用、负载均衡、降级、熔断、重试、限流、跟踪等机制  
 负载均衡：轮训、随机、一致性哈希、最小连接数，加权轮训、加权随机等  
 超时控制等降级：报错，降级函数  
@@ -376,23 +376,23 @@ javaagent + 字节码修改工具
   
   
 ---------------------------------------------------------------------------------------------------------------------  
-  API服务网关和能力开放平台OSP
-  
-  Netty+RxJava+CompletableFuture
-  缓存：一级缓存Redis（lettuce） + 二级缓存Caffeine
-  Guice模块管理
-  snakeyaml解析yaml文件
-  fastjson数据解析
-  加解密：AES、RSA
-  签名：HmacSHA256、RSAWithMD5
-  
-  Netty：创建一个ChannelHander，在此ChannelHander种循环执行所有的业务Filter，每个业务Filter使用RaJava构建执行，在RaJava中使用CompletableFuture来构建异步执行任务
+API服务网关和能力开放平台OSP
 
-  
-  遇到的问题
-    
-  杭州业务大厅网关cookie丢失问题  
-  在生产环境是没有问题的，在测试环境，postman和google浏览器也是没有问题的，就说是app的问题，可是app是IBM的开发的，坚持说app的测试环境和生产环境是一样的代码，就考虑是不是ip和域名的问题，当时domain是空的，默认就是当前的域名或者ip，并且开启了跨域，有预检请求等，但是还是不行，后来实在没办法，就一方面申请了测试环境的域名，一方面就下载了tcpdump抓了网络报文，说明了是app的问题，后来域名还没申请下来，还是IBM自查说是设置了禁止跨域的cookie  
+Netty+RxJava+CompletableFuture
+缓存：一级缓存Redis（lettuce） + 二级缓存Caffeine
+Guice模块管理
+snakeyaml解析yaml文件
+fastjson数据解析
+加解密：AES、RSA
+签名：HmacSHA256、RSAWithMD5
+
+Netty：创建一个ChannelHander，在此ChannelHander种循环执行所有的业务Filter，每个业务Filter使用RaJava构建执行，在RaJava中使用CompletableFuture来构建异步执行任务
+
+
+遇到的问题
+
+杭州业务大厅网关cookie丢失问题  
+在生产环境是没有问题的，在测试环境，postman和google浏览器也是没有问题的，就说是app的问题，可是app是IBM的开发的，坚持说app的测试环境和生产环境是一样的代码，就考虑是不是ip和域名的问题，当时domain是空的，默认就是当前的域名或者ip，并且开启了跨域，有预检请求等，但是还是不行，后来实在没办法，就一方面申请了测试环境的域名，一方面就下载了tcpdump抓了网络报文，说明了是app的问题，后来域名还没申请下来，还是IBM自查说是设置了禁止跨域的cookie  
   
 ---------------------------------------------------------------------------------------------------------------------  
   
