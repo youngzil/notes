@@ -1006,7 +1006,7 @@ quickstart-webservice-axis2
 
 
 ### 机器学习
-[MachineLearning机器学习](docs/base/MachineLearning/MachineLearning机器学习.md)
+[MachineLearning机器学习](docs/base/人工智能技术/MachineLearning机器学习.md)
 
 
 ### 区块链
@@ -1015,7 +1015,7 @@ quickstart-webservice-axis2
 [Bitcoin](docs/base/blockchain/Bitcoin.md)
 
 ### 人工智能
-[ArtificialIntelligence人工智能](docs/base/ArtificialIntelligence/ArtificialIntelligence人工智能.md)
+[ArtificialIntelligence人工智能](docs/base/人工智能技术/ArtificialIntelligence人工智能.md)
 
 
 ### 其他相关
