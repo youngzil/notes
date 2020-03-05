@@ -1,3 +1,24 @@
+1、Git下载代码、提交代码、查看记录、查看状态、提交、回滚
+2、Git修改和配置用户名和邮箱
+3、本地代码库回滚和远程代码库回滚
+4、§ git clone
+  § git remote
+  § git fetch
+  § git pull
+  § git push
+5、Git恢复之前版本的两种方法reset、revert
+6、
+7、
+8、
+9、
+10、
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+Git下载代码、提交代码、查看记录、查看状态、提交、回滚
+
+
 Git官网
 https://git-scm.com/book/zh/v2
 
@@ -43,6 +64,7 @@ git push origin master
 git log显示历史的提交列表
 git show <commit-hashId> 便可以显示某次提交的修改内容
 git show <commit-hashId> filename 可以显示某次提交的某个内容的修改信息。
+git log --author="yangzl"
 
 git status // 查看当前仓库状态（仓库下的工作区文件是否被修改过）
 
@@ -79,7 +101,9 @@ git branch -r -d origin/hongchangfirst
 git push origin :br (origin 后面有空格)
 
 
-
+查看命令帮助
+git switch -h
+git clone -h
 
 
 参考
@@ -88,6 +112,8 @@ https://www.liaoxuefeng.com/wiki/896043488029600/896954074659008
 
 
 ---------------------------------------------------------------------------------------------------------------------
+本地代码库回滚和远程代码库回滚
+
 【本地代码库回滚】：
 git reset --hard commit-id :回滚到commit-id，讲commit-id之后提交的commit都去除
 git reset --hard HEAD~3：将最近3次的提交回滚
@@ -112,6 +138,7 @@ git reset --hard HEAD~3：将最近3次的提交回滚
 
 ---------------------------------------------------------------------------------------------------------------------
 
+Git修改和配置用户名和邮箱
 
 用户名和邮箱地址的作用
 用户名和邮箱地址是本地git客户端的一个变量，不随git库而改变。
@@ -122,10 +149,23 @@ github的contributions统计就是按邮箱来统计的。
 $ git config user.name
 $ git config user.email
 
-修改用户名和邮箱地址：
-$ git config --global user.name "username"
-$ git config --global user.email "email"
+$ git config user.name "yangzl"
+$ 
+git config user.email "yangzl@asiainfo.com"
 
+git config user.name "newName"
+git config user.email "yangzl@asiainfo.com"
+
+修改用户名和邮箱地址：
+git config --global user.name "username"
+git config --global user.email "email"
+
+git config --global user.name "your user name"
+git config --global user.email "your user email"
+
+
+参考
+cnblogs.com/sunshinekevin/p/11617547.html
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -269,6 +309,10 @@ $ git checkout -b newBrach origin/master
 上面命令表示，在origin/master的基础上，创建一个新分支。
 
 此外，也可以使用git merge命令或者git rebase命令，在本地分支上合并远程分支。
+
+git checkout 版本号
+git reset HEAD
+ 
 
  
 
@@ -447,7 +491,43 @@ $ git push origin --tags
 
 ---------------------------------------------------------------------------------------------------------------------
 
+Git恢复之前版本的两种方法reset、revert
 
+
+
+git reset
+原理： git reset的作用是修改HEAD的位置，即将HEAD指向的位置改变为之前存在的某个版本
+
+1. 查看版本号：
+git log
+
+2. 使用“git reset --hard 目标版本号”命令将版本回退：
+git reset --hard 目标版本号
+git log
+
+3. 使用“git push -f”提交更改：
+git push -f【此时如果用“git push”会报错，因为我们本地库HEAD指向的版本比远程库的要旧】
+
+
+
+git revert
+原理： git revert是用于“反做”某一个版本，以达到撤销该版本的修改的目的。比如，我们commit了三个版本（版本一、版本二、 版本三），突然发现版本二不行（如：有bug），想要撤销版本二，但又不想影响撤销版本三的提交，就可以用 git revert 命令来反做版本二，生成新的版本四，这个版本四里会保留版本三的东西，但撤销了版本二的东西。
+
+1. 查看版本号：
+git log
+
+2.使用“git revert -n 版本号”反做，并使用“git commit -m 版本名”提交：
+git revert -n 8b89621019c9adc6fc4d242cd41daeb13aeb9861
+注意： 这里可能会出现冲突，那么需要手动修改冲突的文件。而且要git add 文件名。
+git commit -m "revert add text.txt" 
+git log
+
+3.使用“git push”推上远程库：
+git push
+
+
+参考
+https://blog.csdn.net/yxlshk/article/details/79944535
 
 
 ---------------------------------------------------------------------------------------------------------------------
