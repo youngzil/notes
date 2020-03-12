@@ -1152,7 +1152,7 @@ quickstart-lua	lua脚本语言
 * [《炒股的智慧》](stock/炒股的智慧.md)
 
 ### 其他
-* [《三国演义》](others/三国演义.md)
+* [《三国演义》](fiction/三国演义.md)
 
 
 
