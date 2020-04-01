@@ -140,6 +140,8 @@ git reset --hard HEAD~3：将最近3次的提交回滚
 
 Git修改和配置用户名和邮箱
 
+git修改提交作者和邮箱
+
 用户名和邮箱地址的作用
 用户名和邮箱地址是本地git客户端的一个变量，不随git库而改变。
 每次commit都会用用户名和邮箱纪录。
@@ -153,19 +155,22 @@ $ git config user.name "yangzl"
 $ 
 git config user.email "yangzl@asiainfo.com"
 
+// 或者设置本地项目库配置，进入到仓库的根目录下面执行就可以了
 git config user.name "newName"
 git config user.email "yangzl@asiainfo.com"
 
-修改用户名和邮箱地址：
-git config --global user.name "username"
-git config --global user.email "email"
 
+修改用户名和邮箱地址：设置全局
 git config --global user.name "your user name"
 git config --global user.email "your user email"
 
 
 参考
 cnblogs.com/sunshinekevin/p/11617547.html
+https://blog.csdn.net/cxq2111504104/article/details/102931136
+https://blog.csdn.net/diu_brother/article/details/51982993
+
+
 
 
 ---------------------------------------------------------------------------------------------------------------------

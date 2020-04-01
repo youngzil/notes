@@ -243,6 +243,10 @@ redefine /tmp/com/example/demo/arthas/user/UserController.class
 redefine -c 18b4aac2  /Users/yangzl/workspace/gateway/~/test/com/asiainfo/aifgw/security/zjauth/controller/AuthorizationController.class
 
 
+sc -d *AuthorizationController | grep classLoaderHash
+筛选出我们关注的类加载器哈希值。这里为什么有两个？一个是接口，一个是实现类。找到对应的类加载哈希：38af3868。
+
+
 
 案例: 热更新代码
 下面介绍通过jad/mc/redefine 命令实现动态更新代码的功能。
@@ -338,8 +342,7 @@ redefine error:XXX
 thread
 
 查看具体线程的栈
-查看线程ID 16的栈：
-thread 16
+查看线程ID 16的栈：thread 16
 
 查看CPU使用率top n线程的栈
 thread -n 3
