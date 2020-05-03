@@ -254,7 +254,7 @@ java内部类
   
 3.什么是线程死锁？如何避免线程死锁？如何加一个线程死锁检查机制？  
   
-Throwable、Error、Exception、RuntimeException 区别和联系各是什么？  
+Throwable、Error、Exception、RuntimeException 区别和联系各是什么  
 checked exception 和 unchecked exception的区别是什么？  
 volatile的特性是什么？ 可以完美解决多线程同步问题吗？  
 threadlocal有什么用？ 多线程使用有什么需要注意的地方？ 使用完后为什么要remove？  
@@ -655,11 +655,11 @@ RuntimeException
 当试图将对象强制转换为不是实例的子类时，抛出该异常（ClassCastException)  
 指示索引或者为负，或者超出字符串的大小，抛出StringIndexOutOfBoundsException异常  
   
+
+
   
 Throwable、Error、Exception、RuntimeException 区别和联系各是什么  
-http://blog.csdn.net/liuj2511981/article/details/8524418  
-http://blog.csdn.net/kingzone_2008/article/details/8535287  
-http://blog.csdn.net/kwu_ganymede/article/details/51382461  
+
 1.Throwable类是 Java 语言中所有错误或异常的超类。它的两个子类是Error和Exception；  
 2.Error是Throwable 的子类，用于指示合理的应用程序不应该试图捕获的严重问题。  
 3.Exception类及其子类是 Throwable 的一种形式，它指出了合理的应用程序想要捕获的条件  
@@ -681,9 +681,37 @@ Java 中定义了两类异常：
 您应该知道的是Java 提供了两种Exception 的模式，一种是执行的时候所产生的Exception (Runtime Exception)，另外一种则是受控制的Exception (Checked Exception)。  
 　　所有的Checked Exception 均从java.lang.Exception 继承而来，而Runtime Exception 则继承java.lang.RuntimeException 或java.lang.Error (实际上java.lang.RuntimeException 的上一层也是java.lang.Exception)。  
    
+   
  因此从程序的运作机制上看，Runtime Exception与Checked Exception 不一样，然而从逻辑上看，Runtime Exception 与Checked Exception 在使用的目的上也不一样。  
 　　一般而言，Checked Exception 表示这个Exception 必须要被处理，也就是说程序设计者应该已经知道可能会收到某个Exception(因为要try catch住) ，所以程序设计者应该能针对这些不同的Checked Exception 做出不同的处理。  
 　　而Runtime Exception 通常会暗示着程序上的错误，这种错误会导致程序设计者无法处理，而造成程序无法继续执行下去。  
+
+
+
+讲一下 RunTimeException 的造成的原因「非检查型异常」，并说一下为什么不处理 RunTimeException？
+RuntimeException是Exception子类。而Exception还有其它类型的异常，我们统一称为非Runtime异常。
+RuntimeException的特点是非检查型异常，也就是Java系统中允许可以不被catch，在运行时抛出。而其它定非运行时异常如果抛出的话必须显示的catch，否则编译不过。
+
+RuntimeException常见异常：
+1 NullPointerException，空指针异常。
+2 NumberFormatException，字符串转化成数字时。
+3 ArrayIndexOutOfBoundsException， 数组越界时。
+4 StringIndexOutOfBoundsException， 字符串越界时。
+5 ClassCastException，类型转换时。
+6 UnsupportedOperationException，该操作不支持，一般子类不实现父类的某些方法时。
+7 ArithmeticException，零作为除数等。
+8 IllegalArgumentException，表明传递了一个不合法或不正确的参数
+
+运行时出现错误，说明你的代码有问题，程序已经无法继续运行，所以对RuntimeException的处理时不必要的。之所以不处理，目的就是要是程序停止，修正代码。
+
+
+
+
+参考
+http://blog.csdn.net/liuj2511981/article/details/8524418  
+http://blog.csdn.net/kingzone_2008/article/details/8535287  
+http://blog.csdn.net/kwu_ganymede/article/details/51382461  
+
   
   
 ---------------------------------------------------------------------------------------------------------------------  

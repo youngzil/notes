@@ -1,10 +1,33 @@
+IDEA官网
+IDEA插件中心
+IDEA主题样式
+idea配置所在路径
+IDEA问题解决参考
+代码格式化模板
+IDEA快捷键参考
+
+
+IDEA插件.md
+IDEA注释配置.md
+Mac下IntelliJ IDEA快捷键大全.md
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+IDEA官网
 IntelliJ IDEA
 https://www.jetbrains.com/
 官网https://www.jetbrains.com/idea/
 官方文档https://www.jetbrains.com/idea/documentation/
 下载地址：https://www.jetbrains.com/idea/download/
 
-IDEA 插件中心：http://plugins.jetbrains.com/
+IDEA插件中心：http://plugins.jetbrains.com/
 
 https://www.oschina.net/p/intellij+idea
 
@@ -22,16 +45,20 @@ Plugins: ~/Library/Application Support/IdeaIC13
 Logs: ~/Library/Logs/IdeaIC13
 
 
-IDEA学习参考
+IDEA问题解决参考
 https://blog.csdn.net/heatdeath/article/category/7325258
 
 
-代码格式化
+代码格式化模板
 https://github.com/krasa/EclipseCodeFormatter
 https://github.com/alibaba/p3c
 https://github.com/google/google-java-format
 https://github.com/google/styleguide
 
 
+
+
+IDEA快捷键参考
+https://mp.weixin.qq.com/s/4UDT7J-_vpgSciYr_TZPWA
 
 
