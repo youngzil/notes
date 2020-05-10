@@ -17,11 +17,13 @@ Oxygen	http://download.eclipse.org/releases/oxygen	Enabled
 8、配置Tomcat
 9、JUint（Eclipse自带）
 10、TestNG：Eclipse Marketplace 或者 http://beust.com/eclipse
-11、安装findBugs
+11、安装FindBugs
 	安装指引：http://findbugs.cs.umd.edu/eclipse/
 	官方发布的http://findbugs.cs.umd.edu/eclipse
 	候选版本和正式版本的http://findbugs.cs.umd.edu/eclipse-candidate
 	所有版本的http://findbugs.cs.umd.edu/eclipse-daily，包括开发版本
+	参考
+	http://blog.csdn.net/xlxxcc/article/details/52056732
 12、阿里Java代码规约检查插件P3C：https://p3c.alibaba.com/plugin/eclipse/update
 13、EasyShell：Eclipse Marketplace
 14、ShellEd：使用zip包安装的方式，先安装下面2个依赖插件
@@ -36,9 +38,11 @@ Oxygen	http://download.eclipse.org/releases/oxygen	Enabled
 -javaagent:/Users/yangzl/mysoft/lombok/lombok-1.18.0.jar
 16、idea 插件：JRebel和JProfiler，idea自带的jvm Profiler 是async-profiler，有些人在IDEA中配置了JRebel热部署，要想JRebel和JProfiler同时运行，就要改手动管理JProfiler session了。
 
-17、
-18、
-19、
+17、Gradle
+18、安装C++
+    参考
+    http://blog.csdn.net/yuanguangyu1221/article/details/50564017
+19、Sonar
 20、
 21、
 22、
