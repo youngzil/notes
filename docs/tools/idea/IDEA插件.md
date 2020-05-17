@@ -1,3 +1,8 @@
+
+Key Promoter X 是一个提示插件，当你在IDEA里面使用鼠标的时候，如果这个鼠标操作是能够用快捷键替代的，那么Key Promoter X会弹出一个提示框，告知你这个鼠标操作可以用什么快捷键替代。对于想完全使用快捷键在IDEA的，这个插件就很有用。
+
+
+
 代码检查相关
 Alibaba Java Coding Guidelines - 阿里巴巴Java开发规约
 Findbugs

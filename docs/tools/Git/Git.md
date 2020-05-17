@@ -30,6 +30,19 @@ https://blog.csdn.net/taiyangdao/article/details/78484623
 
 ---------------------------------------------------------------------------------------------------------------------
 
+Git分支管理规范：Git-flow方式
+Git-flow工具：Sourcetree、IDEA插件（Git Flow Integration、GitToolBox、Git Commit Template）
+Git提交注释规范：<type>(<scope>): <subject> // 提交消息头Message header 
+
+
+
+
+
+Git提交注释日志规范
+细节见：https://www.jianshu.com/p/d0ba3c2b678d
+最广泛的 angular 规范 ，大家可以瞻仰下：  https://github.com/angular/angular/commits/master
+
+
 
 
 

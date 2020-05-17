@@ -152,17 +152,16 @@ $ git config user.name
 $ git config user.email
 
 $ git config user.name "yangzl"
-$ 
-git config user.email "yangzl@asiainfo.com"
+git config user.email "youngzil@163.com"
 
 // 或者设置本地项目库配置，进入到仓库的根目录下面执行就可以了
-git config user.name "newName"
-git config user.email "yangzl@asiainfo.com"
+git config user.name "yangzl"
+git config user.email "youngzil@163.com"
 
 
 修改用户名和邮箱地址：设置全局
-git config --global user.name "your user name"
-git config --global user.email "your user email"
+git config --global user.name "yangzl"
+git config --global user.email "youngzil@163.com"
 
 
 参考
