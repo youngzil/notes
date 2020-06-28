@@ -7,7 +7,7 @@
   § git pull
   § git push
 5、Git恢复之前版本的两种方法reset、revert
-6、
+6、Git仓库分支(Branch)和标签(Tag)
 7、
 8、
 9、
@@ -151,7 +151,8 @@ github的contributions统计就是按邮箱来统计的。
 $ git config user.name
 $ git config user.email
 
-$ git config user.name "yangzl"
+$ 
+git config user.name "yangzl"
 git config user.email "youngzil@163.com"
 
 // 或者设置本地项目库配置，进入到仓库的根目录下面执行就可以了
@@ -535,8 +536,81 @@ https://blog.csdn.net/yxlshk/article/details/79944535
 
 
 ---------------------------------------------------------------------------------------------------------------------
+Git仓库分支(Branch)和标签(Tag)
+
+标签(Tag)也是属于仓库Repository的
 
 
+
+一、tag 标签使用方法
+
+1. 列出标签
+# git tag #     //在控制台打印出当前仓库的所有标签
+# git tag -l ‘v0.1.*’ #   //搜索符合模式的标签
+
+
+2 打标签
+客户端上操作：
+# git clone http://admin@ald8.cn:8080/r/ald8.git    //先连接下载分支
+# git checkout master      //切到master
+# git tag v1.00 440376 -m "20190424第一版"           //tag  自定义版本标识  版本id号  -m "备注“
+
+
+3. 切换标签（这个适用于代码回滚或切换到指定标签版本） 
+git checkout [tagname]  //与切换分支命令相同
+# git checkout V1.02     //当前目录全部代码切换到V1.02时的代码  
+
+
+4. 删除标签
+客户端上操作：
+# git tag  -d v1.00         //删除本地标签
+# git push origin  :v1.00   //删除git服务器上的标签
+
+
+5. 标签发布
+# git push origin V1.00      //将V1.00标签提交到git服务器
+# git push origin --tags #   //将本地所有标签一次性提交到git服务器
+
+
+
+二、发布和回滚
+
+代码第一次上线发布做版本标签
+# git tag v1.00 440376 -m "20190424第一版"  //打标签
+#  git push origin V1.00   //标签发布
+# git checkout v1.00       //开始切换版本到v1.00，文件结构会自动更新
+
+
+第二次上线发布做版本标签git tag V1.01
+[root@ald8 www]# cd /data/www/ald8   
+[root@ald8 ald8]# git tag v1.01 0a7e9f -m "	20190430"  //打标签
+[root@ald8 ald8]#  git push origin v1.01   //标签发布
+[root@ald8 ald8]# cp -rp ald8 ald8.v1.00   //切换版本时先备份，可以应急手动快速回滚第一个版本
+[root@ald8 ald8]# git checkout v1.01       //开始切换版本到v1.01，文件结构会自动更新
+Previous HEAD position was 440376f... Initial commit
+HEAD is now at 0a7e9fc... 111
+
+
+假如第二次发布的版本发现有bug，需要快速回滚到第一版本，这里有两种方式
+A . 删除备当前版本目录文件ald8，再将第一版的备份文件ald8.v1.00改名成ald8即可.
+[root@ald8 /]# rm /data/www/ald8 -rf 
+[root@ald8 /]# mv /data/www/ald8.v1.00 /data/www/ald8
+
+B. 使用git切换版本的功能，直接执行切换命令即可
+[root@ald8 /]# cd /data/www/ald8
+[root@ald8 ald8]# git checkout v1.00
+Previous HEAD position was 0a7e9fc... 111
+HEAD is now at 440376f... Initial commit
+这样就完成了版本的回滚。
+
+
+
+
+参考
+https://blog.csdn.net/iprettydeveloper/article/details/53944125
+https://blog.csdn.net/cbuy888/article/details/89497440
+https://www.cnblogs.com/senlinyang/p/8527764.html
+https://blog.csdn.net/jdsjlzx/article/details/98654951
 
 
 ---------------------------------------------------------------------------------------------------------------------
