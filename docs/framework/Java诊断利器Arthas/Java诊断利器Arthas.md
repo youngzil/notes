@@ -12,7 +12,7 @@
 12、理解Spring Boot应用的ClassLoader结构
 13、Web Console：Arthas支持通过Web Socket来连接。
 14、arthas-boot支持的参数
-
+15、watch使用示例
 
 
 
@@ -886,3 +886,41 @@ java -jar arthas-boot.jar --telnet-port 9999 --http-port -1
 java -jar arthas-boot.jar -v
 
 CONTINUE
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+https://alibaba.github.io/arthas/watch.html
+
+
+观察方法出参和返回值
+watch demo.MathGame primeFactors "{params,returnObj}" -x 2
+
+观察方法入参
+watch demo.MathGame primeFactors "{params,returnObj}" -x 2 -b
+
+同时观察方法调用前和方法返回后
+watch demo.MathGame primeFactors "{params,target,returnObj}" -x 2 -b -s -n 2
+
+调整-x的值，观察具体的方法参数值
+watch demo.MathGame primeFactors "{params,target}" -x 3
+
+观察异常信息的例子
+watch demo.MathGame primeFactors "{params[0],throwExp}" -e -x 2
+
+
+
+条件表达式的例子
+watch demo.MathGame primeFactors "{params[0],target}" "params[0]<0"
+
+按照耗时进行过滤
+$ watch demo.MathGame primeFactors '{params, returnObj}' '#cost>200' -x 2
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
