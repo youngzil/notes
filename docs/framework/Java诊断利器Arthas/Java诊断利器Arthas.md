@@ -248,6 +248,13 @@ sc -d *AuthorizationController | grep classLoaderHash
 
 
 
+sc -d *ApiUserController | grep classLoaderHash
+redefine -c 135fbaa4  /app/app/ApiUserController.class
+watch com.asiainfo.aifgw.dev.controller.ApiUserController oprLogin "{params,returnObj}" -x 2 -b
+
+
+
+
 案例: 热更新代码
 下面介绍通过jad/mc/redefine 命令实现动态更新代码的功能。
 目前，访问 http://localhost/user/0 ，会返回500异常：
@@ -292,6 +299,7 @@ $ redefine /tmp/com/example/demo/arthas/user/UserController.class
 redefine success, size: 1
 热修改代码结果
 redefine -c 1be6f5c3  /tmp/com/example/demo/arthas/user/UserController.class
+
 
 redefine成功之后，再次访问 https://2886795307-80-ollie08.environments.katacoda.com/user/0 ，结果是：
 {
@@ -470,6 +478,7 @@ curl http://localhost/user/0
 在Arthas里执行：
 
 watch com.example.demo.arthas.user.UserController * '{params, throwExp}'
+
 
 第一个参数是类名，支持通配
 第二个参数是函数名，支持通配
@@ -898,6 +907,8 @@ watch demo.MathGame primeFactors "{params,returnObj}" -x 2
 
 观察方法入参
 watch demo.MathGame primeFactors "{params,returnObj}" -x 2 -b
+watch com.asiainfo.aifgw.common.controller.PictureCheckCodeController getVerify "{params,returnObj}" -x 2 -b
+watch com.asiainfo.aifgw.dev.controller.ApiUserController oprLogin "{params,returnObj}" -x 2 -b
 
 同时观察方法调用前和方法返回后
 watch demo.MathGame primeFactors "{params,target,returnObj}" -x 2 -b -s -n 2
