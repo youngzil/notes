@@ -15,6 +15,8 @@ https://github.com/hsz/idea-gitignore
 https://github.com/github/gitignore
 
 
+
+
 https://www.gitbook.com/
 https://github.com/GitbookIO/gitbook
 
@@ -36,13 +38,19 @@ Git提交注释规范：<type>(<scope>): <subject> // 提交消息头Message hea
 
 
 
-
-
 Git提交注释日志规范
 细节见：https://www.jianshu.com/p/d0ba3c2b678d
 最广泛的 angular 规范 ，大家可以瞻仰下：  https://github.com/angular/angular/commits/master
 
+如何规范你的Git commit？
+https://developer.aliyun.com/article/770277
 
+
+
+IDEA插件
+GitToolBox
+Git Flow Integration
+Git Commit Template
 
 
 
