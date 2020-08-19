@@ -54,7 +54,19 @@ Git Commit Template
 
 
 
+---------------------------------------------------------------------------------------------------------------------
 
 
+git报错
+LFS upload missing objects, tried manually uploading
+
+git lfs fetch --all
+git lfs push --all origin master
+git config -f .lfsconfig lfs.url https://github.com/youngzil/notes.git/info/lfs
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
 
 
