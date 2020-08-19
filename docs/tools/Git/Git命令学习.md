@@ -9,7 +9,7 @@
 5、Git恢复之前版本的两种方法reset、revert
 6、Git仓库分支(Branch)和标签(Tag)
 7、Git撤销中间某次提交
-8、
+8、Git推送tag到服务端
 9、
 10、
 
@@ -637,6 +637,36 @@ https://blog.csdn.net/jdsjlzx/article/details/98654951
 
 
 ---------------------------------------------------------------------------------------------------------------------
+Git推送tag到服务端
+
+
+1.push单个tag推送
+git push origin [tagname]
+
+2.push所有tag
+git push --tags
+或
+git push origin --tags
+
+ 
+很早之前，我们就提到过用git tag来给工程打上标签，但是这个命令只是在本地仓库打标签而已，
+
+为了能把标签同步到远程服务器，我们可以这样做：
+
+默认情况下，git push并不会把tag标签传送到远端服务器上，只有通过显式命令才能分享标签到远端仓库。
+1.push单个tag，命令格式为：git push origin [tagname]
+例如：
+git push origin v1.0 #将本地v1.0的tag推送到远端服务器
+
+
+2.push所有tag，命令格式为：git push [origin] --tags
+例如：
+git push --tags
+或
+git push origin --tags
+
+以上命令经检验通过，如果不起作用，请在Git控制台上确认你的账号是否有权限推送Tag。这一点很重要，因为这个原因，我有过一段时间很抓狂。
+
 
 
 
