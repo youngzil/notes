@@ -19,11 +19,32 @@
 ---------------------------------------------------------------------------------------------------------------------
 基本介绍和命令
 
+Java 线上诊断工具 Arthas
+Arthas是阿里巴巴 2018 年 9 月开源的一款 Java 线上诊断工具。
+Arthas 支持 JDK 6+，支持 Linux/Mac/Windows，采用命令行交互模式，同时提供丰富的 Tab 自动补全功能，进一步方便进行问题的定位和诊断。
+
 Alibaba Java Diagnostic Tool Arthas/Alibaba Java诊断利器Arthas 
 
 https://github.com/alibaba/arthas
 https://alibaba.github.io/arthas/
 https://github.com/alibaba/arthas/blob/master/README_CN.md
+
+基础教程： 
+https://alibaba.github.io/arthas/arthas-tutorials?language=cn&id=arthas-basics
+
+进阶教程： 
+https://alibaba.github.io/arthas/arthas-tutorials?language=cn&id=arthas-advanced
+
+
+
+工具的使用场景：
+这个类从哪个 jar 包加载的？为什么会报各种类相关的 Exception？
+我改的代码为什么没有执行到？难道是我没 commit？分支搞错了？
+遇到问题无法在线上 debug，难道只能通过加日志再重新发布吗？
+线上遇到某个用户的数据处理有问题，但线上同样无法 debug，线下无法重现！
+是否有一个全局视角来查看系统的运行状况？
+有什么办法可以监控到 JVM 的实时运行状态？
+
 
 
 使用as.sh脚本需要安装telnet

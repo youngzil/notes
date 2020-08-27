@@ -57,6 +57,30 @@ IPv6有3种表示方法:
 
 
 
+二、JAVA正则表达式区分IPv4和IPv6地址
+
+输入数据合法格式：
+
+IPv4:唯一标准格式 -> 0-255.0-255.0-255.0-255
+
+IPv6: 标  准  格  式 -> abcd:abcd:abcd:abcd:abcd:abcd:abcd:abcd   标准IPv6地址一共（8*4 + 7）  个字符
+
+IPv6  压  缩  格  式 -> abcd::abcd:abcd:abcd:abcd
+                       ::abcd:abcd:abcd
+                       abcd:abcd:abcd:abcd:abcd::
+                       ::1
+                       ::
+
+IPv6压缩规则：至少两个全0块才可以压缩，并且只能压缩一次，存在多个全0块优先压缩更长的全0块；
+
+
+
+JAVA正则表达式区分IPv4和IPv6地址
+https://blog.csdn.net/bokerr/article/details/83508415
+/Users/yangzl/git/quickstart-framework/quickstart-javase/src/test/java/org/quickstart/javase/jdk/io/JudgeIpAddress.java
+
+
+
 
 参考
 https://blog.csdn.net/chao199512/article/details/86139714
