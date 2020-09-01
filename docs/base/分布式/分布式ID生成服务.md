@@ -164,6 +164,7 @@ https://www.iteye.com/blog/uule-2420466
 https://mp.weixin.qq.com/s?__biz=MzAxNjM2MTk0Ng==&mid=2247489245&idx=3&sn=0205f0fd8c9aa03fc8d84b4f3a176b57&scene=21#wechat_redirect  
   
   
+  
 
 Twitter的snowflake雪花算法
 最新的
@@ -172,6 +173,13 @@ https://github.com/twitter/twitter-server
 
 老的2010版本，已经淘汰了Snowflake的初始版本，已经迁移到twitter-server项目了
 https://github.com/twitter-archive/snowflake/releases
+
+参考
+https://www.kutu66.com/GitHub/article_103050
+https://github.com/zhongxunking/idcenter
+
+
+
 
 
 
