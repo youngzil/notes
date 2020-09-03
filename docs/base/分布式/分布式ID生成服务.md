@@ -19,7 +19,6 @@
 
 
 ---------------------------------------------------------------------------------------------------------------------
-https://yq.aliyun.com/articles/648038
 https://www.jianshu.com/p/9d7ebe37215e
 https://tech.meituan.com/2017/04/21/mt-leaf.html
 https://www.cnblogs.com/haoxinyue/p/5208136.html
@@ -38,7 +37,7 @@ https://mp.weixin.qq.com/s?__biz=MzAxNjM2MTk0Ng==&mid=2247489245&idx=3&sn=0205f0
 
 
 
-www.toutiao.com/i6682672464708764174
+www.toutiao.com/i6682672464708764174  
 分布式ID的生成方案
 
 唯一ID的特性：
@@ -174,9 +173,10 @@ https://github.com/twitter/twitter-server
 老的2010版本，已经淘汰了Snowflake的初始版本，已经迁移到twitter-server项目了
 https://github.com/twitter-archive/snowflake/releases
 
-参考
-https://www.kutu66.com/GitHub/article_103050
-https://github.com/zhongxunking/idcenter
+参考  
+https://www.kutu66.com/GitHub/article_103050  
+https://github.com/zhongxunking/idcenter  
+https://cloud.tencent.com/developer/article/1533454  
 
 
 

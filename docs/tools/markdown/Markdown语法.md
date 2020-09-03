@@ -10,6 +10,7 @@ http://xianbai.me/learn-md/article/extension/table.html
 #####h5级标题
 ######h6级标题
 
+
 <h1 id="user-content-锚点">锚点1级</h1>
 <h2 id="user-content-锚点">锚点2级</h2>
 <h3 id="user-content-锚点">锚点3级</h3>
@@ -18,6 +19,12 @@ http://xianbai.me/learn-md/article/extension/table.html
 <h6 id="user-content-锚点">锚点6级</h6>
 <h7 id="user-content-锚点">锚点7级</h7>
 <h8 id="user-content-锚点">锚点8级，可见7、8级都被忽略了</h8>
+
+- [测试](#测试)
+### <a id="测试">测试</a>
+### <a href="#测试2">测试2</a>
+
+
 
 
 
