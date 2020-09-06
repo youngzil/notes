@@ -46,7 +46,7 @@ https://my.oschina.net/wsxiao/blog/1648996
 1、反向代理Nginx
 2、Jquery的jsonp方式请求：需要自己写脚本发起请求，然后写个回调函数处理数据
 3、CROS：前端会有预检请求，后端要有CORSFilter
-参考
+参考《》
 /Users/yangzl/git/quickstart-http/docs/CORS跨域请求.md
 
 

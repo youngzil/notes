@@ -105,13 +105,11 @@ kafka架构内部原理
 
 ---------------------------------------------------------------------------------------------------------------------  
 
-
-/Users/yangzl/git/quickstart-mq/docs  
-/Users/yangzl/git/quickstart-mq/doc/消息分类.md    
-/Users/yangzl/git/quickstart-mq/quickstart-activemq/doc/ActiveMQ学习.md    
-/Users/yangzl/git/quickstart-mq/quickstart-rocketmq/doc/RocketMQ学习.md    
-/Users/yangzl/git/quickstart-mq/quickstart-kafka/doc/Kafka学习.md    
-  
+参考  
+[消息分类](https://github.com/youngzil/quickstart-mq/blob/master/docs/消息分类.md)  
+[ActiveMQ学习](https://github.com/youngzil/quickstart-mq/blob/master/quickstart-activemq/docs/ActiveMQ学习.md)  
+[RocketMQ学习](https://github.com/youngzil/quickstart-mq/blob/master/quickstart-rocketmq/docs/RocketMQ学习.md)  
+[Kafka学习](https://github.com/youngzil/quickstart-mq/blob/master/quickstart-kafka/docs/Kafka学习.md)  
 
 
 Rocketmq原理  
