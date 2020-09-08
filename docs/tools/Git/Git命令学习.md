@@ -640,6 +640,14 @@ https://blog.csdn.net/jdsjlzx/article/details/98654951
 Git推送tag到服务端
 
 
+
+将tag同步到远程服务器
+git push origin v1.0
+
+推送所有：
+git push origin --tags
+
+
 1.push单个tag推送
 git push origin [tagname]
 
@@ -669,6 +677,32 @@ git push origin --tags
 
 
 
+创建Tag
+git tag -a tagName -m "my tag"
+
+给指定的某个commit号加tag
+git tag -a v1.2 9fceb02 -m "my tag"
+
+
+列出已有的tag
+git tag
+
+
+git删除tag
+git tag -d tagName 删除tag
+git push origin :refs/tags/tagName  删除远程
+git push origin :refs/tags/2020-09-07-RELEASE  删除远程
+
+
+tag重命名：先根据已有的tag创建一个新的tag推送到服务器，再删除
+
+把【2020-09-07-RELEASE4】重命名为【v20200907-RELEASE】
+
+git tag v20200907-RELEASE 2020-09-07-RELEASE4
+git push origin v20200907-RELEASE
+
+git tag -d 2020-09-07-RELEASE4
+git push origin :refs/tags/2020-09-07-RELEASE4
 
 
 ---------------------------------------------------------------------------------------------------------------------
