@@ -1,28 +1,22 @@
-shadowsocks官网地址
-VPS搭建Shadowsocks（ss）教程
-
-
-
-
-
+- [shadowsocks官网地址](#shadowsocks官网地址)
+- [VPS搭建Shadowsocks（ss）教程](#VPS搭建Shadowsocks)
 
 ---------------------------------------------------------------------------------------------------------------------
-shadowsocks官网地址
+## shadowsocks官网地址  
 
-https://shadowsocks.org/en/index.html
-https://github.com/shadowsocks
+[shadowsocks官网](https://shadowsocks.org/en/index.html)  
+[shadowsocks Github](https://github.com/shadowsocks)  
 
 
-客户端下载链接（GitHub）：
-安卓：shadowsocks-android
-Win：shadowsocks-windows
-Mac：ShadowsocksX-NG-R
-https://github.com/shadowsocks/ShadowsocksX-NG
-https://github.com/shadowsocks/shadowsocks-windows
-https://github.com/shadowsocks/shadowsocks-android
-
+客户端下载链接（GitHub）：  
+[Mac客户端](https://github.com/shadowsocks/ShadowsocksX-NG)  
+[Win客户端](https://github.com/shadowsocks/shadowsocks-windows)  
+[Android客户端](https://github.com/shadowsocks/shadowsocks-android)  
 
 ---------------------------------------------------------------------------------------------------------------------
+## VPS搭建Shadowsocks
+
+
 VPS搭建Shadowsocks（ss）教程
 
 
@@ -77,10 +71,13 @@ chmod +x shadowsocks.sh
 
 首先，我们把配置信息准备好（# 开头的是注释，不要复制进去），把下面的代码复制到记事本中，按要求把 "port_password"{……} 中的端口和密码改为自己需要的。
 
+```
 # 1.先设置好端口和对应的密码
 # 2.添加或删除的用户都在 "port_password"{……} 中
 # 3.用户信息格式，注意末尾的英文逗号："端口"："密码",  如 "8006": "123456",
 # 4."method" 为加密方式，可修改，默认也可以，客户端的加密方式也是这个
+```
+
 {
     "server":"0.0.0.0",
     "local_address":"127.0.0.1",
@@ -133,19 +130,15 @@ vi /etc/shadowsocks.json
 四、使用
 下面只要下载客户端连接就行了。包含 win、mac 和 安卓客户端。（IOS 需要在商店中安装）
 
-客户端下载链接（GitHub）：
-安卓：shadowsocks-android
-Win：shadowsocks-windows
-Mac：ShadowsocksX-NG-R
-https://github.com/shadowsocks/ShadowsocksX-NG
-https://github.com/shadowsocks/shadowsocks-windows
-https://github.com/shadowsocks/shadowsocks-android
+客户端下载链接（GitHub）：  
+[Mac客户端](https://github.com/shadowsocks/ShadowsocksX-NG)  
+[Win客户端](https://github.com/shadowsocks/shadowsocks-windows)  
+[Android客户端](https://github.com/shadowsocks/shadowsocks-android)  
 
 
 
-参考
-https://medium.com/@jackme256/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-vultr-vps-%E6%90%AD%E5%BB%BA-shadowsocks-ss-%E6%95%99%E7%A8%8B-%E6%96%B0%E6%89%8B%E5%90%91-968613081aae
 
 
+参考[Vultr VPS 搭建 Shadowsocks（ss）教程（新手向）](https://medium.com/@jackme256/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-vultr-vps-%E6%90%AD%E5%BB%BA-shadowsocks-ss-%E6%95%99%E7%A8%8B-%E6%96%B0%E6%89%8B%E5%90%91-968613081aae)  
 
 ---------------------------------------------------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 《Effective Java中文版》
-
+《Effective Java》
 
 本书的源代码
 https://github.com/jbloch/effective-java-3e-source-code
