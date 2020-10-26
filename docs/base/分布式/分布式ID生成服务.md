@@ -1,12 +1,20 @@
+- [分布式ID的生成方案](#分布式ID的生成方案)
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+## 分布式ID的生成方案
+
 分布式ID的生成方案：分段
-1. 数据库自增长序列或字段
-2. Redis生成ID：可以用Redis的原子操作 INCR和INCRBY来实现。
-3. UUID
-4. Twitter的snowflake雪花算法
-5、其他框架
-美团 Leaf
-滴滴 Tinyid
-百度 UidGenerator
+1. 数据库自增长序列或字段：第一种方案仍然还是基于数据库的自增ID，需要单独使用一个数据库实例，在这个实例中新建一个单独的表
+2. 号段模式：我们可以使用号段的方式来获取自增ID，号段可以理解成批量获取，比如DistributIdService从数据库获取ID时，如果能批量获取多个ID并缓存在本地的话，那样将大大提供业务应用获取ID的效率。
+3. Redis生成ID：可以用Redis的原子操作 INCR和INCRBY来实现，可以利用Redis中的incr命令来实现原子性的自增与返回
+4. UUID
+5. Twitter的snowflake雪花算法：snowflake是twitter开源的分布式ID生成算法，是一种算法，所以它和上面的三种生成分布式ID机制不太一样，它不依赖数据库。核心思想是：分布式ID固定是一个long型的数字，一个long型占8个字节，也就是64个bit，原始snowflake算法中对于bit的分配如下图
+6. 其他框架  
+    [百度（uid-generator）](https://github.com/baidu/uid-generator/blob/master/README.zh_cn.md) ：uid-generator使用的就是snowflake，只是在生产机器id，也叫做workId时有所不同。  
+    [美团（Leaf）](https://github.com/Meituan-Dianping/Leaf) ：美团的Leaf也是一个分布式ID生成框架。它非常全面，即支持号段模式，也支持snowflake模式。  
+    [滴滴Tinyid](https://github.com/didi/tinyid/wiki)  
 
 
 分布式ID：
@@ -16,6 +24,13 @@
 4、CenterCode+AppCode+使用Redis的原子操作 INCR和INCRBY，
 5、类snowflake方案：这种方案生成一个64bit的数字，64bit被划分成多个段，分别表示时间戳、机器编码、序号。 
 6、TDDL序列生成方式：按应用进行每次一个步长的增长，步长变动可以使用Zookeeper来通知
+
+
+
+参考  
+[大型互联网公司分布式ID方案总结](https://juejin.im/post/6844903935296176141)
+
+
 
 
 ---------------------------------------------------------------------------------------------------------------------

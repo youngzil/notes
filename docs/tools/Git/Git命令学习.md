@@ -574,12 +574,12 @@ Git仓库分支(Branch)和标签(Tag)
 
 2 打标签
 客户端上操作：
-# git clone http://admin@ald8.cn:8080/r/ald8.git    //先连接下载分支
-# git checkout master      //切到master
-# git tag v1.00 440376 -m "20190424第一版"           //tag  自定义版本标识  版本id号  -m "备注“
+#git clone http://admin@ald8.cn:8080/r/ald8.git  //先连接下载分支
+# git checkout master   //切到master
+# git tag v1.00440376 -m "20190424第一版"     //tag 自定义版本标识 版本id号 -m "备注“
 
 
-3. 切换标签（这个适用于代码回滚或切换到指定标签版本） 
+3. 切换标签（这个适用于代码回滚或切换到指定标签版本）
 git checkout [tagname]  //与切换分支命令相同
 # git checkout V1.02     //当前目录全部代码切换到V1.02时的代码  
 
@@ -606,7 +606,7 @@ git checkout [tagname]  //与切换分支命令相同
 
 第二次上线发布做版本标签git tag V1.01
 [root@ald8 www]# cd /data/www/ald8   
-[root@ald8 ald8]# git tag v1.01 0a7e9f -m "	20190430"  //打标签
+[root@ald8 ald8]# git tag v1.010a7e9f -m "	20190430" //打标签
 [root@ald8 ald8]#  git push origin v1.01   //标签发布
 [root@ald8 ald8]# cp -rp ald8 ald8.v1.00   //切换版本时先备份，可以应急手动快速回滚第一个版本
 [root@ald8 ald8]# git checkout v1.01       //开始切换版本到v1.01，文件结构会自动更新

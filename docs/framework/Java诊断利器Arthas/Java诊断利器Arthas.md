@@ -75,6 +75,8 @@ sh as.sh
 或者
 java -jar arthas-boot.jar --target-ip 0.0.0.0
 
+/app/jdk/bin/java -jar arthas-boot.jar --target-ip 0.0.0.0
+
 
 打印帮助信息：
 help
@@ -923,8 +925,24 @@ CONTINUE
 https://alibaba.github.io/arthas/watch.html
 
 
+
+安装并启动
+sh install-local.sh
+
+启动
+sh as.sh 
+或者
+java -jar arthas-boot.jar --target-ip 0.0.0.0
+
+/app/jdk/bin/java -jar arthas-boot.jar --target-ip 0.0.0.0
+
+
+
 观察方法出参和返回值
 watch demo.MathGame primeFactors "{params,returnObj}" -x 2
+
+
+watch com.asiainfo.aifgw.common.util.PoUtil xml2pojo "{params,returnObj}" -x 2
 
 观察方法入参
 watch demo.MathGame primeFactors "{params,returnObj}" -x 2 -b
