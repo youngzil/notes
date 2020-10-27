@@ -1,7 +1,9 @@
-官网https://GetLantern.org
+[Lantern官网](https://GetLantern.org)  
+[Lantern Github](https://github.com/getlantern/lantern)  
+[Lantern下载](https://github.com/getlantern/download)
 
-https://github.com/getlantern/lantern
-https://github.com/getlantern/download
+
+
 
 
 

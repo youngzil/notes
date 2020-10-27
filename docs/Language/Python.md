@@ -1,7 +1,6 @@
-https://github.com/youngzil/quickstart-python  
-  
-  
-  
+
+参考  
+[quickstart-python](https://github.com/youngzil/quickstart-python)
 ---------------------------------------------------------------------------------------------------------------------  
   
 1、Python+自动化运维  

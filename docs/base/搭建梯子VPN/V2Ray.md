@@ -34,7 +34,7 @@ V2RayX 是一个基于 V2Ray 内核的 Mac OS X 客户端。用户可以通过�
 
 
 
-[Just My Socks 详细图文购买教程](https://justmysocks.xyz/justmysocks-v2ray/)，搬瓦工官方出品的代理服务  
+[Just My Socks 详细图文购买教程](https://justmysocks.xyz/justmysocks-v2ray/) ，搬瓦工官方出品的代理服务  
 
 
 Just My Socks配置讲解   
@@ -48,7 +48,7 @@ Just My Socks配置讲解
 
 
 ## V2Ray Server搭建
-
+[V2Ray新脚本安装服务器](http://loonlog.com/2020/10/5/v2ray-server-new/)  
 [V2Ray一键安装脚本](https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC)  
 [如何搭建一个 V2Ray Server](https://blog.huangyz.name/tech/2017/10/17/how-to-build-a-v1ray-vps.html)   
 [小白也可以搭建的V2Ray服务器安装教程](http://loonlog.com/2019/7/2/v2ray-vpn-fanqiang/)  

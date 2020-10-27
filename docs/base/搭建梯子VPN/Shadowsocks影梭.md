@@ -1,8 +1,8 @@
-- [shadowsocks官网地址](#shadowsocks官网地址)
+- [shadowsocks官网地址](#Shadowsocks官网地址)
 - [VPS搭建Shadowsocks（ss）教程](#VPS搭建Shadowsocks)
 
 ---------------------------------------------------------------------------------------------------------------------
-## shadowsocks官网地址  
+## Shadowsocks官网地址  
 
 [shadowsocks官网](https://shadowsocks.org/en/index.html)  
 [shadowsocks Github](https://github.com/shadowsocks)  
