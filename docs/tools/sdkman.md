@@ -6,12 +6,9 @@
 
 ---------------------------------------------------------------------------------------------------------------------
 
-官网
 
-
-https://sdkman.io/
-https://github.com/sdkman/sdkman-cli
-
+[SDKMAN官网](https://sdkman.io/)  
+[SDKMAN Github](https://github.com/sdkman/sdkman-cli)  
 
 
 
