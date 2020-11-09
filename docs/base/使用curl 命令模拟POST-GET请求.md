@@ -1,6 +1,10 @@
-https://github.com/curl/curl
-https://curl.haxx.se/
+[Curl官网](https://curl.haxx.se/)  
+[Curl Github](https://github.com/curl/curl)  
 
+
+A command line tool and library for transferring data with URL syntax, supporting HTTP, HTTPS, FTP, FTPS, GOPHER, TFTP, SCP, SFTP, SMB, TELNET, DICT, LDAP, LDAPS, MQTT, FILE, IMAP, SMTP, POP3, RTSP and RTMP. libcurl offers a myriad of powerful features
+
+命令行工具和库，用于使用URL语法传输数据，支持HTTP，HTTPS，FTP，FTPS，GOPHER，TFTP，SCP，SFTP，SMB，TELNET，DICT，LDAP，LDAPS，MQTT，FILE，IMAP，SMTP，POP3， RTSP和RTMP。 libcurl提供了许多强大的功能
 
 cURL是一个利用URL语法在命令行下工作的文件传输工具，1997年首次发行。它支持文件上传和下载，所以是综合传输工具，但按传统，习惯称cURL为下载工具。cURL还包含了用于程序开发的libcurl。
 

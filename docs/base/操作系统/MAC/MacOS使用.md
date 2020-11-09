@@ -56,7 +56,7 @@ https://support.apple.com/zh-cn/HT204895
 
 mac软件参考
 https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md
-
+https://wangchujiang.com/awesome-mac/index.zh.html
 
 
 

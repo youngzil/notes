@@ -1,7 +1,7 @@
 https://draveness.me/dsl
 领域专用语言(DSL)和通用编程语言(GPL)：
-领域专用语言（Domain Specific Language/DSL）
-通用编程语言（General Purpose Language/GPL）
+- 领域专用语言（Domain Specific Language/DSL）
+- 通用编程语言（General Purpose Language/GPL）
 
 
 DSL解释
