@@ -1,6 +1,4 @@
-ajax请求流程，ajax状态码，http状态码
-OSI七层与TCP/IP五层网络架构
-TCP/IP连接过程：三次握手四次挥手
+
 采用三次握手是：为了防止失效的连接请求报文段突然又传送到主机 B ，因而产生错误
 收到server的FIN之后会进入TIME_WAIT状态将持续2个MSL(Max Segment Lifetime)原因
 http连接过程（5步）：域名解析 --> 发起TCP的3次握手 --> 建立TCP连接后发起http请求 --> 服务器响应http请求，浏览器得到html代码 --> 浏览器解析html代码，并请求html代码中的资源（如js、css、图片等） --> 浏览器对页面进行渲染呈现给用户
@@ -16,12 +14,19 @@ https连接过程(5步)：+SSL层，过程是先非对称协商秘钥，然后�
 /Users/yangzl/git/quickstart-framework/quickstart-document/doc/base/加解密.md
 
 
-MTU 和 MSS 区别
 
 
-
+- [Ajax请求流程](#Ajax请求流程)
+- [AJAX状态码](#AJAX状态码)
+- [HTTP状态码](#HTTP状态码)
+- [OSI七层与TCP/IP五层网络架构详解](#OSI七层与TCP/IP五层网络架构详解)
+- [TCP/IP连接过程：三次握手四次挥手](#TCP/IP连接过程：三次握手四次挥手)
+- [](#)
+- [MTU和MSS区别](#MTU和MSS区别)
 
 ---------------------------------------------------------------------------------------------------------------------
+
+## Ajax请求流程
 
 xhr对象
   【Ajax发送请求】这件事情并不是一句话带过就可以的，在Ajax中对整个请求从创建到发送都有一套严格的标准流程。在Ajax规则中，“请求”从创建到被发送需要至少经历如下几个步骤：
@@ -31,7 +36,7 @@ xhr对象
   4.令xhr对象执行send()方法，发出请求
 
 
-AJAX状态码
+## AJAX状态码
 一共有5中请求状态，从0 到 4 发生变化。
 0: 请求未初始化
 1: 服务器连接已建立
@@ -47,7 +52,7 @@ AJAX状态码
 // 4: 请求已完成，且响应已就绪
 
 
-HTTP状态码
+## HTTP状态码
 // status值说明
 // 200:成功
 // 404:没有发现文件、查询或URl
@@ -68,7 +73,7 @@ readyState属性
 
 
 
-OSI七层与TCP/IP五层网络架构详解
+## OSI七层与TCP/IP五层网络架构详解
 http://network.51cto.com/art/201310/413853.htm
 http://blog.csdn.net/cc1949/article/details/79063439
 OSI七层模型
@@ -93,6 +98,7 @@ OSI中的层 功能 TCP/IP协议族
 
 
 
+## TCP/IP连接过程：三次握手四次挥手
 TCPIP：三次握手四次挥手，查看TCP连接状态数量：netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}' 
 http://blog.csdn.net/linux_ever/article/details/51136723
 http://blog.csdn.net/whuslei/article/details/6667471
@@ -388,8 +394,7 @@ https://blog.csdn.net/qq_18425655/article/details/52314970
 
 ---------------------------------------------------------------------------------------------------------------------
 
-MTU 和 MSS 区别
-
+## MTU和MSS区别
 
 
 MTU： Maximum Transmit Unit，最大传输单元，即物理接口（数据链路层）提供给其上层（通常是IP层）最大一次传输数据的大小；  

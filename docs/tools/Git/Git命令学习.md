@@ -686,11 +686,24 @@ git tag -a v1.2 9fceb02 -m "my tag"
 列出已有的tag
 git tag
 
+#查询远程tags的命令如下：
+git ls-remote --tags origin
+
 
 git删除tag
 git tag -d tagName 删除tag
 git push origin :refs/tags/tagName  删除远程
 git push origin :refs/tags/2020-09-07-RELEASE  删除远程
+
+git tag -d  2020-01-16-RELEASE
+git tag -d 2020-05-19-RELEASE
+git tag -d 2020-06-09-RELEASE
+git tag -d 2020-06-16-RELEASE
+git tag -d 2020-06-23-RELEASE
+git tag -d 2020-07-14-RELEASE
+git tag -d 2020-08-11-RELEASE
+
+
 
 
 tag重命名：先根据已有的tag创建一个新的tag推送到服务器，再删除
@@ -702,6 +715,37 @@ git push origin v20200907-RELEASE
 
 git tag -d 2020-09-07-RELEASE4
 git push origin :refs/tags/2020-09-07-RELEASE4
+
+
+
+
+问题场景：
+同事A在本地创建tagA并push同步到了远程->同事B在本地拉取了远程tagA(git fetch)->同事A工作需要将远程标签tagA删除->同事B用git fetch同步远端信息，git tag后发现本地仍然记录有tagA
+
+分析：对于远程repository中已经删除了的tag，即使使用git fetch --prune，甚至"git fetch --tags"确保下载所有tags，也不会让其在本地也将其删除的。而且，似乎git目前也没有提供一个直接的命令和参数选项可以删除本地的在远程已经不存在的tag（我目前是没找到有关这类tag问题的git命令~~，有知道的同学可以告知我下，互相进步）。
+解决方法：
+
+git tag -l | xargs git tag -d #删除所有本地分支
+git fetch origin --prune #从远程拉取所有信息
+git branch --contains Tag_V1.0.0 # 看看本地哪个分支包含这个tag/commit
+
+#查询远程tags的命令如下：
+git ls-remote --tags origin
+
+tag常用git命令：
+git tag #列出所有tag
+git tag -l v1.* #列出符合条件的tag（筛选作用）
+git tag [tag名] #创建轻量tag（无-m标注信息）
+git tag -a [tag名] #创建含注解的tag
+
+git push origin --tags #推送所有本地tag到远程
+git push origin [本地tag名] #推送指定本地tag到远程
+
+git tag -d [本地tag名] #删除本地指定tag
+git push origin :refs/tags/[远程tag名] #删除远程指定tag
+
+git fetch origin [远程tag名] #拉取远程指定tag
+git show [tag名] #显示指定tag详细信息
 
 
 ---------------------------------------------------------------------------------------------------------------------

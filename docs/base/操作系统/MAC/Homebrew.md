@@ -1,3 +1,12 @@
+Homebrew
+
+[Homebrew官网](https://brew.sh/)  
+[Homebrew Documentation](https://docs.brew.sh/)  
+[Homebrew Github](https://github.com/Homebrew/brew)  
+
+
+🍺 The missing package manager for macOS (or Linux)  
+mac缺少macOS（或Linux）的软件包管理器
 
 
 列出过时的软件包（已安装但不是最新版本）
@@ -5,8 +14,6 @@ brew outdated
 
 更新过时的软件包（全部或指定）
 brew upgrade 或 brew upgrade wget
-
-
 
 
 

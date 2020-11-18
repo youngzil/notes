@@ -54,10 +54,9 @@ https://support.apple.com/zh-cn/HT204895
 四根手指：到桌面，到启动台
 
 
-mac软件参考
-https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md
-https://wangchujiang.com/awesome-mac/index.zh.html
-
+mac软件参考  
+[awesome-mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md)  
+[Awesome Mac](https://wangchujiang.com/awesome-mac/index.zh.html)  
 
 
 
