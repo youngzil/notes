@@ -19,7 +19,7 @@ JProfiler下载：https://www.ej-technologies.com/download/jprofiler/files
 远程项目：
 1、下载linux压缩包并且在Linux主机解压
 2、本地安装，选择菜单Session->integration Wizards->new remote integration 开始做链接配置，在最后一步会出现一个jvm的javaagent配置，复制下来加在服务器应用启动脚本里
-  -agentpath:/home/aifqa/profiler/jprofiler11.0/bin/linux-x64/libjprofilerti.so=port=60998
+  -agentpath:/home/test/profiler/jprofiler11.0/bin/linux-x64/libjprofilerti.so=port=60998
 3、然后启动linux主机上的应用，就可以了
 
 或者

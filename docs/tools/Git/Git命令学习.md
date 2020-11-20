@@ -150,7 +150,7 @@ $ git config user.email
 
 $ 
 git config user.name "yangzl"
-git config user.email "yangzl@asiainfo.com"
+git config user.email "yangzl@XXX.com"
 
 // 或者设置本地项目库配置，进入到仓库的根目录下面执行就可以了
 git config user.name "yangzl"

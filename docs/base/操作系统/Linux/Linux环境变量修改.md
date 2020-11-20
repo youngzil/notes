@@ -4,7 +4,7 @@ source /etc/profile
 
 用户级别：ll -a 查看全部文件和目录
 修改其个人用户主目录下的.bashrc文件
-source /home/msgframe/.bashrc
+source /home/test/.bashrc
 
 shell级别：
 直接执行export命令

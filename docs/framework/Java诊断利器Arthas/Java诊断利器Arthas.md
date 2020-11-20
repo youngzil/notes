@@ -258,12 +258,12 @@ sh as.sh
 java -jar arthas-boot.jar --target-ip 0.0.0.0
 
 
-jad --source-only com.asiainfo.aifgw.security.zjauth.controller.AuthorizationController > /tmp/AuthorizationController.java
+jad --source-only com.quickstart.controller.AuthorizationController > /tmp/AuthorizationController.java
 vim /tmp/AuthorizationController.java
 sc -d *AuthorizationController | grep classLoaderHash
-mc -c 18b4aac2 /Users/yangzl/workspace/gateway/aifgw-security-parent/aifgw-security-zjauth/src/main/java/com/asiainfo/aifgw/security/zjauth/controller/AuthorizationController.java -d ~/test
+mc -c 18b4aac2 /Users/yangzl/workspace/quickstart-framework/quickstart--security/src/main/java/com/quickstart/security/controller/AuthorizationController.java -d ~/test
 redefine /tmp/com/example/demo/arthas/user/UserController.class
-redefine -c 18b4aac2  /Users/yangzl/workspace/gateway/~/test/com/asiainfo/aifgw/security/zjauth/controller/AuthorizationController.class
+redefine -c 18b4aac2  /Users/yangzl/workspace/gateway/~/test/com/quickstart/security/controller/AuthorizationController.class
 
 
 sc -d *AuthorizationController | grep classLoaderHash
@@ -273,7 +273,7 @@ sc -d *AuthorizationController | grep classLoaderHash
 
 sc -d *ApiUserController | grep classLoaderHash
 redefine -c 135fbaa4  /app/app/ApiUserController.class
-watch com.asiainfo.aifgw.dev.controller.ApiUserController oprLogin "{params,returnObj}" -x 2 -b
+watch com.quickstart.dev.controller.ApiUserController oprLogin "{params,returnObj}" -x 2 -b
 
 
 
@@ -942,12 +942,12 @@ java -jar arthas-boot.jar --target-ip 0.0.0.0
 watch demo.MathGame primeFactors "{params,returnObj}" -x 2
 
 
-watch com.asiainfo.aifgw.common.util.PoUtil xml2pojo "{params,returnObj}" -x 2
+watch com.quickstart.common.util.PoUtil xml2pojo "{params,returnObj}" -x 2
 
 观察方法入参
 watch demo.MathGame primeFactors "{params,returnObj}" -x 2 -b
-watch com.asiainfo.aifgw.common.controller.PictureCheckCodeController getVerify "{params,returnObj}" -x 2 -b
-watch com.asiainfo.aifgw.dev.controller.ApiUserController oprLogin "{params,returnObj}" -x 2 -b
+watch com.quickstart.common.controller.PictureCheckCodeController getVerify "{params,returnObj}" -x 2 -b
+watch com.quickstart.dev.controller.ApiUserController oprLogin "{params,returnObj}" -x 2 -b
 
 同时观察方法调用前和方法返回后
 watch demo.MathGame primeFactors "{params,target,returnObj}" -x 2 -b -s -n 2

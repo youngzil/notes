@@ -153,17 +153,6 @@ https://github.com/youngzil/notes
     - [JarsLink](#JarsLink)
 - [Linux](#Linux)
     - [](#)
-- [AIF组件和项目](#AIF组件和项目)
-    - [网关和能力开放平台OSP](#网关和能力开放平台OSP)
-    - [消息组件MsgFrame](#消息组件MsgFrame)
-    - [缓存Aicache](#缓存Aicache)
-    - [配置中心Amber](#配置中心Amber)
-    - [微服务治理框架CSF](#微服务治理框架CSF)
-    - [监控和跟踪Log4x和ISee](#监控和跟踪Log4x和ISee)
-    - [调度ET(AISchedule)](#调度ET(AISchedule))
-    - [服务编排Comframe](#服务编排Comframe)
-    - [统一权限USPA](#统一权限USPA)
-    - [网管项目](#网管项目)
 - [数据结构与算法](#数据结构与算法)
     - [数据结构](#数据结构)
     - [算法](#算法)
@@ -417,9 +406,8 @@ https://github.com/youngzil/notes
 ### MQTT
 * [MQTT](docs/java/XXX.md)
 
-### msgframe
-quickstart-msgframe-v1
-quickstart-msgframe-v2
+### 自己做过的消息组件
+
 
 ### Jafka
 一个快速，简单的分布式发布-订阅消息系统（mq）
@@ -679,38 +667,7 @@ java9模块化开发
 
 quickstart-linux	Linux命令、Shell脚本等  
 
----------------------------------------------------------------------------------------------------------------------
-## [AIF项目](docs/interview/AIF.md)
-### 网关和能力开放平台OSP
-* [gateway和osp](docs/java/XXX.md)
 
-### 消息组件MsgFrame
-* [消息组件MsgFrame](docs/java/XXX.md)
-
-### 缓存Aicache
-* [缓存Aicache](docs/java/XXX.md)
-
-### 配置中心Amber
-* [hessian](docs/java/XXX.md)
-
-### 微服务治理框架CSF
-* [微服务治理框架CSF](docs/java/XXX.md)
-
-### 监控和跟踪Log4x和ISee
-* [log4x和isee](docs/java/XXX.md)
-
-### 调度ET(AISchedule)
-* [ET(AISchedule)](docs/java/XXX.md)
-
-### 服务编排Comframe
-* [comframe](docs/java/XXX.md)
-
-### 统一权限USPA
-* [uspa](docs/java/XXX.md)
-
-### 网管项目
-自己做过的项目
-[oss-example]		网管项目示例
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [数据结构与算法](docs/interview/数据结构与算法.md)

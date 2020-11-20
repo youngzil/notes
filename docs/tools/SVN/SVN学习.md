@@ -23,9 +23,9 @@ svn export -r 2232 http://10.11.22.11/svn/project001
 
 
 
-svn co svn://20.26.20.144/products/runtime-config-center/runtime-config-prodaz/config-aifgw-zjosb-cache/resources-sandun-static --username=yangzl --password=mypassword --no-auth-cache
+svn co svn://20.26.20.144/products/runtime-config-center/runtime-config-prodaz/config-gateway-zjosb-cache/resources-sandun-static --username=yangzl --password=mypassword --no-auth-cache
 
-svn export --force --username yangzl --password mypassword http://10.11.20.81/svn/AIOPENPLATFORM/aifgateway/aifgw-backend-parent/  aifgw-backend-parent
+svn export --force --username yangzl --password mypassword http://10.11.20.81/svn/test/gateway/gateway-backend-parent/  gateway-backend-parent
 
 
 
