@@ -3,17 +3,19 @@ https://github.com/youngzil/notes
 
 #目录
 
-- [Java](#Java)
+- [Java](docs/interview/JavaSE.md)
+    - [JavaSE学习](https://github.com/youngzil/quickstart-framework/tree/master/quickstart-javase)
     - [基础](#基础)
     - [集合](#集合)
     - [并发](#并发)
     - [JVM](#JVM)
     - [I/O](#IO)
     - [Java8](#Java8)
-    - [Java9](#Java9)
+    - [Java9](https://github.com/youngzil/quickstart-javase9)
     - [Java学习常见问题汇总](#Java学习常见问题汇总)
     - [读书和笔记](#读书和笔记)
-- [MQ消息组件](#MQ消息组件)
+- [MQ消息组件](docs/interview/MQ消息.md)
+    - [quickstart-mq]
     - [RocketMQ](#RocketMQ)
     - [ActiveMQ](#ActiveMQ)
     - [Kafka](#Kafka)
@@ -24,6 +26,7 @@ https://github.com/youngzil/notes
     - [ZeroMQ](#ZeroMQ)
     - [HiveMQ](#HiveMQ)
     - [HornetQ](#HornetQ)
+    - 自己做过的消息组件
 - [远程通讯和RPC框架](#远程通讯和RPC框架)
     - [Netty](#Netty)
     - [MINA](#MINA)
@@ -40,12 +43,14 @@ https://github.com/youngzil/notes
     - [Tars](#Tars)
     - [HSF](#HSF)
     - [自己实现simple RPC](#自己实现simple RPC)
-- [容器](#容器)
+- [容器](docs/interview/Container容器.md)
+    - [quickstart-container] 
     - [Docker](#Docker)
     - [Kubernetes](#Kubernetes)
     - [Istio](#Istio)
     - [Pouch](#Pouch)
-- [缓存和KV数据库](#缓存和KV数据库)
+- [缓存和KV数据库](docs/interview/Cache和KV数据库.md)
+    - [quickstart-cache]
     - [Redis](#Redis)
     - [Memcached](#Memcached)
     - [Caffeine](#Caffeine)
@@ -57,7 +62,8 @@ https://github.com/youngzil/notes
     - [Hazelcast](#Hazelcast)
     - [Codis](#Codis)
     - [Tair](#Tair)
-- [Reactive响应式编程](#Reactive响应式编程)
+- [Reactive响应式编程](docs/interview/Reactive响应式编程.md)
+    - [quickstart-reactive]
     - [Reactor](#Reactor)
     - [ReactiveX](#ReactiveX)
     - [WebFlux](#WebFlux)
@@ -126,11 +132,14 @@ https://github.com/youngzil/notes
         - [Disconf](#Disconf)
         - [XDiamond](#XDiamond)
         - [XXL-CONF](#XXL-CONF)
-- [分布式](#分布式)
+- [分布式](docs/interview/分布式)
     - [分布式事务](#分布式事务)
+        - [分布式事务与一致性算法](docs/interview/分布式事务与一致性算法.md)
     - [分布式锁](#分布式锁)
-    - [分布式ID](#分布式ID)
-    - [分布式缓存](#分布式缓存)
+        - [分布式锁实现](docs/base/分布式/分布式锁实现.md)
+    - [分布式ID](docs/base/分布式/分布式ID生成服务.md)
+    - [分布式缓存](docs/base/分布式/分布式缓存.md)
+        - [分布式存储系统](docs/base/分布式/分布式存储系统.md)
 - [网关](#网关)
     - [API服务网关](#API服务网关)
         - [Zuul2](#Zuul2)
@@ -165,7 +174,8 @@ https://github.com/youngzil/notes
     - [QuickServer](#QuickServer)
     - [WebLogic](#WebLogic)
     - [WebSphere](#WebSphere)
-- [系统监控](#系统监控)
+- [系统监控](docs/interview/Monitor监控.md)
+    - [quickstart-monitor]
     - [进程监控](#进程监控)
         - [Prometheus](#Prometheus)
         - [Zabbix](#Zabbix)
@@ -199,7 +209,8 @@ https://github.com/youngzil/notes
     - [Proxy代理](#Proxy代理)
     - [Java和Kotlin、Groovy、Scala的代码和相互调用](#Java和Kotlin、Groovy、Scala的代码和相互调用)
     - [其他框架](#其他框架)
-- [数据库](#数据库)
+- [数据库](docs/interview/DB数据库.md)
+    - [quickstart-database]
     - [数据库产品](#数据库产品)
         - [MySQL](#MySQL)
         - [Oracle](#Oracle)
@@ -250,7 +261,8 @@ https://github.com/youngzil/notes
     - [Spider爬虫](#Spider爬虫)
         - [Jsoup](#Jsoup)
         - [Crawler4j](#Crawler4j)
-- [SOFA](#SOFA)
+- [SOFA](docs/interview/SOFA.md)
+    - [quickstart-sofa]
     - [sofa-rpc](#sofa-rpc)
     - [sofa-mesh](#sofa-mesh)
     - [sofa-boot](#sofa-boot)
@@ -275,7 +287,8 @@ https://github.com/youngzil/notes
     - [区块链](#区块链)
     - [人工智能](#人工智能)
     - [其他相关](#其他相关)
-- [测试](#测试)
+- [测试](docs/interview/Test测试.md)
+    - [quickstart-test]
     - [单元测试](#单元测试)
         - [JUnit](#JUnit)
         - [TestNG](#TestNG)
@@ -291,15 +304,16 @@ https://github.com/youngzil/notes
         - [Selenium](#Selenium)
     - [基准测试](#基准测试)
         - [JMH](#JMH)
-- [Golang](#Golang)
-    - [](#)
-- [Python](#Python)
-    - [](#)
-- [Lua](#Lua)
-    - [](#)
-- [C++/C](#C++C)
-    - [](#)
-- [前端开发](#前端开发)
+- [Golang](docs/Language/Golang.md)
+    - [quickstart-golang]
+- [Python](docs/Language/Python.md)  
+    - [quickstart-python]
+- [Lua](docs/Language/Lua.md)  
+    - quickstart-lua	lua脚本语言
+- [C++/C](docs/Language/C++.md)  
+    - [quickstart-cpp]
+- [前端开发](docs/interview/Front前端.md)  
+    - [quickstart-front]
     - [VueJS](#VueJS)
     - [Angular](#Angular)
     - [Bootstrap](#Bootstrap)
@@ -330,7 +344,8 @@ https://github.com/youngzil/notes
     - [面经](#面经)
     - [常见的学习网站](#常见的学习网站)
     - [开源项目](#开源项目)
-- [开发工具](#开发工具)
+- [开发工具](docs/interview/Tools开发工具.md)
+    - [quickstart-tools]
     - [基础工具](#基础工具)
         - [Git](#Git)
         - [Nexus](#Nexus)
@@ -351,20 +366,6 @@ https://github.com/youngzil/notes
 - [说明](#说明)
 
 ---------------------------------------------------------------------------------------------------------------------
-## [Java](docs/interview/JavaSE.md)
-[JavaSE学习](https://github.com/youngzil/quickstart-framework/tree/master/quickstart-javase)
-
-### 基础
-* [基础](docs/java/XXX.md)
-
-### 集合
-* [集合](docs/java/XXX.md)
-
-### 并发
-* [并发](docs/java/XXX.md)
-
-### JVM
-* [JVM](docs/java/XXX.md)
 
 ### I/O
 * [BIO,NIO,AIO 总结](docs/java/XXX.md)
@@ -375,39 +376,13 @@ https://github.com/youngzil/notes
 * [Java8 forEach 指南](docs/java/What's%20New%20in%20JDK8/Java8foreach指南.md)
 
 
-### Java9 
-[quickstart-javase9]
-
-### Java学习常见问题汇总 
-
 ### 读书和笔记
 * [Java 编程规范以及优雅 Java 代码实践总结](docs/java/Java编程规范.md)
 
 ---------------------------------------------------------------------------------------------------------------------
-## [MQ消息组件](docs/interview/MQ消息.md)
-
-[quickstart-mq]
-
-### RocketMQ
-* [RocketMQ](docs/java/XXX.md)
-
-### ActiveMQ
-* [ActiveMQ](docs/java/XXX.md)
-
-### Kafka
-* [Kafka](docs/java/XXX.md)
-
-### RabbitMQ
-* [RabbitMQ](docs/java/XXX.md)
 
 ### OpenMessaging
 云原生，与供应商无关的开放式规范，用于分布式消息传递
-
-### MQTT
-* [MQTT](docs/java/XXX.md)
-
-### 自己做过的消息组件
-
 
 ### Jafka
 一个快速，简单的分布式发布-订阅消息系统（mq）
@@ -441,69 +416,12 @@ Pulsar是一个分布式pub-sub消息平台，具有非常灵活的消息传递�
 [quickstart-remoting]  
 [quickstart-rpc]  
 
-### Netty
-* [Netty](docs/java/XXX.md)
-
-### MINA
-* [mina](docs/java/XXX.md)
-
-### Hession
-* [hessian](docs/java/XXX.md)
-
-### t-io
-* [t-io](docs/java/XXX.md)
-
-
-### xSocket
-
-### Grizzly
-
-### Dubbo
-
-### gRPC
-
-### Thrift
-
-### Finagle
-
-### Jupiter
-
-### Motan
-
-### Tars
-
-### HSF
-
-### 自己实现simple RPC
-
 ---------------------------------------------------------------------------------------------------------------------
-## [容器](docs/interview/Container容器.md)
-[quickstart-container]  
-
-### Docker
-* [Docker](docs/java/XXX.md)
-
-### Kubernetes
-* [Kubernetes](docs/java/XXX.md)
-
-### Istio
-* [Istio](docs/java/XXX.md)
-
-### Pouch
-
----------------------------------------------------------------------------------------------------------------------
-## [缓存和KV数据库](docs/interview/Cache和KV数据库.md)
-[quickstart-cache]  
-
-### Redis
-
-### Memcached
-
 ### Caffeine
 Caffeine缓存框架
 
 ### JetCache
-JetCache是​​一种Java缓存抽象，可为各种缓存解决方案提供一致的使用。
+JetCache是一种Java缓存抽象，可为各种缓存解决方案提供一致的使用。
 
 ### JCache
 Java缓存规范JCache API（JSR107），它对Java对象缓存进行标准化，方便高效开发，让程序员摆脱实现缓存有效期、互斥、假脱机（spooling）和缓存一致性等负担。
@@ -526,21 +444,7 @@ Redis 的集群解决方案有社区的，也有官方的，社区的解决方�
 ### Tair
 air是一个Key/Value结构数据的解决方案，它默认支持基于内存和文件的两种存储方式，分别和我们通常所说的缓存和持久化存储对应。
 
----------------------------------------------------------------------------------------------------------------------
-## [Reactive响应式编程](docs/interview/Reactive响应式编程.md)
-[quickstart-reactive]  
 
-### Reactor
-
-### ReactiveX
-
-### WebFlux
-
-### RSocket
-
-### Akka
-
-### Ratpack
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [架构和设计](docs/interview/ArchitectureDesign架构和设计.md)
@@ -584,70 +488,21 @@ quickstart-design-pattern	设计模式和代码示例
 [quickstart-register]  
 [quickstart-config]
 
-### 注册中心
-### ZooKeeper
-### Nacos
-### Etcd
-### Consul
-### ZKWeb
-
-### 配置中心
-### Apollo
-### Disconf
-### XDiamond
-### XXL-CONF
-
----------------------------------------------------------------------------------------------------------------------
-## [分布式](docs/interview/分布式)
-
-### 分布式事务
-* [分布式事务与一致性算法](docs/interview/分布式事务与一致性算法.md)
-
-### 分布式锁
-[分布式锁实现](docs/base/分布式/分布式锁实现.md)
-
-
-### 分布式ID
-[分布式ID生成服务](docs/base/分布式/分布式ID生成服务.md)
-
-### 分布式缓存
-[分布式缓存](docs/base/分布式/分布式缓存.md)
-
-### 分布式缓存
-[分布式存储系统](docs/base/分布式/分布式存储系统.md)
-
-
 
 ---------------------------------------------------------------------------------------------------------------------
 ## [网关](docs/interview/Gateway网关.md)
 网关、微服务  
 [quickstart-gateway]  
 
-### API服务网关
-### Zuul2
-### Zuul1
-### Kong
+
 
 ### 代理服务器
 流量网关 或者 代理服务器 或者 负载均衡
-### Nginx
-### Tengine
-### LittleProxy
-### ApacheHTTP
 
-### 限流熔断
-### Sentinel
-### Resilience4j
-### Eureka
-### SnowJena
 ---------------------------------------------------------------------------------------------------------------------
 ## [模块化和类隔离](docs/interview/Modular模块化.md)
 [quickstart-modular]		模块化
 
-
-### sofa-jarslink
-
-### Pandora
 
 ### Java9
 java9模块化开发
@@ -685,29 +540,6 @@ quickstart-linux	Linux命令、Shell脚本等
 ---------------------------------------------------------------------------------------------------------------------
 ## [应用容器](docs/interview/ApplicationContainer.md)
 [quickstart-application-container]
-
-### Jetty
-### Tomcat
-### Undertow
-### JBoss
-### Jersey
-### QuickServer
-### WebLogic
-### WebSphere
----------------------------------------------------------------------------------------------------------------------
-## [系统监控](docs/interview/Monitor监控.md)
-[quickstart-monitor]	监控
-
-### 进程监控
-### Prometheus
-### Zabbix
-
-### 在线诊断工具
-### JVM SandBox
-### Anthas
-### BTrace
-### Greys-Anatomy
-### HouseMD
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -843,91 +675,10 @@ quickstart-servicecomb	ServiceComb 是华为开源的一套包含代码框架生
 
 
 ---------------------------------------------------------------------------------------------------------------------
-## [数据库](docs/interview/DB数据库.md)
-
-[quickstart-database]
 
 
-### 数据库产品
-### MySQL
-### Oracle
-### OceanBase
-### MongoDB
-
-
-### 数据库操作框架
-### DataSource
-### MyBatis
-### MyBatis-Plus
-### Hibernate
-### ThinkJD
-### JOOQ
-
-
-### 数据库中间件
-### MyCat
-### Druid
-### ShardingSphere
-### Zdal
-
-
-### 轻量级数据库
-### H2
-### SQLite
-### Derby
-### InfluxDB
-
-
-### 数据迁移
-### Yugong
-
-
-### Liquibase
-### Otter
-
-
-### 数据库工具
-### DataGrip
-### Navicat
-### PL/SQL Developer
-### PL/SQL
-
-
----------------------------------------------------------------------------------------------------------------------
 ## [大数据处理](docs/interview/Data处理.md)
 [quickstart-data]		大数据、流式计算
-
-
-### 流处理
-### Flink
-### JStorm
-### Storm
-### Flume
-### Spark
-### Beam
-### Samza
-### Hadoop
-### HBase
-### druid-io
-
-
-### 搜索
-### Elasticsearch
-### Lucene
-### Solr
-
-### Spider爬虫
-
----------------------------------------------------------------------------------------------------------------------
-## [SOFA](docs/interview/SOFA.md)
-[quickstart-sofa]
-
-### sofa-rpc
-### sofa-mesh
-### sofa-boot
-### sofa-bolt
-### sofa-ark
-### sofa-jarslink
 
 ---------------------------------------------------------------------------------------------------------------------
 ## Netflix  
@@ -978,60 +729,6 @@ quickstart-webservice-axis2
 [EdgeComputing边缘计算](docs/other/EdgeComputing边缘计算.md)
 
 
----------------------------------------------------------------------------------------------------------------------
-## [测试](docs/interview/Test测试.md)
-[quickstart-test]
-
-### 单元测试
-### JUnit
-### TestNG
-### Arquillian
-
-
-### Mock测试
-### Mockito
-### Spock
-### Moco框架
-
-
-### 压力测试
-### JMeter
-### LoadRunner
-
-
-### 自动化测试
-### Selenium
-
-### 基准测试
-### JMH
-
----------------------------------------------------------------------------------------------------------------------
-## [Golang](docs/Language/Golang.md)
-[quickstart-golang]
-
----------------------------------------------------------------------------------------------------------------------
-## [Python](docs/Language/Python.md)  
-[quickstart-python]
----------------------------------------------------------------------------------------------------------------------
-## [Lua](docs/Language/Lua.md)  
-
-quickstart-lua	lua脚本语言
-
----------------------------------------------------------------------------------------------------------------------
-## [C++/C](docs/Language/C++.md)  
-[quickstart-cpp]
----------------------------------------------------------------------------------------------------------------------
-## [前端开发](docs/interview/Front前端.md)  
-[quickstart-front]
-
-### VueJS
-### Angular
-### Bootstrap
-### ECharts
-### RequireJS
-### zTree
-### Layui
-### JavaScript
 ---------------------------------------------------------------------------------------------------------------------
 ## 读书和笔记  
 1、[notes]学习笔记文档  
@@ -1127,31 +824,6 @@ quickstart-lua	lua脚本语言
 
 ### 开源项目
 
-
----------------------------------------------------------------------------------------------------------------------
-## [开发工具](docs/interview/Tools开发工具.md)
-[quickstart-tools]
-
-### 基础工具
-### Git
-### Nexus
-
-
-### 项目管理
-### Maven
-### Gradle
-### Ant
-### Ivy
-
-
-### 代码扫描
-### SonarQube
-### PMD
-### FindBugs
-### Checkstyle
-
-### DevOps工具
-### Jenkins
 
 ---------------------------------------------------------------------------------------------------------------------
 ## 待办

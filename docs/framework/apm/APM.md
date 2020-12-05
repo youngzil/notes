@@ -36,6 +36,8 @@ APM工具：
 [SkyWalking Github](https://github.com/apache/skywalking)  
 
 
+[SkyWalking 源码分析 —— Agent 插件体系](http://www.iocoder.cn/SkyWalking/agent-plugin-system/)
+
 
 
 ## CAT参考  
