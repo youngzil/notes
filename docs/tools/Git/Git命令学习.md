@@ -10,6 +10,7 @@
 - [Git撤销中间某次提交](#Git撤销中间某次提交)
 - [Git仓库分支(Branch)和标签(Tag)](#Git仓库分支(Branch)和标签(Tag))
 - [Git推送tag到服务端](#Git推送tag到服务端)
+- [Git还原最近一次提交记录](#Git还原最近一次提交记录)
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -641,7 +642,7 @@ https://blog.csdn.net/jdsjlzx/article/details/98654951
 
 
 将tag同步到远程服务器
-git push origin v1.0
+git push origin v20201215-RELEASE
 
 推送所有：
 git push origin --tags
@@ -695,13 +696,34 @@ git tag -d tagName 删除tag
 git push origin :refs/tags/tagName  删除远程
 git push origin :refs/tags/2020-09-07-RELEASE  删除远程
 
-git tag -d  2020-01-16-RELEASE
+git tag -d 2020-01-16-RELEASE
 git tag -d 2020-05-19-RELEASE
 git tag -d 2020-06-09-RELEASE
 git tag -d 2020-06-16-RELEASE
 git tag -d 2020-06-23-RELEASE
 git tag -d 2020-07-14-RELEASE
 git tag -d 2020-08-11-RELEASE
+git tag -d v20200907-RELEASE
+git tag -d v20200923-RELEASE
+git tag -d v20200927-RELEASE
+git tag -d v20201023-RELEASE
+
+
+git push origin :refs/tags/2020-01-16-RELEASE
+git push origin :refs/tags/2020-05-19-RELEASE
+git push origin :refs/tags/2020-06-09-RELEASE
+git push origin :refs/tags/2020-06-16-RELEASE
+git push origin :refs/tags/2020-06-23-RELEASE
+git push origin :refs/tags/2020-07-14-RELEASE
+git push origin :refs/tags/2020-08-11-RELEASE
+git push origin :refs/tags/v20200907-RELEASE
+git push origin :refs/tags/v20200923-RELEASE
+git push origin :refs/tags/v20200927-RELEASE
+git push origin :refs/tags/v20201023-RELEASE
+
+
+git tag -d v20201215-RELEASE
+git push origin :refs/tags/v20201215-RELEASE
 
 
 
@@ -749,3 +771,54 @@ git show [tag名] #显示指定tag详细信息
 
 
 ---------------------------------------------------------------------------------------------------------------------
+## Git还原最近一次提交记录
+
+
+首先先把本地的代码备份
+
+git stash save 'message...可以添加一些注释'
+
+显示保存进度的列表。也就意味着，git stash命令可以多次执行。
+
+git stash list
+
+
+版本号可用如下指令查看
+
+git log remotes/origin/master
+
+先在本地回退到需要的版本
+
+git reset --hard 6f2c8c38
+
+强制把本地提交到远端覆盖远端的【必须是自己提交后没有其他人提交】
+
+git push origin master --force
+
+
+
+更新代码
+
+git pull
+
+
+通过git stash pop命令恢复进度后，会删除当前进度。
+
+git stash pop [–index] [stash_id]
+git stash pop 恢复最新的进度到工作区。git默认会把工作区和暂存区的改动都恢复到工作区。
+git stash pop --index 恢复最新的进度到工作区和暂存区。（尝试将原来暂存区的改动还恢复到暂存区）
+git stash pop stash@{1}恢复指定的进度到工作区。stash_id是通过git stash list命令得到的
+
+
+
+git stash apply [–index] [stash_id]
+除了不删除恢复的进度之外，其余和git stash pop 命令一样。
+
+git stash drop [stash_id]
+删除一个存储的进度。如果不指定stash_id，则默认删除最新的存储进度。
+
+git stash clear
+删除所有存储的进度。
+
+
+
