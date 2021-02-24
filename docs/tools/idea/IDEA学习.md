@@ -44,10 +44,10 @@ IDEA主题样式：http://www.riaway.com/
 
 
 idea配置所在路径
-Config: ~/Library/Preferences/IdeaIC13
-System: ~/Library/Caches/IdeaIC13
-Plugins: ~/Library/Application Support/IdeaIC13
-Logs: ~/Library/Logs/IdeaIC13
+Config:~/Library/Preferences/IdeaIC13
+System:~/Library/Caches/IdeaIC13
+Plugins:~/Library/Application Support/IdeaIC13
+Logs:~/Library/Logs/IdeaIC13
 
 
 IDEA问题解决参考

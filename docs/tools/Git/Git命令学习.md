@@ -697,31 +697,6 @@ git tag -d tagName 删除tag
 git push origin :refs/tags/tagName  删除远程
 git push origin :refs/tags/2020-09-07-RELEASE  删除远程
 
-git tag -d 2020-01-16-RELEASE
-git tag -d 2020-05-19-RELEASE
-git tag -d 2020-06-09-RELEASE
-git tag -d 2020-06-16-RELEASE
-git tag -d 2020-06-23-RELEASE
-git tag -d 2020-07-14-RELEASE
-git tag -d 2020-08-11-RELEASE
-git tag -d v20200907-RELEASE
-git tag -d v20200923-RELEASE
-git tag -d v20200927-RELEASE
-git tag -d v20201023-RELEASE
-
-
-git push origin :refs/tags/2020-01-16-RELEASE
-git push origin :refs/tags/2020-05-19-RELEASE
-git push origin :refs/tags/2020-06-09-RELEASE
-git push origin :refs/tags/2020-06-16-RELEASE
-git push origin :refs/tags/2020-06-23-RELEASE
-git push origin :refs/tags/2020-07-14-RELEASE
-git push origin :refs/tags/2020-08-11-RELEASE
-git push origin :refs/tags/v20200907-RELEASE
-git push origin :refs/tags/v20200923-RELEASE
-git push origin :refs/tags/v20200927-RELEASE
-git push origin :refs/tags/v20201023-RELEASE
-
 
 git tag -d v20201215-RELEASE
 git push origin :refs/tags/v20201215-RELEASE
@@ -849,12 +824,12 @@ git reset commitId
 git reset --hard commitId
 
 
-三、需要将撤销提交到远程服务器的执行：
+三、可以把本地的先暂存起来
 
-git push origin HEAD --force
+git stash save "暂存区名字"
 
 
-四、需要将撤销提交到远程服务器的执行：
+四、需要将撤销提交到远程服务器的执行
 
 git push origin HEAD --force
 

@@ -1,3 +1,7 @@
+markdown编辑器语法——文字颜色、大小、字体与背景色的设置
+https://blog.csdn.net/manjianchao/article/details/53668280
+
+
 参考
 http://xianbai.me/learn-md/article/extension/table.html
 
