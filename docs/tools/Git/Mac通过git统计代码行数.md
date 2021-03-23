@@ -1,9 +1,9 @@
 
 
 统计一段时间内某个用户（提交记录）的增删行数
-git log --author="lengfeng" --since='2021-01-11' --until='2021-02-20' --pretty=tformat: --numstat | awk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "增加的行数:%s 删除的行数:%s 总行数: %s\n",add,subs,loc }'
+git log --author="lengfeng" --since='2021-03-01' --until='2021-03-02' --pretty=tformat: --numstat | awk '{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf "增加的行数:%s 删除的行数:%s 总行数: %s\n",add,subs,loc }'
 或者
-git log --after="2020-02-21" --before="2021-02-22" --author="$(git config --get user.name)" --pretty=tformat: --numstat | awk '{ add += $1 ; subs += $2 ; loc += $1 + $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }'
+git log --after="2021-03-02" --before="2021-03-04" --author="$(git config --get user.name)" --pretty=tformat: --numstat | awk '{ add += $1 ; subs += $2 ; loc += $1 + $2 } END { printf "added lines: %s removed lines : %s total lines: %s\n",add,subs,loc }'
 
 
 git扫描 Log 单独统计每个人的增删行数
