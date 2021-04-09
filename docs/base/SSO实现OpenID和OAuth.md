@@ -6,17 +6,78 @@ OAuth 2.0 是一种授权机制，主要用来颁发令牌（token）
 获取令牌的四种方式
 OAuth2 中主要分为了4种角色
 Oauth1.0与Oauth2.0的区别：3点
-JWT，JSON Web Token
+[JWT，JSON Web Token](JWT详解.md)
 
 4、HTTP API认证授权术
 HTTP Basic
 Digest Access
 App Secret Key + HMAC
-JWT – JSON Web Tokens
+[JWT – JSON Web Tokens](JWT详解.md)
 OAuth 1.0 – 3 legged & 2 legged
 OAuth 2.0 – Authentication Code & Client Credential
 
 5、
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+## 常见概念
+1. SSO (Single sign-on)：SAML2和OAuth2
+2. Authentication VS Authorisation 
+3. 什么是4A
+4. IDP和SP
+5. OAuth VS OpenId
+6. JWT和Session
+
+
+
+SSO (Single sign-on)
+
+SSO 是一类 解决方案 的统称，而在具体的实施方面，我们有两种策略可供选择：
+- SAML 2.0
+- OAuth 2.0
+
+
+Authentication VS Authorisation
+- Authentication: 身份鉴别，以下简称 认证；认证 的作用在于 认可 你能够访问系统，用于 鉴别访问者 是否是 合法用户；
+- Authorisation: 资源访问 授权。而 授权 用于决定你有访问 哪些资源的权限。
+
+
+
+
+什么是4A
+- 账号管理 Account
+- 身份验证 Authentication
+- 授权控制 Authorization
+- 安全审计 Audit
+
+基于中国移动4A技术规范的4A管理平台是将业务支撑系统中的帐号(Account)管理、认证(Authentication)管理、授权(Authorization)管理和安全审计(Audit)整合成集中、统一的安全服务系统。
+
+
+
+IDP和SP
+- Authorization Server/Identity Provider(IdP)
+  把负责 认证的服务 称为 AuthorizationServer 或者 IdentityProvider，以下简称 IDP。
+- Service Provider(SP)/Resource Server
+  把负责 提供资源（API 调用）的服务称为 ResourceServer 或者 ServiceProvider，以下简称 SP。
+
+
+OAuth VS OpenId：OpenID 和 OAuth 很像。但本质上来说它们是截然不同的两个东西：
+- OpenID: 只用于 身份认证（Authentication），允许你以 同一个账户 在 多个网站登陆。它仅仅是为你的 合法身份 背书，当你以 Facebook 账号登陆某个站点之后，该站点 无权访问 你的在 Facebook 上的 数据。
+- OAuth: 用于 授权（Authorisation），允许 被授权方 访问 授权方 的 用户数据。
+
+
+JWT和Session
+- JWT 也是 token，正如我们在上文提到的，它是 访问资源 的 凭证。
+- 有状态的对话Session
+
+
+
+[浅谈SAML, OAuth, OpenID和SSO, JWT和Session](https://juejin.cn/post/6844903634094784520)  
+[SAML和OAuth2这两种SSO协议的区别](https://www.cnblogs.com/flydean/p/14224139.html)  
+[]()  
+[]()  
+[]()  
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -148,7 +209,7 @@ OAuth 2.0 是一种授权机制，主要用来颁发令牌（token）
 获取令牌的四种方式
 OAuth2 中主要分为了4种角色
 Oauth1.0与Oauth2.0的区别：3点
-JWT，JSON Web Token
+[JWT，JSON Web Token](JWT详解.md)
 
 
 
@@ -226,21 +287,6 @@ A)客户端到授权服务器请求一个授权令牌(requesttoken&secret)
 
 客户端私有证书、资源拥有者密码证书、刷新令牌等方式，而且验证过程更为简洁。
 相比之下1.0只有一个用户授权流程。
-
-
-
-JWT，JSON Web Token，作为一个开放的标准，通过紧凑（compact，快速传输，体积小）或者自包含（self-contained，payload中将包含用户所需的所有的信息，避免了对数据库的多次查询）的方式，定义了用于在各方之间发送的安全JSON对象。
-
-
-JWT的组成
-
-JWT格式一般如下：
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiY2FuZyB3dSIsImV4cCI6MTUxODA1MTE1NywidXNlcklkIjoiMTIzNDU2In0.IV4XZ0y0nMpmMX9orv0gqsEMOxXXNQOE680CKkkPQcs
-
-它由三部分组成，每部分通过 .分隔开，分别是：
-1、Header头部
-2、Payload有效负荷
-3、Signature签名
 
 
 

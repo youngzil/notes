@@ -72,10 +72,62 @@ mac 系统怎么访问局域网内的共享文件夹
 
 
 
+macOS环境 查看端口、进程号、进程名
+
+
+记录一些mac下的常用命令：
+
+1、查看进程号
+
+ps -ef | grep 进程名
+
+ps -ef | grep java | grep zookeeper
 
 
 
+2、查看端口被哪个进程监听
 
+sudo lsof -i :端口
+
+lsof -i tcp:8080
+
+该命令会显示占用8080端口的进程，有其 pid
+
+
+
+3、查看进程监听的端口
+
+sudo lsof -nP -p 进程号 | grep LISTEN
+
+sudo lsof -nP | grep LISTEN | grep 进程号
+
+lsof -nP -p 5450 | grep LISTEN
+lsof -nP | grep LISTEN | grep 39269
+
+
+
+知道进程号，查看进程详细信息
+
+ps | grep 39269
+
+
+
+4、查看监听端口的进程
+
+sudo lsof -nP | grep LISTEN | grep 端口号
+
+lsof -nP | grep LISTEN | grep 8080
+
+
+
+5、看到一个新的方法（MacOS统计TCP/UDP端口号与对应服务）
+
+echo "### TCP LISTEN ###"
+lsof -nP -iTCP -sTCP:LISTEN
+
+
+
+https://blog.csdn.net/glw0223/article/details/86737591
 
 
 
