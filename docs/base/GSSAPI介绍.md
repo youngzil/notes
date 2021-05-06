@@ -35,7 +35,7 @@ SASL是Simple Authentication and Security Layer的缩写，主要应用于跨节
 
 [JAAS/GSS-API/SASL/Kerberos简介](http://www.nosqlnotes.com/technotes/distributed-system-with-kerberos/)  
 [图解Kerberos协议原理](http://www.nosqlnotes.com/technotes/kerberos-protocol/)  
-
+[kerberos安装及入门](https://www.orchome.com/Kerberos/index)  
 
 ---------------------------------------------------------------------------------------------------------------------
 
