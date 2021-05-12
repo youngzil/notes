@@ -113,5 +113,5 @@ mybatis代码自动生成插件，大部分单表操作的代码可自动生成 
 参考
 https://juejin.im/entry/5c4f9f9d6fb9a049a5714c8c
 https://www.cnblogs.com/jajian/p/8081658.html
-
+[最全IDEA插件](https://segmentfault.com/a/1190000022510898)  
 
