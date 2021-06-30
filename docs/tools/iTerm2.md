@@ -17,4 +17,16 @@ Preference －> Profiles -> Text -> Font 里改 14
 
 
 
+点击左下角的+新增一个配置项，在右边的command处输入ssh登录的命令：
+ssh root@x.x.x.x -p xxxxx
+
+然后把tab页面切换到Advanced，点击Edit进入触发器编辑页面：
+在Triggers中点击Edit进入触发器编辑页面：
+新弹框中新增一个触发器，触发器的作用是匹配终端输出的字符串然后执行相应动作。触发字符串是password:，Action选择Send Text，Parameters填入登录密码，密码最后以\n结束表示输完密码后换行：
+
+或者
+在Smart Selection中点击Edit进入触发器编辑页面：
+ssh password password Very Low
+然后选中新增的ssh password 这一行，点击Edit Actions新增
+触发字符串是password:，Action选择Send Text，Parameters填入登录密码，密码，密码不需要\n结束
 

@@ -89,8 +89,15 @@ https://program-think.blogspot.com/2016/09/https-ssl-tls-3.html#head-2
 
 
 
-https://www.openssl.org/
-https://github.com/openssl/openssl
+
+
+
+
+
+[OpenSSL官网](https://www.openssl.org/)  
+[OpenSSL Github](https://github.com/openssl/openssl)  
+
+关于如何将应用程序迁移到 OpenSSL 3.0 的详细指导，查看 [迁移指南](https://www.openssl.org/docs/manmaster/man7/migration_guide.html) 。
 
 HTTPS是一种协议，等于HTTP+TLS（由于历史原因，SSL3.0之后就被TLS1.0替代了）。
 

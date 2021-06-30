@@ -1,7 +1,7 @@
 SVN常用命令之checkout、export
 
 
-
+[SVN插件安装](../eclipse/SVN.md)
 
 
 

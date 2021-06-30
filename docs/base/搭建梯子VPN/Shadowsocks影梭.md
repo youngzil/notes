@@ -1,17 +1,60 @@
-- [shadowsocks官网地址](#Shadowsocks官网地址)
+- [Shadowsocks介绍](#Shadowsocks介绍)
 - [VPS搭建Shadowsocks（ss）教程](#VPS搭建Shadowsocks)
 
 ---------------------------------------------------------------------------------------------------------------------
-## Shadowsocks官网地址  
+## Shadowsocks介绍  
 
-[shadowsocks官网](https://shadowsocks.org/en/index.html)  
-[shadowsocks Github](https://github.com/shadowsocks)  
+[Shadowsocks官网](https://shadowsocks.org/en/index.html)  
+[Shadowsocks原版 Github](https://github.com/shadowsocks)  
+[Shadowsocks分支ShadowsocksRR（SSRR）](https://github.com/shadowsocksrr)
+
+[Yet another SIP003 plugin for shadowsocks, based on v2ray](https://github.com/shadowsocks/v2ray-plugin)  
 
 
 客户端下载链接（GitHub）：  
 [Mac客户端](https://github.com/shadowsocks/ShadowsocksX-NG)  
 [Win客户端](https://github.com/shadowsocks/shadowsocks-windows)  
 [Android客户端](https://github.com/shadowsocks/shadowsocks-android)  
+
+
+
+
+Shadowsocks（简称SS）是一种基于Socks5代理方式的加密传输协议，也可以指实现这个协议的各种开发包。目前包使用Python、C、C++、C#、Go语言、Rust等编程语言开发，大部分主要实现（iOS平台的除外）采用Apache许可证、GPL、MIT许可证等多种自由软件许可协议开放源代码。
+
+Shadowsocks分为服务器端和客户端，在使用之前，需要先将服务器端程序部署到服务器上面，然后通过客户端连接并创建本地代理。
+
+在中国大陆，本工具广泛用于突破防火长城（GFW），以浏览被封锁、遮蔽或干扰的内容。2015年8月22日，Shadowsocks原作者Clowwindy称受到了网络审查的压力，宣布停止维护此计划（项目）并移除其个人页面所存储的源代码[4][5]。
+
+为了避免关键词过滤，网民会根据谐音将ShadowsocksR称为“酸酸乳”[注 1]（SSR），将Shadowsocks称为“酸酸”（SS）。另外，因为Shadowsocks(R)的标志均为纸飞机，所以专门提供Shadowsocks(R)或类似服务（如V2Ray）的网站则就被称为了“机场”。
+
+
+
+
+特点
+- Shadowsocks使用自行设计的协议进行加密通信。[6]加密算法有AES、Blowfish、ChaCha20、RC4等，除创建TCP连接外无需握手，每次请求只转发一个连接，无需保持“一直连线”的状态，因此在移动设备上相对较为省电。
+- 所有的流量都经过算法加密，允许自行选择算法。
+- Shadowsocks通过异步I/O和事件驱动程序运行，响应速度快。
+- 客户端覆盖多个主流操作系统和平台，包括Windows、macOS、Android、Linux和iOS系统和路由器（OpenWrt）等[7]。
+
+
+
+
+
+### ShadowsocksR
+
+ShadowsocksR（简称SSR）是网名为breakwa11的用户发起的Shadowsocks分支，在Shadowsocks的基础上增加了一些资料混淆方式，称修复了部分安全问题并可以提高QoS优先级。[25]后来贡献者Librehat也为Shadowsocks补上了一些此类特性，[26]甚至增加了类似Tor的可插拔传输层功能。[27]
+
+ShadowsocksR开始时曾有过违反GPL、发放二进制时不发放源码的争议，使得原开发作者不满[28]。不过后来ShadowsocksR项目由breakwa11转为了与Shadowsocks相同的GPL、Apache许可证、MIT许可证等多重自由软件许可协议。
+
+2017年7月19日，ShadowsocksR作者breakwa11在Telegram频道ShadowsocksR news里转发了深圳市启用SS协议检测的消息并被大量用户转发，引发恐慌[29]。
+
+7月24日，breakwa11发布了闭源的SS被动检测程序，引发争议[30]。7月27日，breakwa11遭到自称“ESU.TV”（恶俗TV）的不明身份人士人身攻击，对方宣称如果不停止开发并阻止用户讨论此事件将发布更多包含个人隐私的资料[31]，随后breakwa11表示遭到对方人肉搜索并公开个人资料的是无关人士，为了防止对方继续伤害无关人士，breakwa11将删除GitHub上的所有代码、解散相关交流群组，停止ShadowsocksR项目。但项目已被多人fork，并有人在其基础上继续发布新的版本，例如较为知名的SSRR（页面存档备份，存于互联网档案馆）（ShadowsocksRR）。
+
+
+
+参考  
+[Shadowsocks介绍](https://zh.wikipedia.org/wiki/Shadowsocks)  
+
 
 ---------------------------------------------------------------------------------------------------------------------
 ## VPS搭建Shadowsocks
