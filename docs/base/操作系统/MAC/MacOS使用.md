@@ -1,4 +1,15 @@
-下载软件xclient网站上
+
+
+
+软件下载网站：
+[Xclient](https://xclient.info/)  
+[麦氪搜(iMacso.com)](https://www.imacso.com/)  
+[MacWk](https://www.macwk.com/)  
+[]()  
+
+
+
+
 
 
 MAC OS 如何安装命令行工具:Command Line Tools

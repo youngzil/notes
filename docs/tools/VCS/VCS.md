@@ -49,6 +49,7 @@ Below is a list of these VCS, categorized by generation:
 
 Subversion (SVN)、Git、Mercurial 和 Bazaar 都是积极开发的版本控制软件解决方案  
 目前IDEA支持Subversion (SVN)、Git、Mercurial
+Git, GitHub, SVN, Mercurial, Perforce
 
 
 Git vs Mercurial vs SVN(Subversion)
@@ -97,6 +98,19 @@ Git 和 Mercurial 非常相似（但足够不同以保证谨慎）。另一方�
 
 
 
+Github
+Github于2008年上线，目前，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。
+
+
+Bitbucket
+Bitbucket 是一家源代码托管网站，采用Mercurial和Git作为分布式版本控制系统，同时提供商业计划和免费账户。
+
+
+Coding
+Coding.net 为软件开发者提供基于云计算技术的软件开发平台，包括项目管理，代码托管，运行空间和质量控制等等。
+
+GitLab
+GitLab 提供丰富的 Git 代码管理功能，是目前主流的企业内部 Git 代码仓库解决方案。
 
 
 
