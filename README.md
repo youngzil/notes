@@ -786,22 +786,22 @@ quickstart-webservice-axis2
 * [英语学习](English/英语学习.md)
 
 ### 医学
-* [医学常识](medicine/医学常识.md)
-* [《人体使用手册》](medicine/人体使用手册.md)
-* [《普通生物学》](medicine/普通生物学.md)
+* [医学常识](常识/日常/医学常识.md)
+* [《人体使用手册》](Books/medicine/人体使用手册.md)
+* [《普通生物学》](Books/medicine/普通生物学.md)
 
 ### 历史
-* [《国史大纲》](history/国史大纲.md)
-* [《明朝那些事儿》](history/明朝那些事儿.md)
-* [《万历十五年》](history/万历十五年.md)
+* [《国史大纲》](Books/history/国史大纲.md)
+* [《明朝那些事儿》](Books/history/明朝那些事儿.md)
+* [《万历十五年》](Books/history/万历十五年.md)
 
-* [《中国通史》](history/中国通史.md)
-* [《第二次世界大战战史》](history/第二次世界大战战史.md)
-* [《世界史：从史前到21世纪全球文明的互动》](history/世界史：从史前到21世纪全球文明的互动.md)
-* [《全球通史：从史前史到21世纪》](history/全球通史：从史前史到21世纪.md)
+* [《中国通史》](Books/history/中国通史.md)
+* [《第二次世界大战战史》](Books/history/第二次世界大战战史.md)
+* [《世界史：从史前到21世纪全球文明的互动》](Books/history/世界史：从史前到21世纪全球文明的互动.md)
+* [《全球通史：从史前史到21世纪》](Books/history/全球通史：从史前史到21世纪.md)
 
 ### 股票
-* [《炒股的智慧》](stock/炒股的智慧.md)
+* [《炒股的智慧》](常识/日常/stock/炒股的智慧.md)
 
 ### 其他
 * [《三国演义》](fiction/三国演义.md)
