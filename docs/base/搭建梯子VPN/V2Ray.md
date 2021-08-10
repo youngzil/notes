@@ -6,6 +6,7 @@
     - [Qv2ray](#Qv2ray)
 - [Just My Socks详细讲解](#Just-My-Socks详细讲解)
 - [V2Ray Server搭建](#V2Ray-Server搭建)
+- [如何更新PAC中最新GFW清单](#如何更新PAC中最新GFW清单)
 
 
 
@@ -181,6 +182,21 @@ bash <(curl -s -L https://git.io/v2ray.sh)
 [如何搭建一个 V2Ray Server](https://blog.huangyz.name/tech/2017/10/17/how-to-build-a-v1ray-vps.html)   
 [小白也可以搭建的V2Ray服务器安装教程](http://loonlog.com/2019/7/2/v2ray-vpn-fanqiang/)  
 [面向新手的V2Ray搭建指南](https://yearliny.com/v2ray-build-guide-for-novices/)
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+## 如何更新PAC中最新GFW清单
+
+[gfwlist地址](https://github.com/gfwlist/gfwlist)  
+
+
+[更新 pac.js 的 bash 脚本](https://github.com/Cenmrev/V2RayX/issues/320)  
+[建议：加强pac功能 ](https://github.com/Cenmrev/V2RayX/issues/265)  
+[pac.js更新python版本脚本](https://github.com/Cenmrev/V2RayX/issues/303)  
+[]()  
+
 
 
 
