@@ -1,3 +1,53 @@
+- [敏捷开发](#敏捷开发)
+  - [敏捷宣言](#敏捷宣言)
+- [敏捷软件开发](#敏捷软件开发)
+- [DevOps](#DevOps)
+- [AIOps](#AIOps)
+- [GitOps](#GitOps)
+- [CI和CD](#CI和CD)
+- [SRE](#SRE)
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+## 敏捷开发
+
+极限编程（Extreme Programming，XP）、Scrum、DSDM、自适应软件开发、Crystal、特征驱动开发（Feature-Driven Development，FDD）、实用主义编程。
+
+
+参考  
+[20 年起义，敏捷已死，敏捷万岁](https://www.infoq.cn/article/lmiNQOS6f4lI6fWzGRD5)
+
+### 敏捷宣言
+
+敏捷宣言（Agile Manifesto，敏捷软件开发）
+
+《敏捷软件开发宣言》（Agile Software Development Manifesto）
+[Manifesto for Agile Software Development](https://agilemanifesto.org/iso/en/manifesto.html)
+[敏捷软件开发宣言](https://agilemanifesto.org/iso/zhchs/manifesto.html)
+
+
+我们身体力行同时帮助他人来探索开发软件的更佳方式，进而认可下列价值：
+- 个体和互动高于过程和工具。（Individuals and interactions over processes and tools.）
+- 可工作的软件高于详尽的文档。（Working software over comprehensive documentation.）
+- 客户合作高于合同谈判。（Customer collaboration over contract negotiation.）
+- 响应变化高于遵循计划。（Responding to change over following a plan.）
+
+
+也就是说，尽管右项有其价值，我们更重视左项的价值。
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+## DevOps
+
+
 DevOps: Development和Operations的组合
 
 可以把DevOps看作开发（软件工程）、技术运营和质量保障（QA）三者的交集。
@@ -70,11 +120,13 @@ Web服务器：Apache、Nginx、IIS
 
 参考
 https://www.jianshu.com/p/c5d002cf25b9
-
+[DevOps wiki](https://zh.wikipedia.org/wiki/DevOps)
 
 
 
 ---------------------------------------------------------------------------------------------------------------------
+## 敏捷软件开发
+
 敏捷软件开发（英语：Agile software development）
 敏捷开发（Agile）是一种以人为核心、迭代、循序渐进的开发方法。
 
@@ -165,7 +217,7 @@ https://blog.csdn.net/csdn15556927540/article/details/90712308
 
 
 ---------------------------------------------------------------------------------------------------------------------
-CI和CD
+## CI和CD
 持续集成Continuous Integration (CI) && 持续交付Continuous Delivery (CD)
 持续测试Continuous Testing 和 持续部署Continuous Deployment
 
@@ -192,4 +244,74 @@ CI和CD
 https://blog.csdn.net/guofangsky/article/details/89684857
 
 
+---------------------------------------------------------------------------------------------------------------------
+## AIOps
 
+AIOps 使用人工智能来简化 IT 运营管理，并在复杂的现代 IT 环境中加速和自动化问题解决。
+
+
+
+
+
+[AIOps](https://www.ibm.com/cloud/learn/aiops)
+[What Is AIOps? A Beginner’s Guide](https://www.bmc.com/blogs/what-is-aiops/)
+[What is AIOps?](https://www.moogsoft.com/resources/aiops/guide/everything-aiops/)
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+## GitOps
+
+GitOps 是一种持续交付的方式。它的核心思想是将应用系统的声明性基础架构和应用程序存放在 Git 版本库中。
+
+将 Git 作为交付流水线的核心，每个开发人员都可以提交拉取请求（Pull Request）并使用 Git 来加速和简化 Kubernetes 的应用程序部署和运维任务。通过使用像 Git 这样的简单工具，开发人员可以更高效地将注意力集中在创建新功能而不是运维相关任务上（例如，应用系统安装、配置、迁移等）。
+
+
+
+[GitOps | 一种云原生的持续交付模型](https://juejin.cn/post/6844903665187160072)
+
+[GitOps 初探](https://segmentfault.com/a/1190000019809452)
+[Gitops入门到精通（1）概念篇](https://zhuanlan.zhihu.com/p/339726600)
+[最全的GitOps工具选型，30+款工具随你挑](https://cloud.tencent.com/developer/news/710975)
+[GitOps：一款基于Kubernetes的高速CI/CD框架](http://dockone.io/article/3450)
+[21 个运维必知领域之「GitOps」](https://www.infoq.cn/article/z653ttpzar2vrxgxgpt1)
+[What is GitOps?](https://about.gitlab.com/topics/gitops/)
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+## SRE
+
+SRE (Site Reliability Engineering)运维
+
+SRE 是谷歌提出的实践，旨在保障互联网服务的稳定性和性能；而广受应用的微服务架构，几乎是大家保持研发效率的唯一方法。
+
+自动化是 SRE 角色与传统运营团队之间的一个区别。
+
+
+
+SRE的怎么来的？
+
+10多年前，谷歌出现了一种新的岗位叫做SRE，它重视运维人员的开发能力，要求运维工作在50%以内，另外50%精力开发自动化工具减少人力需求，谷歌的这种模式大获成功，不仅解决了运维和开发之间的矛盾，还降低了人力成本，这个岗位发展到现在有1000名以上的SRE！这就是SRE的历史起源。
+
+SRE的方法论是什么？
+
+谷歌的一名SRE出了一本书叫《SRE：Google运维解密》，通过这本书，我们知道了谷歌SRE的一些方法论：
+1、运维工作50%，另外50%精力用于开发自动化工具；
+2、保障服务的前提下最大化迭代速度，不追求100%可靠性；
+3、通过监控预案缩短平均恢复时间MTTR；
+4、部署变更管理：渐进发布，精确检测，安全回滚；
+……
+
+从这里我们就可以看出传统运维和SRE的区别了：相对传统运维，SRE重视开发，重视效率，追求自动化，专注于整个软件系统的生命周期管理。
+
+总体来说，SRE就是运维开发一体化的一套方法论，而在国内这种运维开发一体化的模式叫做Devops。
+
+
+
+
+[SRE和运维的区别是什么？](https://www.zhihu.com/question/58721069)
+[SRE 工程师到底是做什么的？](https://www.infoq.cn/article/oklq_1ts0b2q7gfdubak)
+[21 个运维必知领域之「SRE」](https://www.infoq.cn/article/tbrbL5T2djWylxQSEBWj)
