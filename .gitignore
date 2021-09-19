@@ -11,9 +11,9 @@ node_modules
 _book
 
 # eBook build output
-*.epub
-*.mobi
-*.pdf
+#*.epub
+#*.mobi
+#*.pdf
 
 
 # MacOS
