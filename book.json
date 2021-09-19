@@ -11,7 +11,12 @@
   },
   "plugins": [
     "tbfed-pagefooter",
-    "disqus"
+    "disqus",
+    "-lunr",
+    "-search",
+    "search-plus",
+    "edit-link",
+    "github"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
@@ -21,6 +26,10 @@
     },
     "disqus": {
       "shortName": "youngzil"
+    },
+    "edit-link": {
+      "base": "https://github.com/youngzil/notes/blob/master",
+      "label": "编辑本页"
     },
     "github": {
       "url": "https://github.com/youngzil"
