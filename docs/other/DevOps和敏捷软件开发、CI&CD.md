@@ -19,6 +19,8 @@
 
 极限编程（Extreme Programming，XP）、Scrum、DSDM、自适应软件开发、Crystal、特征驱动开发（Feature-Driven Development，FDD）、实用主义编程。
 
+我们要的是敏捷，而不是脆弱(agile rather than fragile)
+
 
 参考  
 [20 年起义，敏捷已死，敏捷万岁](https://www.infoq.cn/article/lmiNQOS6f4lI6fWzGRD5)
@@ -47,6 +49,10 @@
 
 ## DevOps
 
+Devopsday 是一个全球性的系列技术会议，涵盖软件开发、IT 基础设施运营以及它们之间的交叉主题。每个活动都由当地的志愿者组织。
+[DevOpsDays官网](https://devopsdays.org/)
+[中国DevOpsDays社区](https://chinadevopsdays.org/)
+
 
 DevOps: Development和Operations的组合
 
@@ -54,7 +60,6 @@ DevOps: Development和Operations的组合
 Development：Software Engineering
 QA：Quality Assurance
 Technology Operations
-
 
 
 DevOps 是 Development 和 Operations 的合成词，其目标是要加强开发人员、测试人员、运维人员之间的沟通协调。如何实现这一目标呢？需要我们的项目做到持续集成、持续交付、持续部署。
@@ -116,12 +121,48 @@ Web服务器：Apache、Nginx、IIS
 在工具的选择上，需要结合公司业务需求和技术团队情况而定。（注：更多关于工具的详细介绍可以参见此文：51 Best DevOps Tools for #DevOps Engineers）
 
 
-
-
-参考
-https://www.jianshu.com/p/c5d002cf25b9
+参考  
+[Devops讲解](https://www.jianshu.com/p/c5d002cf25b9)
 [DevOps wiki](https://zh.wikipedia.org/wiki/DevOps)
+[DevOps 教程](https://www.gingerdoc.com/devops-intro)
+[实例化DevOps原则](https://zhuanlan.zhihu.com/p/25675203)
+[关于DevOps 的那些事](https://zhuanlan.zhihu.com/p/33984591)
 
+
+
+
+## DevOps核心原则之CALMS
+
+DevOps核心原则之CALMS分别为 文化、自动化、精益、度量、分享。
+
+因为DevOps源自草根，没有什么框架，所以如何定义DevOps成了DevOps社区里面的一个大难题。一些DevOps从业者，纷纷设定自己的DevOps框架。其中比较有名的框架有上文提到的Damon Edwards所定义并被Jez Humble所修订的CALMS，和Gene Kim所定义的The Three Ways。
+
+### CALMS
+- Culture – 文化：公司各个角色一起担当业务变化，实现有效协作和沟通；
+- Automation – 自动化：在价值链中尽量除去手工步骤；
+- Lean – 精益：运用精益原则更频繁地交付价值；
+- Metrics – 度量：度量并使用数据来优化交付周期；
+- Sharing – 分享：分享成功和失败的经验来相互学习。
+
+
+### The Three Ways
+- The First Way： System Thinking （系统思考：强调全局优化，避免局部优化）；
+- The Second Way： Amplify Feedback Loops （经过放大的反馈回路：创建从开发过程下游至上游的反馈环）；
+- The Third Way： Culture of Continual Experimentation And Learning（持续做试验和学习的文化：持续做试验，承担风险、从失败中学习；通过反复实践来达到精通）。
+
+
+给大家分享一下DevOps的精髓——“CALMS” 的主旨吧！
+- Culture（文化）- 是指拥抱变革，促进协作和沟通
+- Automation（自动化）- 是指将人为干预的环节从价值链中消除
+- Lean（精益）- 是指通过使用精益原则促使高频率循环周期
+- Metrics（指标）- 是指衡量每一个环节，并通过数据来改进循环周期
+- Sharing（分享）- 是指与他人开放分享成功与失败的经验，并在错误中不断学习改进
+
+DevOps2.0按照敏捷的方式去建立DevOps文化、DevOps原则、DevOps流程、DevOps工具，实现从敏捷治理、敏捷高效管理、敏捷精益管理、持续交付、轻量级ITSM等多个方面的综合敏捷管控。
+
+
+[DevOps Master系列:再论DevOps核心原则CALMS](https://www.douban.com/note/731775271/)
+[CALMS及其与数据库DevOps的关系](https://blog.csdn.net/Tybyqi/article/details/83623972)
 
 
 ---------------------------------------------------------------------------------------------------------------------

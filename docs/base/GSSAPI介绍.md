@@ -26,7 +26,7 @@ SASL是Simple Authentication and Security Layer的缩写，主要应用于跨节
 
 当SASL中使用Kerberos服务时，也需要使用到GSS-API来与Kerberos之间进行安全信息交换。
 
-
+[简单验证和安全层 (Simple Authentication and Security Layer, SASL) 介绍](https://docs.oracle.com/cd/E26926_01/html/E25912/sasl.intro.20.html)
 
 
 ### Kerberos
