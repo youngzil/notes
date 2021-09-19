@@ -126,10 +126,10 @@ TCP三次握手过程
 由TCP的三次握手和四次断开可以看出,TCP使用面向连接的通信方式,大大提高了数据通信的可靠性,使发送数据端和接收端在数据正式传输前就有了交互,为数据正式传输打下了可靠的基础
 
 TCP状态码：
-![http连接过程图片](../../interview/image/httpconnect.png "ReferencePicture")
+![http连接过程图片](../../../Books/tech/images/httpconnect.png "ReferencePicture")
 
 
-![http连接过程图片](../../interview/image/tcp-three-handshake.png "ReferencePicture")
+![http连接过程图片](../../../Books/tech/images/tcp-three-handshake.png "ReferencePicture")
 
 1、Client：发送SYN后
 SYN-SENT -在发送连接请求后等待匹配的连接请求； 
