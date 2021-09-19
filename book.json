@@ -11,18 +11,36 @@
   },
   "plugins": [
     "tbfed-pagefooter",
+    "git-author",
     "disqus",
     "-lunr",
     "-search",
-    "search-plus",
+    "search-pro",
     "edit-link",
-    "github"
+    "github",
+    "github-buttons",
+    "-sharing",
+    "sharing-plus",
+    "expandable-chapters",
+    "splitter",
+    "page-toc-button",
+    "back-to-top-button",
+    "lightbox",
+    "advanced-emoji",
+    "copy-code-button",
+    "pageview-count",
+    "donate"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
       "copyright": "Copyright © 2018-2021 | Distributed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh>CC BY 4.0</a> | <a href=https://youngzil.github.io/notes/>Peter</a>",
       "modify_label": " Updated at ",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "git-author": {
+      "modifyTpl": "最后修改: {user} {timeStamp}",
+      "createTpl": "创建: {user} {timeStamp}",
+      "timeStampFormat": "YYYY-MM-DD HH:mm:ss"
     },
     "disqus": {
       "shortName": "youngzil"
@@ -33,9 +51,68 @@
     },
     "github": {
       "url": "https://github.com/youngzil"
+    },
+    "github-buttons": {
+      "buttons": [
+        {
+          "user": "youngzil",
+          "repo": "notes",
+          "type": "star",
+          "size": "small"
+        },
+        {
+          "user": "youngzil",
+          "type": "follow",
+          "size": "small",
+          "width": "130",
+          "count": true
+        }
+      ]
+    },
+    "sharing": {
+      "weibo": true,
+      "google": true,
+      "facebook": false,
+      "twitter": false,
+      "linkedin": false,
+      "douban": false,
+      "qq": false,
+      "qzone": false,
+      "whatsapp": false,
+      "instapaper": false,
+      "messenger": false,
+      "hatenaBookmark": false,
+      "viber": false,
+      "vk": false,
+      "pocket": false,
+      "stumbleupon": false,
+      "line": false,
+      "all": [
+        "weibo",
+        "google",
+        "facebook",
+        "twitter",
+        "linkedin",
+        "douban",
+        "qq",
+        "qzone",
+        "whatsapp",
+        "instapaper",
+        "messenger",
+        "hatenaBookmark",
+        "viber",
+        "vk",
+        "pocket",
+        "stumbleupon"
+      ]
+    },
+    "donate": {
+      "wechat": "images/WeChatPay.png",
+      "alipay": "images/Alipay_donate.jpg",
+      "title": "",
+      "button": "打赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
     }
   }
 }
-
-
-
