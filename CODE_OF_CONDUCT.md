@@ -44,7 +44,7 @@ make build
 
 **下载 PDF/ePub/Mobi 格式文档本地查看**
 
-访问 [gitbook](https://youngzil.gitbook.io/notes/) 可以看到下载地址，可以下载根据最新文档生成的 **PDF/ePub/Mobi** 格式文档（文档的注脚中注明了更新时间），同时也可以直接在 gitbook 中阅读，不过 gitbook 不太稳定打开速度较慢，建议大家直接在https://youngzil.github.io/notes/浏览。
+访问 [gitbook](https://youngzil.gitbook.io/notes/) 可以看到下载地址，可以下载根据最新文档生成的 **PDF/ePub/Mobi** 格式文档（文档的注脚中注明了更新时间），同时也可以直接在 gitbook 中阅读，不过 gitbook 不太稳定打开速度较慢，建议大家直接在 https://youngzil.github.io/notes/ 浏览。
 
 **生成 pdf**
 
