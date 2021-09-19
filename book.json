@@ -15,7 +15,7 @@
     "disqus",
     "-lunr",
     "-search",
-    "search-pro",
+    "search-plus",
     "edit-link",
     "github",
     "github-buttons",
@@ -29,7 +29,10 @@
     "advanced-emoji",
     "copy-code-button",
     "pageview-count",
-    "donate"
+    "donate",
+
+    "3-ba",
+    "ga"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
@@ -113,6 +116,12 @@
       "button": "打赏",
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
+    },
+    "3-ba": {
+      "token": "e7ecf29793863a212ebb101cf06e8b68"
+    },
+    "ga": {
+      "token": "G-ZKXMJ03E4L"
     }
   }
 }
