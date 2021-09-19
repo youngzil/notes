@@ -246,7 +246,7 @@ TCP三次握手过程
 和接收端在数据正式传输前就有了交互,为数据正式传输打下了可靠的基础  
   
 TCP状态码：  
-![http连接过程图片](./image/httpconnect.png "ReferencePicture")  
+![http连接过程图片](../../Books/tech/images/httpconnect.png "ReferencePicture")  
   
 各个状态的意义如下：   
 1、Client：发送SYN后  

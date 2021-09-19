@@ -109,7 +109,7 @@ Use the `printf()` function.
 图片
 ![Alt text](http://www.izhangbo.cn/wp-content/themes/minty/img/logo.png "Optional title")
 
-![这里是说明，后面是图片位置，可以使相对位置或者网址](./media/image-20180824112136964.png)
+![这里是说明，后面是图片位置，可以使相对位置或者网址](media/image-20180824112136964.png)
 
 使用 icon 图标文字
 <i class="icon-cog"></i>

@@ -969,8 +969,8 @@ http://blog.csdn.net/RodeStillFaraway/article/details/50530142
     图形结构：各种图  
   
 数据结构体系图：  
-![数据结构体系图](./image/datastructsystem.png "ReferencePicture")  
-![数据结构时间复杂度](./image/Datastructuretimecomplexity.png "ReferencePicture")  
+![数据结构体系图](../../images/datastructsystem.png "ReferencePicture")  
+![数据结构时间复杂度](../../images/Datastructuretimecomplexity.png "ReferencePicture")  
 ---------------------------------------------------------------------------------------------------------------------  
   
 Java线程的5种状态及切换(透彻讲解)  
@@ -983,7 +983,7 @@ http://blog.csdn.net/pange1991/article/details/53860651
 运行-->等待队列-->锁池队列-->就绪（wait()+notify/notifyAll、synchronized(obj) ）  
 运行-->就绪（yield()、时间片用完）  
   
-![线程状态转换](./image/threadstatuschange.png "ReferencePicture")  
+![线程状态转换](../../images/threadstatuschange.png "ReferencePicture")  
   
 在调用sleep()方法的过程中，线程不会释放对象锁。  
 而当调用wait()方法的时候，线程会放弃对象锁，让出cpu该其他线程，进入等待此对象的等待锁定池，只有针对此对象调用notify()方法后本线程才进入对象锁定池准备  

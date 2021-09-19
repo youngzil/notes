@@ -23,16 +23,18 @@
     "sharing-plus",
     "expandable-chapters",
     "splitter",
-    "page-toc-button",
-    "back-to-top-button",
+    "theme-default",
+    "anchor-navigation-ex-toc",
     "lightbox",
     "advanced-emoji",
     "copy-code-button",
     "pageview-count",
-    "donate",
-
     "3-ba",
-    "ga"
+    "ga",
+    "donate",
+    "codesnippet",
+    "image-captions",
+    "favicon"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
@@ -72,6 +74,9 @@
         }
       ]
     },
+    "theme-default": {
+      "showLevel": true
+    },
     "sharing": {
       "weibo": true,
       "google": true,
@@ -109,19 +114,22 @@
         "stumbleupon"
       ]
     },
-    "donate": {
-      "wechat": "images/WeChatPay.png",
-      "alipay": "images/Alipay_donate.jpg",
-      "title": "",
-      "button": "打赏",
-      "alipayText": "支付宝打赏",
-      "wechatText": "微信打赏"
+    "image-captions": {
+      "caption": "图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_"
     },
     "3-ba": {
       "token": "e7ecf29793863a212ebb101cf06e8b68"
     },
     "ga": {
       "token": "G-ZKXMJ03E4L"
+    },
+    "donate": {
+      "wechat": "/images/WeChatPay.png",
+      "alipay": "/images/Alipay_donate.jpg",
+      "title": "",
+      "button": "打赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
     }
   }
 }
