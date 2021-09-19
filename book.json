@@ -33,7 +33,6 @@
     "ga",
     "donate",
     "codesnippet",
-    "image-captions",
     "favicon"
   ],
   "pluginsConfig": {
@@ -113,9 +112,6 @@
         "pocket",
         "stumbleupon"
       ]
-    },
-    "image-captions": {
-      "caption": "图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_"
     },
     "3-ba": {
       "token": "e7ecf29793863a212ebb101cf06e8b68"
