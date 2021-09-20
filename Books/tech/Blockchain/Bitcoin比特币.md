@@ -1,3 +1,12 @@
+在区块链之前是机器学习和人工智能（ML/AI）  
+与加密相关的东西，如哈希、签名、混淆等  
+比特币以及类似的 POW 区块链  
+区块链项目EOS  
+以太坊ETH  
+BTC
+
+
+
 区块链Blockchain
 指纹（fingerprint）
 比特币Bitcoin

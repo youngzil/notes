@@ -31,9 +31,9 @@
     "pageview-count",
     "3-ba",
     "ga",
-    "donate",
     "codesnippet",
-    "favicon"
+    "favicon-absolute",
+    "donate"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
@@ -118,6 +118,11 @@
     },
     "ga": {
       "token": "G-ZKXMJ03E4L"
+    },
+    "favicon-absolute": {
+      "favicon": "/images/favicon.ico",
+      "bookmark": "/images/favicon.ico",
+      "appleTouchIconPrecomposed152": "/images/favicon.ico"
     },
     "donate": {
       "wechat": "/images/WeChatPay.png",
