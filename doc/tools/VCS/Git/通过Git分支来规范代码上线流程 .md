@@ -17,7 +17,7 @@ Git提交注释日志规范
 
 
 
-![通过Git分支来规范代码上线流程](../../../../Books/images/git上线流程.jpg "ReferencePicture")
+![通过Git分支来规范代码上线流程](../../../../docs/images/git上线流程.jpg "ReferencePicture")
 
 或者
 

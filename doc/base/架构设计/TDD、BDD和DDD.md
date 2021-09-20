@@ -5,18 +5,18 @@
 
 
 测试驱动开发（TDD）是一种开发软件的过程，其中在编写代码之前先编写测试。一旦完成，开发人员将努力编写足够的代码以通过测试，然后开始重构。
-![Hybrid Practice](../../../Books/images/TDD.png "ReferencePicture")
+![Hybrid Practice](../../../docs/images/TDD.png "ReferencePicture")
 
 
 域驱动设计（DDD）是一种将实现与不断发展的模型联系在一起的开发方法。将项目的重点放在核心领域（知识领域），背后的逻辑上，并迫使技术和非技术方面之间进行协作以改进模型。
-![Hybrid Practice](../../../Books/images/DDD.png "ReferencePicture")
+![Hybrid Practice](../../../docs/images/DDD.png "ReferencePicture")
 
 行为驱动开发（BDD）是对TDD和DDD的改进，旨在通过缩小沟通差距，增进对客户的了解并实现持续沟通来简化开发。简而言之，BDD是将业务需求与代码结合在一起的一种方式，使您能够从业务/最终用户的角度了解系统的行为。
-![Hybrid Practice](../../../Books/images/BDD.png "ReferencePicture")
+![Hybrid Practice](../../../docs/images/BDD.png "ReferencePicture")
 
 Hybrid Practice混合实践
 
-![Hybrid Practice](../../../Books/images/Hybrid_Practice.png "ReferencePicture")
+![Hybrid Practice](../../../docs/images/Hybrid_Practice.png "ReferencePicture")
 
 
 

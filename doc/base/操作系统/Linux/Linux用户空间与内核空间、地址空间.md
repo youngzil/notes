@@ -91,7 +91,7 @@ Windows默认：2G、2G
 5、命令行参数: 程序的命令行参数
 6、环境变量：类似于Linux下的PATH，HOME等环境变量，子进程会继承父进程的环境变量。
 
-![进程空间和内和空间示意图](../../../../Books/images/linux-address.png "ReferencePicture")
+![进程空间和内和空间示意图](../../../../docs/images/linux-address.png "ReferencePicture")
 
 
 
