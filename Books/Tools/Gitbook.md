@@ -56,6 +56,42 @@ gitbook serve
 
 
 
+book.json部分配置参考
+
+```json
+{
+  "title": "Kubernetes",
+  "description": "Kubernetes ",
+  "language": "zh-hans",
+  "author": "Jimmy",
+  "plugins": [
+    "page-toc-button",
+    "back-to-top-button",
+    "image-captions",
+    "-lunr",
+    "-search",
+    "search-plus",
+    "-highlight",
+    "prism",
+    "prism-themes",
+    "sitemap-general"
+  ],
+  "pluginsConfig": {
+    "image-captions": {
+      "caption": "图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_：_CAPTION_"
+    },
+    "prism": {
+      "css": [
+        "prism-themes/themes/prism-ghcolors.css"
+      ]
+    },
+    "sitemap-general": {
+      "prefix": "https://jimmysong.io/kubernetes-handbook/"
+    }
+  }
+}
+```
+
 
 
 ## Gitbook插件
@@ -87,4 +123,8 @@ gitbook serve
 [推荐12个实用的gitbook插件](https://juejin.cn/post/6844903865146441741)
 
 [Gitbook插件推荐](https://github.com/swapagarwal/awesome-gitbook-plugins)
+
+
+
+
 
