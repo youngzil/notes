@@ -125,8 +125,8 @@
       "appleTouchIconPrecomposed152": "images/favicon.ico"
     },
     "donate": {
-      "wechat": "/images/WeChatPay.png",
-      "alipay": "/images/Alipay_donate.jpg",
+      "wechat": "/notes/images/WeChatPay.png",
+      "alipay": "/notes/images/Alipay_donate.jpg",
       "title": "",
       "button": "打赏",
       "alipayText": "支付宝打赏",
