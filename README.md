@@ -30,21 +30,21 @@ quickstart-webservice-axis2
 
 
 ### 机器学习
-[MachineLearning机器学习](docs/base/人工智能技术/MachineLearning机器学习.md)
+[MachineLearning机器学习](Books/tech/人工智能技术/MachineLearning机器学习.md)
 
 
 ### 区块链
-[Blockchain区块链](docs/base/blockchain/Blockchain区块链.md)
-[Ethereum以太坊](docs/base/blockchain/Ethereum以太坊.md)
-[Bitcoin](docs/base/blockchain/Bitcoin.md)
+[Blockchain区块链](Books/tech/Blockchain/Blockchain区块链.md)
+[Ethereum以太坊](Books/tech/Blockchain/Ethereum以太坊.md)
+[Bitcoin](Books/tech/Blockchain/Bitcoin.md)
 
 ### 人工智能
-[ArtificialIntelligence人工智能](docs/base/人工智能技术/ArtificialIntelligence人工智能.md)
+[ArtificialIntelligence人工智能](Books/tech/人工智能技术/ArtificialIntelligence人工智能.md)
 
 
 ### 其他相关
-[CloudComputing云计算](docs/other/CloudComputing云计算.md)
-[EdgeComputing边缘计算](docs/other/EdgeComputing边缘计算.md)
+[CloudComputing云计算](Books/tech/others/CloudComputing云计算.md)
+[EdgeComputing边缘计算](Books/tech/others/EdgeComputing边缘计算.md)
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -52,27 +52,6 @@ quickstart-webservice-axis2
 1、[notes]学习笔记文档  
 [youngzil.github.io]
 
-### Java书籍
-* [《Effective Java中文版》](Computer/Java/Effective Java中文版.md)
-* [《Java多线程编程核心技术》](Computer/Java/Java多线程编程核心技术.md)
-* [《Java编程思想》](Computer/Java/Java编程思想.md)
-* [《深入理解Java虚拟机JVM高级特性与最佳实践》](Computer/Java/深入理解Java虚拟机JVM高级特性与最佳实践.md)
-* [《码出高效：Java开发手册》](Computer/Java/码出高效：Java开发手册.md)
-* [《Java程序性能优化》](Computer/Java/Java程序性能优化.md)
-
-### DB数据库书籍
-* [《深入浅出MyBatis技术原理与实战》](Computer/DB/深入浅出MyBatis技术原理与实战.md)
-* [《高性能MySQL》](Computer/DB/高性能MySQL.md)
-
-### 网络HTTP
-* [《图解HTTP》](Computer/HTTP/图解HTTP.md)
-* [《TCPIP详解：卷一》](Computer/HTTP/TCPIP详解：卷一.md)
-
-### Linux书籍
-* [《鸟哥的Linux私房菜》](Computer/Linux/鸟哥的Linux私房菜.md)
-
-### Netty书籍
-* [《Netty权威指南》](Computer/Netty/Netty权威指南.md)
 
 ### Spring书籍
 * [Spring实战](docs/java/)
@@ -80,59 +59,10 @@ quickstart-webservice-axis2
 ### Redis书籍
 * [Spring实战](docs/java/)
 
-### 分布式书籍
-* [《从PAXOS到ZOOKEEPER分布式一致性原理与实践》](Computer/分布式/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md)
-* [Zookeeper](docs/java/)
-
-### 架构设计
-* [《代码整洁之道》](Computer/架构设计/代码整洁之道.md)
-* [《重构》](Computer/架构设计/重构.md)
-* [《亿级网站架构核心技术》](Computer/架构设计/亿级网站架构核心技术.md)
-* [《可伸缩服务架构》](Computer/架构设计/可伸缩服务架构.md)
-* [《大型网站技术架构——核心原理与案例分析》](Computer/架构设计/大型网站技术架构——核心原理与案例分析.md)
-* [《大型网站系统与Java中间件实践》](Computer/架构设计/大型网站系统与Java中间件实践.md)
-
-### Interview面试
-* [《剑指Offer》](Computer/Interview/剑指Offer.md)
-* [《程序员面试宝典》](Computer/Interview/程序员面试宝典.md)
-* [《程序员面试金典》](Computer/Interview/程序员面试金典.md)
 
 ### 技术其他
 * [《阿里巴巴Java开发手册》](Computer/Company/Alibaba/阿里巴巴Java开发手册/阿里巴巴Java开发手册.md)
 
-### 英语
-* [英语学习](English/英语学习.md)
-
-### 医学
-* [医学常识](常识/日常/医学常识.md)
-* [《人体使用手册》](Books/Book/medicine/人体使用手册.md)
-* [《普通生物学》](Books/Book/medicine/普通生物学.md)
-
-### 历史
-* [《国史大纲》](Books/Book/history/国史大纲.md)
-* [《明朝那些事儿》](Books/Book/history/明朝那些事儿.md)
-* [《万历十五年》](Books/Book/history/万历十五年.md)
-
-* [《中国通史》](Books/Book/history/中国通史.md)
-* [《第二次世界大战战史》](Books/Book/history/第二次世界大战战史.md)
-* [《世界史：从史前到21世纪全球文明的互动》](Books/Book/history/世界史：从史前到21世纪全球文明的互动.md)
-* [《全球通史：从史前史到21世纪》](Books/Book/history/全球通史：从史前史到21世纪.md)
-
-### 股票
-* [《炒股的智慧》](常识/日常/stock/炒股的智慧.md)
-
-### 其他
-* [《三国演义》](fiction/三国演义.md)
-
-
-
-## 面试指南
-### 备战面试
-* [面试学习技术网站](docs/interview/面试学习技术网站.md)
-
-
-### 面经
-* [简历和面试](docs/interview/简历和面试.md)
 
 ### 常见的学习网站
 * [开源组织和公司开源项目地址和网站](docs/interview/开源组织和公司开源项目地址和网站.md)
