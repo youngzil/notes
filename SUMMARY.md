@@ -523,7 +523,6 @@
     * [红楼梦](Books/fiction/红楼梦.md)
 
 * [日常常识]()
-  * [买房购房](Books/commonsense/买房购房/买房子购房.md)
   * [搭建梯子VPN]()
     * [VPN的使用](Books/commonsense/搭建梯子VPN/VPN的使用.md)
     * [V2Ray](Books/commonsense/搭建梯子VPN/V2Ray.md)
@@ -536,8 +535,9 @@
     * [CPU和主板](Books/commonsense/电脑组装/CPU和主板.md)
     * [内存和硬盘](Books/commonsense/电脑组装/内存和硬盘.md)
   * [硬盘知识](Books/commonsense/硬盘知识/硬盘知识.md)
-  * [信用卡分类](Books/commonsense/信用卡分类.md)
+  * [买房购房](Books/commonsense/买房购房/买房子购房.md)
   * [汽车](Books/commonsense/汽车.md)
+  * [信用卡分类](Books/commonsense/信用卡分类.md)
   * [生活小常识](Books/commonsense/生活小常识.md)
   * [眼镜](Books/commonsense/眼镜.md)
   * [运动健身](Books/commonsense/运动健身.md)
