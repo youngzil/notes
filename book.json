@@ -120,13 +120,13 @@
       "token": "G-ZKXMJ03E4L"
     },
     "favicon-absolute": {
-      "favicon": "/images/favicon.ico",
-      "bookmark": "/images/favicon.ico",
-      "appleTouchIconPrecomposed152": "/images/favicon.ico"
+      "favicon": "images/favicon.ico",
+      "bookmark": "images/favicon.ico",
+      "appleTouchIconPrecomposed152": "images/favicon.ico"
     },
     "donate": {
-      "wechat": "/images/WeChatPay.png",
-      "alipay": "/images/Alipay_donate.jpg",
+      "wechat": "images/WeChatPay.png",
+      "alipay": "images/Alipay_donate.jpg",
       "title": "",
       "button": "打赏",
       "alipayText": "支付宝打赏",
