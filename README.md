@@ -2,9 +2,15 @@
 
 个人读书学习笔记
 
+[在线阅读请点此](https://youngzil.github.io/notes)
 
-### 技术其他
-* [《阿里巴巴Java开发手册》](Computer/Company/Alibaba/阿里巴巴Java开发手册/阿里巴巴Java开发手册.md)
+[Gitbook地址请点此](https://youngzil.gitbook.io/notes)
+
+
+
+https://github.com/youngzil/notes/tree/master/ + 目录
+
+
 
 
 ---------------------------------------------------------------------------------------------------------------------
