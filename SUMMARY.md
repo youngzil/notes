@@ -400,6 +400,9 @@
       * [Markdown语法模板](docs/Tools/fileformat/markdown/Markdown语法模板.md)
       * [Typora模板](docs/Tools/fileformat/markdown/Typora模板.md)
 
+* [技术其他]()
+  * [技术圈的反对种族歧视](docs/tech/others/技术圈的反对种族歧视.md)
+
 * [Interview面试]()
   * [面试学习技术网站](docs/Interview/面试学习技术网站.md)
   * [简历和面试](docs/Interview/简历和面试.md)
@@ -419,7 +422,7 @@
     * [《Java多线程编程核心技术》](docs/Book/Java/Java多线程编程核心技术.md)
     * [《Java编程思想》](docs/Book/Java/Java编程思想.md)
     * [《深入理解Java虚拟机JVM高级特性与最佳实践》](docs/Book/Java/深入理解Java虚拟机JVM高级特性与最佳实践.md)
-    * [《码出高效：Java开发手册》](docs/Book/Java/码出高效：Java开发手册.md)
+    * [《码出高效：Java开发手册》](docs/Book/Java/码出高效-Java开发手册.md)
     * [《Java程序性能优化》](docs/Book/Java/Java程序性能优化.md)
   * [DB数据库]()
     * [《深入浅出MyBatis技术原理与实战》](docs/Book/DB/深入浅出MyBatis技术原理与实战.md)
@@ -591,8 +594,6 @@
   * [常识名词](docs/commonsense/常识名词.md)
 
 * [说明]()
-
-* [其他相关]()
 
 * [待办]()
   * [ReadingList](ReadingChart.md)

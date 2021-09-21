@@ -1,3 +1,5 @@
+# GitHubPages写博客方法
+
 GitHubPages写博客方法：
 一种是：GitHub Pages + Hexo 的方式
 另外一种是：GitHub Pages + jekyll 的方式

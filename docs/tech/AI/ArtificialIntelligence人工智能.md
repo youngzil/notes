@@ -1,3 +1,5 @@
+# ArtificialIntelligence人工智能
+
 人工智能（Artificial Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。
 
 人工智能的定义可以分为两部分，即“人工”和“智能”。
