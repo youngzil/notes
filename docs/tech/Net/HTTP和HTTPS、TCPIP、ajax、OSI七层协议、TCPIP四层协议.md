@@ -1,3 +1,6 @@
+# HTTP和HTTPS、TCPIP、ajax、OSI七层协议、TCPIP四层协议
+
+
 
 采用三次握手是：为了防止失效的连接请求报文段突然又传送到主机 B ，因而产生错误
 收到server的FIN之后会进入TIME_WAIT状态将持续2个MSL(Max Segment Lifetime)原因

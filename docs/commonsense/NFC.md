@@ -1,5 +1,5 @@
 
-## NFC
+# NFC
 
 NFC，全称是Near Field Communication，即“近场通信”，也叫“近距离无线通信”。
 

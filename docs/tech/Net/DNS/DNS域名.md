@@ -1,3 +1,6 @@
+# DNS域名
+
+
 - [DNS介绍和DNS查询方式](#DNS介绍和DNS查询方式)
 - [如何设计一个DNS](#如何设计一个DNS)
 - [HTTPDNS原理](#HTTPDNS原理)

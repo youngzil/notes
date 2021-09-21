@@ -1,3 +1,5 @@
+# NAT和UDP穿孔打洞、HTTP隧道
+
 NAT(Network Address Translators)，网络地址转换：网络地址转换是在IP地址日益缺乏的情况下产生的，它的主要目的就是为了能够地址重用。
 NAT分为两大类，基本的NAT和NAPT(Network  Address/Port Translator)。
 最开始NAT是运行在路由器上的一个功能模块。
