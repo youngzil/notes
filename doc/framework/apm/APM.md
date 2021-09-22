@@ -151,7 +151,7 @@ Uber工程团队的开源分布式追踪系统Jaeger自2016年起，在公司内
 
 Google的Dapper论文参考  
 [Dapper论文](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf)  
-[Dapper论文本地地址](../../../docs/images/dapper分布式跟踪系统原文.pdf)  
+[Dapper分布式跟踪系统原文.pdf](https://github.com/bigbully/Dapper-translation/blob/master/dapper%E5%88%86%E5%B8%83%E5%BC%8F%E8%B7%9F%E8%B8%AA%E7%B3%BB%E7%BB%9F%E5%8E%9F%E6%96%87.pdf)  
 [Dapper论文翻译版](https://bigbully.github.io/Dapper-translation/)  
 [Dapper论文翻译版Github地址](https://github.com/bigbully/Dapper-translation)  
 

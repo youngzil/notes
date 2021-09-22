@@ -1,3 +1,13 @@
+# Git常用命令速查表
+
+[Git常用命令速查表](https://segmentfault.com/a/1190000017414787)
+
+[Git 常用命令速查表(图文+表格)](https://www.cnblogs.com/kenshinobiy/p/4543976.html)
+
+[Git常用命令速查表（收藏大全）](https://juejin.cn/post/6844903664801284103)
+
+
+
 ------------------------------commit------------------------------
 $ git status                                    # 检查文件当前的状态
 $ git add [文件名]                               # 追踪新的文件

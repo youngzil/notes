@@ -70,8 +70,8 @@ Git Commit Template
 
 ---------------------------------------------------------------------------------------------------------------------
 
+## Git上传文件报错
 
-git报错
 LFS upload missing objects, tried manually uploading
 
 git lfs fetch --all

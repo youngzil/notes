@@ -1,8 +1,8 @@
 {
-  "title": "个人学习笔记 · Peter",
-  "description": "个人学习笔记，可能比较杂乱",
+  "title": "程序猿玄微子个人学习笔记 · Peter",
+  "description": "程序猿玄微子个人学习笔记，可能比较杂乱",
   "language": "zh-hans",
-  "author": "Peter",
+  "author": "Peter、玄微子、lengfeng、yangzl",
   "links": {
     "sidebar": {
       "回到主页": "https://youngzil.github.io/notes/",
@@ -28,12 +28,14 @@
     "lightbox",
     "advanced-emoji",
     "copy-code-button",
+    "codeblock-filename",
     "pageview-count",
     "3-ba",
     "ga",
     "codesnippet",
     "favicon-absolute",
-    "donate"
+    "donate",
+    "auto-scroll-table"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
@@ -132,5 +134,6 @@
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
     }
+
   }
 }
