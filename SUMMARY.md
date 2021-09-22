@@ -93,6 +93,9 @@
 
 * [架构和设计](docs/tech/ArchitectureDesign/ArchitectureDesign架构和设计.md)
   * [设计模式]()
+  * [TDD、BDD和DDD](docs/tech/ArchitectureDesign/TDD、BDD和DDD.md)
+  * [接口幂等性设计](docs/tech/ArchitectureDesign/接口幂等性设计.md)
+  * [权限设计](docs/tech/ArchitectureDesign/权限设计.md)
 
 * [分布式](docs/tech/Distributed/分布式.md)
   * [分布式算法](docs/tech/Distributed/分布式算法.md)
