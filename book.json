@@ -35,7 +35,9 @@
     "codesnippet",
     "favicon-absolute",
     "donate",
-    "auto-scroll-table"
+    "auto-scroll-table",
+    "include-codeblock",
+    "ace"
   ],
   "pluginsConfig": {
     "tbfed-pagefooter": {
@@ -133,6 +135,11 @@
       "button": "打赏",
       "alipayText": "支付宝打赏",
       "wechatText": "微信打赏"
+    },
+    "include-codeblock": {
+      "template": "ace",
+      "unindent": true,
+      "edit": true
     }
 
   }

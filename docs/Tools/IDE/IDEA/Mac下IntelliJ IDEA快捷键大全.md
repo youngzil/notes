@@ -233,7 +233,7 @@ Command + ; 打开项目结构对话框
 Shift + Command + A 查找动作（可设置相关选项）
 Control + Shift + Tab 编辑窗口标签和工具窗口之间切换（如果在切换的过程加按上delete，则是关闭对应选中的窗口）
 十一、Other（一些官方文档上没有体现的快捷键）
-Command + Shift +8 竖编辑模式
+Command + Shift +8 竖编辑模式/列编辑
 
 
 

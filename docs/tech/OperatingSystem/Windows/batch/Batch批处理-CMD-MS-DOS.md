@@ -5,6 +5,9 @@
 
 
 
+[测试脚本](docs/tech/OperatingSystem/Windows/batch/test.bat)
+
+
 md 创建文件夹
 rd  删除文件夹
 cd 进入文件夹
@@ -113,6 +116,9 @@ DATE	查看日期命令
 50	SET	显示当前系统上的环境变量列表。
 
 
+
+
+CMD命令是一种命令提示符，CMD是command的缩写，即命令提示符（CMD），是在OS / 2 ， Win为基础的操作系统（包括Windows 2000和XP中， Vista中，和Server 2003 ）下的“MS-DOS方式”。中文版Windows XP 中的命令提示符进一步提高了与DOS 下操作命令的兼容性，用户可以在命令提示符直接输入中文调用文件。
 
 
 DOS，是磁盘操作系统

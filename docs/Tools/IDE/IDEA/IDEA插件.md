@@ -1,3 +1,16 @@
+# IDEA插件
+
+
+## IDEA插件开发
+
+[Idea插件开发-开发自己的第一款idea插件](https://juejin.cn/post/6844904127990857742)  
+[IDEA插件开发（一）一个简单的表单demo](https://www.cnblogs.com/hama1993/p/12034514.html)  
+[IDEA 插件开发入门教程](https://blog.xiaohansong.com/idea-plugin-development.html)
+
+
+
+
+## IDEA常用插件
 
 Key Promoter X 是一个提示插件，当你在IDEA里面使用鼠标的时候，如果这个鼠标操作是能够用快捷键替代的，那么Key Promoter X会弹出一个提示框，告知你这个鼠标操作可以用什么快捷键替代。对于想完全使用快捷键在IDEA的，这个插件就很有用。
 

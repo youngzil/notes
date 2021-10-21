@@ -1,5 +1,7 @@
 
 
+MacOS
+
 
 软件下载网站：
 [Xclient](https://xclient.info/)  
@@ -139,6 +141,41 @@ lsof -nP -iTCP -sTCP:LISTEN
 
 
 https://blog.csdn.net/glw0223/article/details/86737591
+
+
+
+## Mac滚动截屏
+
+最常规的或许就是登陆QQ，使用Ctrl + Command（Alt）+ A，简单粗暴。没错，使用QQ快捷键截图可能是那些年我们最常用的方式。当然，这种方式并没有过时，大家依然常用，方便，快捷，实用。
+
+
+另外，Mac有自带截图功能。
+
+（1）Shift + Command + 3，会将生成图片自动保存到桌面上。
+
+（2）Shift + Command + 4，会出现十字光标，按需选中要截图的内容后，会将生成图片自动保存到桌面上。
+
+（3）Shift + Command + 4，会出现十字光标，按空格键，出现相机图标，然后点击界面，就会把当前界面生成图片自动保存到桌面上。
+
+
+以上截图方式就已经很方便，那么，如果要截长图，有什么好的办法呢？
+
+Chorme浏览器有自带截长图功能，方便好用。
+
+打开需要截长图的网页，右键--检查--Shift + Command + P，输入“screen”，选择
+
+“Capture full size screenshot”：
+
+
+参考  
+[Mac滚动截屏了解一下？](https://zhuanlan.zhihu.com/p/40683011)
+
+
+
+
+
+
+
 
 
 
