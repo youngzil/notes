@@ -39,6 +39,7 @@ Shadowsocks（ss｜影子代理｜机场｜酸酸乳）
 简单地说，V2Ray 是一个与 Shadowsocks 类似的代理软件，可以用来科学上网（翻墙）学习国外先进科学技术。
 
 
+[翻墙软件VPN推荐，中国仅2款好用(2021年10月最新)](https://github.com/vpncn/vpncn.github.io)
 
 
 ## VPS和VPN

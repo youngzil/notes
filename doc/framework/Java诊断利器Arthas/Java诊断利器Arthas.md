@@ -494,6 +494,7 @@ curl http://localhost/user/0
 在Arthas里执行：
 
 watch com.example.demo.arthas.user.UserController * '{params, throwExp}'
+watch com.wacai.hermes.agent.core.EndPointContext selectEndPoint '{params, throwExp}'
 
 
 第一个参数是类名，支持通配
@@ -514,6 +515,7 @@ ts=2019-02-15 01:35:25; [cost=0.996655ms] result=@ArrayList[
 如果想把获取到的结果展开，可以用-x参数：
 
 watch com.example.demo.arthas.user.UserController * '{params, throwExp}' -x 2
+watch com.wacai.hermes.agent.core.EndPointContext selectEndPoint '{params, throwExp}' -e -x 3
 
 返回值表达式
 在上面的例子里，第三个参数是返回值表达式，它实际上是一个ognl表达式，它支持一些内置对象：
@@ -689,6 +691,9 @@ Something went wrong: 401 Unauthorized
 开始trace：
 
 trace javax.servlet.Filter *
+
+
+trace com.wacai.hermes.agent.core.EndPointContext selectEndPoint 
 
 访问： https://2886795307-80-ollie08.environments.katacoda.com/admin
 

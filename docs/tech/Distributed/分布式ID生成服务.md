@@ -199,3 +199,13 @@ https://cloud.tencent.com/developer/article/1533454
 
 
 
+[Guide to UUID in Java](https://www.baeldung.com/java-uuid)  
+[core-java-uuid源码](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-uuid/)  
+
+[NanoID官网](https://github.com/ai/nanoid)  
+[JNanoId Java版本](https://github.com/aventrix/jnanoid)  
+[]()  
+[]()  
+[]()  
+
+
