@@ -45,6 +45,7 @@
   * [RocketMQ]()
   * [ActiveMQ]()
   * [Kafka]()
+    * [Kafka命令](docs/tech/MQ/Kafka/Kafka命令.md)
   * [Jafka](docs/tech/MQ/Jafka.md)
   * [RabbitMQ]()
   * [OpenMessaging](docs/tech/MQ/OpenMessaging.md)
