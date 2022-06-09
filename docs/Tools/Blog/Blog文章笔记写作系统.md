@@ -62,8 +62,7 @@ GitBook默认使用Markdown语法，从 `2.0.0` 版本起，GitBook也能支持A
 - Travis
 
 - Github Actions
-
-  
+- [mdBook使用](https://www.jianshu.com/p/cdde301edb36)
 
 
 可以使用Travis构建然后推送到gh-pages，也可以使用GitHub Action
