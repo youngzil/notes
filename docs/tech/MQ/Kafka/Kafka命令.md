@@ -1,33 +1,36 @@
+# Kafka命令
+
+
 - [Kafka操作命令](#Kafka操作命令)
 - [查看kafka的zookeeper上的数据](#查看kafka的zookeeper上的数据)
 
 ---------------------------------------------------------------------------------------------------------------------
-# Kafka操作命令
+## Kafka操作命令
 
-启动：
+### 启动
 
-```
+```shell
 bin/zookeeper-server-start.sh config/zookeeper.properties &
 
 bin/kafka-server-start.sh config/server.properties &
 ```
 或者
-```
+```shell
 nohup sh bin/zookeeper-server-start.sh config/zookeeper.properties &
 
 nohup sh bin/kafka-server-start.sh config/server.properties &
 ```
 
-停止：
-```
+### 停止
+```shell
 bin/zookeeper-server-stop.sh
 
 bin/kafka-server-stop.sh
 ```
 
 
-创建主题Topic
-```
+### 创建主题Topic
+```shell
 #replication-factor 表示该topic需要在不同的broker中保存几份, partitions为几个分区
 
 现在我们要创建一个含有6个Partition分区，每个分区3个备份的topic：
@@ -38,16 +41,16 @@ bin/kafka-topics.sh --create --partitions 6 --replication-factor 3 --topic local
 
 ```
 
-列出主题列表
-```
+### 列出主题列表
+```shell
 bin/kafka-topics.sh --list --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 bin/kafka-topics.sh --list --zookeeper 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183/kafka
 
 ```
 
-查看主题详细信息
-```
+### 查看主题详细信息
+```shell
 bin/kafka-topics.sh --describe --topic topic03 --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 一次查询多个topic
@@ -73,12 +76,9 @@ Lsr:是正在服务中的节点.
 ```
 
 
-查看topic指定分区offset的最大值或最小值
-```aidl
+### 查看topic指定分区offset的最大值或最小值
+```shell
 --time，为毫秒值，-time=-1时表示最大值latest，为-2时表示最小值earliest。该offset值是所写时间戳之后的第一条数据。结果为：
-
-bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic topic03 --time -1 --partitions 0 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
-bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic topic03 --time -2 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 具体的时间戳
 bin/kafka-run-class.sh kafka.tools.GetOffsetShell  -topic topicName --time 1585186237000 --broker-list broker1:9092,broker2:9092
@@ -87,15 +87,17 @@ bin/kafka-run-class.sh kafka.tools.GetOffsetShell  -topic topicName --time 15851
 查询offset的最大值
 bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic topic03 --time -1 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
+bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic topic03 --time -1 --partitions 0 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
+
 
 查询offset的最小值
 bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic topic03 --time -2 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 ```
 
-修改主题配置
+### 修改主题配置
 
-```aidl
+```shell
 
 bin/kafka-configs.sh --alter --topic topic03 --add-config max.message.bytes=20480000 --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
@@ -105,9 +107,9 @@ bin/kafka-topics.sh --alter --topic topic03 --config max.message.bytes=102400000
 ```
 
 
-为topic增加分区(不支持减partition)
+### 为topic增加分区(不支持减partition)
 
-```
+```shell
 为topic增加partition
 
 bin/kafka-topics.sh --alter --topic topic03 --partitions 3 --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
@@ -138,8 +140,9 @@ bin/kafka-reassign-partitions.sh --reassignment-json-file reassign.json --execut
 
 ```
 
-删除主题
-```
+
+### 删除主题
+```shell
 bin/kafka-topics.sh --delete --topic topic03 --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 bin/kafka-topics.sh --delete --topic topic03 --zookeeper 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183/kafka
 
@@ -153,16 +156,16 @@ kafka删除topic方法
 ```
 
 
-生产者Producer发送消息
-```
+### 生产者Producer发送消息
+```shell
 bin/kafka-console-producer.sh --topic topic03 --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 bin/kafka-console-producer.sh --topic topic03 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 ```
 
-消费者Consumer消费主题
-```
+### 消费者Consumer消费主题
+```shell
 bin/kafka-console-consumer.sh --topic topic03 --from-beginning --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 bin/kafka-console-consumer.sh --topic topic03 --from-beginning --group test.group --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
@@ -189,21 +192,21 @@ bin/kafka-console-consumer.sh --topic test --new-consumer --from-beginning --con
 
 
 
-查看有哪些消费者Group
-```
+### 查看有哪些消费者Group
+```shell
 2) API方式（新）
 bin/kafka-consumer-groups.sh --list --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 
 1) 分ZooKeeper方式（老）
-bin/kafka-consumer-groups.sh --zookeeper 127.0.0.1:2181/kafka --list
+bin/kafka-consumer-groups.sh --list --zookeeper 127.0.0.1:2181/kafka
 
 ```
 
 
-查看Group详情
-查看消费者消费偏移量
-```
+### 查看Group详情，查看消费者消费偏移量
+
+```shell
 bin/kafka-consumer-groups.sh --list --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 bin/kafka-consumer-groups.sh --group testgroup --describe --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
@@ -213,8 +216,8 @@ bin/kafka-consumer-groups.sh --group testgroup --describe --zookeeper 10.1.128.6
 ```
 
 
-获取指定Consumer Group的位移信息(新的2.x的版本不能使用)
-```
+### 获取指定Consumer Group的位移信息(新的2.x的版本不能使用)
+```shell
 需consumer.properties中设置exclude.internal.topics=false：
 1) 0.11.0.0版本之前： 
 bin/kafka-simple-consumer-shell.sh --topic __consumer_offsets --partition 11 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094 --formatter "kafka.coordinator.GroupMetadataManager\$OffsetsMessageFormatter" 
@@ -222,15 +225,11 @@ bin/kafka-simple-consumer-shell.sh --topic __consumer_offsets --partition 11 --b
 2) 0.11.0.0版本以后(含)： 
 bin/kafka-simple-consumer-shell.sh --topic __consumer_offsets --partition 11 --broker-list 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094 --formatter "kafka.coordinator.group.GroupMetadataManager\$OffsetsMessageFormatter" 
 
-4.查看消费者消费偏移量
-bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
-bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group lengfeng.consumer.group --describe
-
 ```
 
 
-修改消费组的offset
-```
+### 修改消费组的offset
+```shell
 设置为最初偏移量：
 bin/kafka-consumer-groups.sh --group testgroup --topic topic03 --reset-offsets --to-earliest --execute --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
@@ -246,9 +245,9 @@ bin/kafka-consumer-groups.sh --group lengfeng.consumer.group --topic kafka_flink
 
 
 
-查看内部主题__consumer_offsets（保存Consumer Group消费位移信息的Topic）
+### 查看内部主题__consumer_offsets（保存Consumer Group消费位移信息的Topic）
 
-```
+```shell
 需consumer.properties中设置exclude.internal.topics=false：
 
 1) 0.11.0.0之前版本 
@@ -266,8 +265,8 @@ bin/kafka-console-consumer.sh --topic __consumer_offsets --zookeeper localhost:2
 
 
 
-如何增加__consumer_offsets的副本数？其他Topic主题也是一样
-```
+### 如何增加__consumer_offsets的副本数？其他Topic主题也是一样
+```shell
 可使用kafka-reassign-partitions.sh来增加__consumer_offsets的副本数，方法如下：
 
 构造一JSON文件reassign.json：
@@ -296,9 +295,9 @@ server.properties中的配置项num.partitions和default.replication.factor对__
 
 
 
-设置修改Consumer Group的offset
+### 设置修改Consumer Group的offset
 
-```
+```shell
 执行zkCli.sh进入zookeeper命令行界面，假设需将group为testgroup的topic的offset设置为2018，则：set /consumers/testgroup/offsets/test/0 2018
 
 如果kakfa在zookeeper中的根目录不是“/”，而是“/kafka”，则： 
@@ -314,19 +313,18 @@ kafka.tools.UpdateOffsetsInZK$ [earliest | latest] consumer.properties topic
 ```
 
 
-删除Group
-```
+### 删除Group
+```shell
 老版本的ZooKeeper方式可以删除Group，新版本则自动删除，当执行：
 kafka-consumer-groups.sh --group test --delete --bootstrap-server 127.0.0.1:9092
 
 输出如下提示： 
 ```
-kafka-consumer-groups.sh --group lengfeng-test-edu-gatling-group1 --delete --bootstrap-server 172.16.48.179:9081,172.16.48.180:9081,172.16.48.181:9081
 
 
-查看新消费者详情
-```
-仅支持offset存储在zookeeper上的：
+### 查看新消费者详情
+```shell
+# 仅支持offset存储在zookeeper上的：
 
 kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --zkconnect localhost:2181 --group test 
 
@@ -334,15 +332,20 @@ bin/kafka-run-class.sh kafka.tools.ConsumerOffsetChecker --broker-info --group C
 
 ```
 
-查看broker的配置
+### 查看broker的配置
+```shell
 bin/kafka-configs.sh --describe --all --broker 0 --bootstrap-server localhost:9092
+```
+
+
+### 新增修改broker的配置
+```shell
 bin/kafka-configs.sh --alter --add-config k3=v3 --broker 0 --bootstrap-server localhost:9092
 bin/kafka-configs.sh --alter --add-config 'log.cleaner.threads.config=50' --entity-default --entity-type brokers  --bootstrap-server localhost:9092
+```
 
 
-
-
-# 查看kafka的zookeeper上的数据
+## 查看kafka的zookeeper上的数据
 
 1) 查看Kakfa在zookeeper的根目录
    ls /kafka
