@@ -25,7 +25,7 @@
     "splitter",
     "theme-default",
     "anchor-navigation-ex-toc",
-    "lightbox",
+    "popup",
     "advanced-emoji",
     "copy-code-button",
     "codeblock-filename",
@@ -44,14 +44,6 @@
       "copyright": "Copyright © 2018-2021 | Distributed under <a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh>CC BY 4.0</a> | <a href=https://youngzil.github.io/notes/>Peter</a>",
       "modify_label": " Updated at ",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "lightbox": {
-      "includeJQuery": false,
-      "sameUuid": true,
-      "options": {
-        "resizeDuration": 500,
-        "wrapAround": false
-      }
     },
     "git-author": {
       "modifyTpl": "最后修改: {user} {timeStamp}",
