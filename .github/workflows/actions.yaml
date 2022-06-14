@@ -13,5 +13,6 @@ jobs:
         uses: ZanderZhao/gitbook-action@v1.2.4
         with:
           # specify either github_token or personal_token
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
