@@ -7,11 +7,12 @@ jobs:
     steps:
       # Check out the repo first
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       # Run this action to publish gitbook
       - name: Publish
-        uses: tuliren/publish-gitbook@v1.0.0
+        uses: ZanderZhao/gitbook-action@v1.2.4
         with:
           # specify either github_token or personal_token
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
+#          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # personal_token: ${{ secrets.PERSONAL_TOKEN }}
