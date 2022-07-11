@@ -8,6 +8,7 @@
   * 集合
   * 并发
   * JVM
+    * [GraalVM](docs/tech/Java/JVM/GraalVM.md)
   * [I/O](docs/tech/Java/JavaSE/IO.md)
   * [Java8](docs/tech/Java/JavaSE/Java8.md)
   * [Java9](https://github.com/youngzil/quickstart-javase9)
@@ -31,6 +32,8 @@
   * XML框架
   * JVM序列化框架
   * String字符串压缩
+  * [序列化和反序列化](docs/tech/Framework/serializer/序列化和反序列化.md)
+    * [Avro](docs/tech/Framework/serializer/Avro.md)
   * FastDFS
   * [Quartz](https://github.com/youngzil/quickstart-framework/tree/master/quickstart-quartz)
     * [Linux Java(Spring) Java(Quartz) 定时任务表达式格式说明，对比](docs/tech/Framework/Quartz/Linux、Spring、Quartz%20定时任务表达式格式说明.md)
@@ -48,6 +51,7 @@
   * Kafka
     * [Kafka部署](docs/tech/MQ/Kafka/Kafka部署.md)
     * [Kafka命令](docs/tech/MQ/Kafka/Kafka命令.md)
+    * [Kafka运维问题](docs/tech/MQ/Kafka/Kafka运维问题.md)
   * [Jafka](docs/tech/MQ/Jafka.md)
   * RabbitMQ
   * [OpenMessaging](docs/tech/MQ/OpenMessaging.md)
@@ -386,6 +390,7 @@
   * [Erlang](docs/tech/Language/Erlang.md)
   * [Ruby](docs/tech/Language/Ruby.md)
   * [C++/C](docs/tech/Language/C++.md)
+  * [C#语言](docs/tech/Language/.NET开发语言.md)
 
 * 新技术
   * [区块链](docs/tech/Blockchain/Blockchain区块链.md)

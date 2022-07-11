@@ -81,7 +81,7 @@ Lsr:是正在服务中的节点.
 --time，为毫秒值，-time=-1时表示最大值latest，为-2时表示最小值earliest。该offset值是所写时间戳之后的第一条数据。结果为：
 
 具体的时间戳
-bin/kafka-run-class.sh kafka.tools.GetOffsetShell  -topic topicName --time 1585186237000 --broker-list broker1:9092,broker2:9092
+bin/kafka-run-class.sh kafka.tools.GetOffsetShell  -topic topicName --time 1656643531770 --broker-list broker1:9092,broker2:9092
 
 
 查询offset的最大值
@@ -101,6 +101,7 @@ bin/kafka-run-class.sh kafka.tools.GetOffsetShell --topic topic03 --time -2 --br
 
 bin/kafka-configs.sh --alter --topic topic03 --add-config max.message.bytes=20480000 --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
+# 这个是错误的语法，已经改成上面的kafka-configs.sh这种方式了
 bin/kafka-topics.sh --alter --topic topic03 --config max.message.bytes=102400000 --bootstrap-server 127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094
 
 bin/kafka-topics.sh --alter --topic topic03 --config max.message.bytes=102400000 --zookeeper 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183/kafka
