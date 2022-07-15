@@ -6,13 +6,24 @@
 
 
 友情链接
-- [程序猿玄微子的B站主页](https://space.bilibili.com/7683551)
-- [程序猿玄微子的CSDN主页](https://blog.csdn.net/youngzil)
-- [程序猿玄微子的知乎主页](https://www.zhihu.com/people/youngzil)
-- [程序猿玄微子的思否主页](https://segmentfault.com/u/youngzil)
-- [程序猿玄微子的掘金主页](https://juejin.cn/user/1046390801185517)
-- [程序猿玄微子的简书主页](https://www.jianshu.com/u/6b1c28786d01)
-- [程序猿玄微子的开源中国主页](https://my.oschina.net/youngzil)
+- [B站](https://space.bilibili.com/7683551)
+- [CSDN](https://blog.csdn.net/youngzil)
+- [知乎](https://www.zhihu.com/people/youngzil)
+- [思否](https://segmentfault.com/u/youngzil)
+- [掘金](https://juejin.cn/user/1046390801185517)
+- [简书](https://www.jianshu.com/u/6b1c28786d01)
+- [开源中国](https://my.oschina.net/youngzil)
+- [博客园](https://www.cnblogs.com/youngzil)
+- [Github](https://youngzil.github.io/notes)
+- [51CTO博客](https://blog.51cto.com/youngzil)
+- [InfoQ](https://www.infoq.cn/profile/E40EA4EEC50979/publish)
+- [腾讯云社区](https://cloud.tencent.com/developer/user/4258264)
+- [阿里云社区](https://developer.aliyun.com/profile/a75lx73h7p7xg)
+- [GitChat](https://gitchat.cn/gitchat/author/59f3f8f3fb2457508a78346c)
+- [A站](https://www.acfun.cn/u/1264058)
+
+
+
 
 
 
