@@ -47,13 +47,14 @@
 * [MQ消息组件](docs/tech/MQ/MQ消息.md)
   * [Pulsar](docs/tech/MQ/Pulsar.md)
   * RocketMQ
-  * ActiveMQ
   * Kafka
     * [Kafka部署](docs/tech/MQ/Kafka/Kafka部署.md)
     * [Kafka命令](docs/tech/MQ/Kafka/Kafka命令.md)
     * [Kafka运维问题](docs/tech/MQ/Kafka/Kafka运维问题.md)
   * [Jafka](docs/tech/MQ/Jafka.md)
+  * [InLong](docs/tech/MQ/InLong.md)
   * RabbitMQ
+  * ActiveMQ
   * [OpenMessaging](docs/tech/MQ/OpenMessaging.md)
   * MQTT
   * [OpenMQ](docs/tech/MQ/OpenMQ.md)
@@ -301,6 +302,10 @@
   * WebSphere
 
 * [Linux](docs/tech/Linux/Linux.md)
+  * [查看Linux基本属性信息](docs/tech/Linux/查看Linux基本属性信息.md)
+  * [查看Linux下CPU占用情况](docs/tech/Linux/查看Linux下CPU占用情况.md)
+  * [查看LINUX进程内存占用情况](docs/tech/Linux/查看LINUX进程内存占用情况.md)
+  * [查看Linux下端口占用情况](docs/tech/Linux/查看Linux下端口占用情况.md)
 
 * [Spring](docs/tech/Spring/Spring.md)
   * SpringBoot
@@ -359,6 +364,8 @@
     * Selenium
   * 基准测试
     * JMH
+
+* [物联网IoT](docs/tech/IoT/物联网IoT.md)
 
 * 运维
   * 日常遇到的问题
@@ -444,6 +451,7 @@
   * Nexus
   * 项目管理
     * Maven
+      * [Maven中optional和scope元素的使用](docs/Tools/maven/Maven中optional和scope元素的使用.md)
     * Gradle
     * Ant
     * Ivy
