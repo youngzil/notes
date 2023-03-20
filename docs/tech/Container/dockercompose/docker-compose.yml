@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  consumer:
+    build:
+      context: ./centos
+      dockerfile: Dockerfile
+    ports:
+      - "9002:9002"
+#    depends_on:
+#      - consul
+#      - provider-grpc
+#      - provider-jsonrpc
+#    links:
+#      - consul
+#    command: sh -c "echo 'waiting for provider...'; sleep 10 && java -jar ./*.jar"
