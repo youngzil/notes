@@ -22,7 +22,7 @@ _book
 # IDEA
 *.iml
 .idea
-
+.history
 # Eclipse
 target/
 .settings/

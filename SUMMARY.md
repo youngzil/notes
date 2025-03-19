@@ -412,6 +412,7 @@
   * [人工智能](docs/tech/AI/ArtificialIntelligence人工智能.md)
   * [CloudComputing云计算](docs/tech/others/CloudComputing云计算.md)
   * [EdgeComputing边缘计算](docs/tech/others/EdgeComputing边缘计算.md)
+  * [GraphRAG](docs/tech/AI/GraphRAG.md)
 
 * [前端开发](docs/tech/Front/Front前端.md)
   * VueJS

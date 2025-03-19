@@ -1,12 +1,17 @@
-version: "3"
+version: "3.8"
 
 services:
-  consumer:
+  centos72:
+#    image: test/centos7
     build:
       context: ./centos
       dockerfile: Dockerfile
+    container_name: centos7-container_name
     ports:
-      - "9002:9002"
+      - "4444:4444"
+    volumes:
+      - /Users/quarks:/usr/local/yangzl
+    tty: true
 #    depends_on:
 #      - consul
 #      - provider-grpc
